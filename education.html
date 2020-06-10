@@ -39,10 +39,10 @@
     </script>
 </head>
 
-<!--NAVIGATION-->
+<body class="about-us sidebar-collapse">
 
-<body class="profile-page sidebar-collapse">
-    <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100"
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg" color-on-scroll="100"
         id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
@@ -58,18 +58,18 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="dropdown nav-item">
+                    <li class="nav-item">
                         <a href="about.html" class="nav-link">
                             <i class="material-icons">home</i> Home
                         </a>
                     </li>
-                    <li class="dropdown nav-item">
-                        <a href="education.html" class="nav-link" data-toggle="dropdown">
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
                             <i class="material-icons">mood</i> About Me
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="experience.html" class="nav-link" data-toggle="dropdown">
+                        <a href="experience.html" class="nav-link">
                             <i class="material-icons">code</i> Experience
                         </a>
                     </li>
@@ -78,56 +78,88 @@
         </div>
     </nav>
 
-    <!--MAIN-->
-    <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/bg_16.jpg')">
+    <!--HEADING-->
+    <div class="page-header header-filter header-small" data-parallax="true"
+        style="background-image: url('../assets/img/bg9.jpg');">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="brand text-center">
-                        <h1 style="font-weight: 900">Education</h1>
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h1 class="title">Education</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MAIN-->
+    <section>
+        <div class="main main-raised">
+            <div class="profile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 ml-auto mr-auto">
+                            <div class="profile">
+                                <div class="avatar">
+                                    <br>
+                                    <img src="assets/img/byui.jpg" alt="Circle Image"
+                                        class="img-raised rounded-circle img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 ml-auto mr-auto text-center">
+                            <h2 class="title">Brigham Young University Idaho</h2>
+                            <h3>Computer Science and Programming</h3>
+                            <br>
+                            <h4>Relevent Coursework</h4>
+                            <ul style="list-style: none">
+                                <li>Introduction Python Programming</li>
+                                <li>Web Development HTML-CSS</li>
+                                <li>Introduction JavaScript Programming</li>
+                                <li>Introduction C++ Programming</li>
+                                <li>Introduction Java Programming</li>
+                                <li>Oracle SQL Database Management</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main main-raised">
-        <div class="container">
-            <div class="section">
-                <div class="col-md-4">
-                    <img class="img-raised rounded img-fluid mx-auto d-block" alt="Raised Image"
-                        src="assets/img/byui.jpg">
+    </section>
+    <section>
+        <div class="main">
+            <div class="profile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 ml-auto mr-auto">
+                            <div class="profile">
+                                <div class="avatar">
+                                    <br>
+                                    <img src="assets/img/uofu.jpeg" alt="Circle Image"
+                                        class="img-raised rounded-circle img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 ml-auto mr-auto text-center">
+                            <h2 class="title">University of Utah</h2>
+                            <h3>Strategic Communications</h3>
+                            <br>
+                            <h4>Relevent Coursework</h4>
+                            <ul style="list-style: none">
+                                <li>Military Science Tactical Leadership</li>
+                                <li>Military Science Applied Leadership</li>
+                                <li>Communications and Gender</li>
+                                <li>Psychology Memory and Cognition</li>
+                                <li>Introduction to Visual Arts</li>
+                            </ul>
+                            <br>
+                            <p>&ensp;</p>
+                            <p>&ensp;</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="title">Brigham Young Univerisity Idaho</h2>
-                <h3 style="font-weight: 700">Computer Science and Programming</h3>
-                <br>
-                <h4>Relevent Coursework</h4>
-                <ul>
-                    <li>Introduction Python Programming</li>
-                    <li>Web Development HTML-CSS</li>
-                    <li>Introduction JavaScript Programming</li>
-                    <li>Introduction C++ Programming</li>
-                    <li>Introduction Java Programming</li>
-                    <li>Oracle SQL Database Management</li>
-                </ul>
             </div>
-            <div class="col-md-4">
-                <img class="img-raised rounded img-fluid mx-auto d-block" alt="Raised Image" src="assets/img/uofu.jpeg">
-            </div>
-            <h2 class="title">University of Utah</h2>
-            <h3 style="font-weight: 700">Strategic Communications</h3>
-            <br>
-            <h4>Relevent Coursework</h4>
-            <ul>
-                <li>Military Science Tactical Leadership</li>
-                <li>Military Science Applied Leadership</li>
-                <li>Communications and Gender</li>
-                <li>Psychology Memory and Cognition</li>
-                <li>Introduction to Visual Arts</li>
-            </ul>
         </div>
-        <p>&ensp;</p>
-        <p>&ensp;</p>
-    </div>
+    </section>
+
 
     <!--FOOTER-->
     <footer class="footer footer-default">
