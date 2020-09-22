@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/main-css.css" />
-    <link rel="stylesheet" href="assets/material-kit/css/material-kit.css" />
 
     <!--JS Files-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -31,37 +30,47 @@
 </head>
 
 <body>
-    <header>
-        <h1>Steven Crosby</h1>
-        <img src="assets/img/profile_color_200x250.jpg" alt="Steven Crosby Profile">
+    <header class="container">
+        <div class="row">
+            <h1 class="col-sm-6">Steven Crosby</h1>
+            <img src="assets/img/profile_color_200x250.jpg">
+        </div>
     </header>
 
-    <section>
-        <h2>CS-230: Assignment Portal</h2>
-        <ul>
-            <li>
-                <span class="lesson-span">Lesson 02:</span>
-                <a href="#">Assignment Link</a>
-            </li>
-            <li>
-                <span class="lesson-span">Lesson 03:</span>
-                <a href="#">Assignment Link</a>
-            </li>
-            <li>
-                <span class="lesson-span">Lesson 04:</span>
-                <a href="#">Link</a>
-            </li>
-        </ul>
-    </section>
-    <footer>
-        <div>
-            &copy; <span id="yearData"></span> |
-            Aaron Bangerter |
-            Utah |
-            <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+    <section class="jumbotron">
+        <div class="container">
+            <h2>WDD-230 Assignment Portal</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#">LESSON 02</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">LESSON 03</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">LESSON 04</a>
+                </div>
+            </div>
         </div>
-        <div class="lastUpdated">Last Updated: <span id="lastUpdatedData"></span></div>
+    </section>
+
+    <footer class="container">
+        <div class="row">
+            <p class="col-sm-4">
+                &copy; 2020 Steven Crosby
+            </p>
+            <div class="col-sm-2">
+                <a href="#" target="#">Github</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" target="#">LinkedIn</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" target="#">Twitter</a>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
