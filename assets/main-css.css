@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+	color:#2a70e0;
+	font-weight: 800;
+	font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+}
+
+#header-font {
+    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 600;
 }
 
 header {
@@ -12,11 +23,6 @@ header .row,
 footer .row {
     display: flex;
     align-items: center;
-}
-
-h1 {
-    font-weight: 700;
-    margin: 0;
 }
 
 nav {
@@ -32,22 +38,29 @@ a {
 .jumbotron {
     display: flex;
     align-items: center;
-    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/personal_portfolio/background.jpeg');
     background-size: cover;
     color: #ffffff;
-    height: 400px;
+    height: 500px;
+}
+
+#bg-overlay{
+    background-color: rgba(0,0,0,0.8);
 }
 
 .jumbotron h2 {
-    font-size: 60px;
-    font-weight: 700;
+    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
     margin: 0;
-    color: #fff;
+    color: #0084ff;
 }
 
 .jumbotron h3 {
-    margin: 0 0 20px;
-    color: #fff;
+    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 50px;
+    color: #0084ff;
 }
 
 section .row img {
@@ -78,8 +91,15 @@ section .row img {
 }
 
 .portrait {
-    width: 350px;
-    height: 300px;
+	border-radius:80%;
+	width:50%;
+	max-width: 200px;
+}
+
+#family-portrait {
+    border-radius:85%;
+	width:50%;
+	max-width: 300px;
 }
 
 figure img {
@@ -91,9 +111,33 @@ figure {
     margin-bottom: 30px;
 }
 
+.techlogo {
+	width:150px;
+}
+
+.tech-item {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tech-item-text {
+    margin-top:10px;
+}
+
+.tech-item i {
+    font-size:5em;
+}
+
+.tech-tool-item {
+	margin-left:15px;
+    display: inline-block;
+}
+
 footer {
-    font-size: 12px;
-    padding: 20px 0;
+    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    padding: 40px 0;
 }
 
 footer .col-sm-8 {
@@ -103,4 +147,10 @@ footer .col-sm-8 {
 
 footer ul {
     list-style: none;
+}
+
+.profile-pic {
+	border-radius:50%;
+	width:50%;
+	max-width: 175px;
 }
