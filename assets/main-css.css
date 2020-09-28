@@ -1,156 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
-    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
-    background-color: #fff;
+    margin:5px auto;
+    padding:0;
+    width: 750px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-h1, h2, h3, h4, h5 {
-	color:#2a70e0;
-	font-weight: 800;
-	font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+ul {
+    margin:6px 0;
 }
-
-#header-font {
-    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 600;
+header, footer {
+    color: #0099ff;
+    background-color: black;
+    border-radius: 5px;
 }
-
 header {
-    padding: 20px 0;
+    padding: 20px 0 20px 100px;
+    font-size: 42px;
+    font-weight: 800;
+    position: relative;
 }
-
-header .row,
-footer .row {
-    display: flex;
-    align-items: center;
+header img {
+    width:125px;
+    position: absolute;
+    right:15px;
+    top: 15px;
+    box-shadow: -10px 10px 25px rgba(36, 34, 34, 0.5);
 }
-
-nav {
-    display: flex;
-    justify-content: flex-end;
+section {
+    padding:24px 16px;
 }
-
-a {
-    padding: 0 20px;
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+    border-bottom: 1px solid #777777;
+    padding-bottom: 5px;
     margin: 0;
 }
-
-.jumbotron {
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    color: #ffffff;
-    height: 500px;
+.lesson-span {
+    color: #666;
+    font-weight: 100;
 }
-
-#bg-overlay{
-    background-color: rgba(0,0,0,0.8);
-}
-
-.jumbotron h2 {
-    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
-    font-size: 80px;
-    font-weight: 800;
-    margin: 0;
-    color: #0084ff;
-}
-
-.jumbotron h3 {
-    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-    margin: 50px;
-    color: #0084ff;
-}
-
-section .row img {
-    margin: 0 0 30px;
-    width: 100%;
-}
-
-.col-md-6 {
-    margin: 0 0 30px;
-}
-
-.btn.btn-primary {
-    border-radius: 2px;
-    border: 0px;
-    color: #fbd1d5;
-    background-color: #ffffff;
-}
-
-.btn.btn-primary:hover {
-    color: #ffffff;
-    background-color: #fbd1d5;
-}
-
-.btn-secondary {
-    background-color: #2a70e0;
-    color: #ffffff;
-    margin: 0 0 30px;
-}
-
-.portrait {
-	border-radius:80%;
-	width:50%;
-	max-width: 200px;
-}
-
-#family-portrait {
-    border-radius:85%;
-	width:50%;
-	max-width: 300px;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-}
-
-figure {
-    margin-bottom: 30px;
-}
-
-.techlogo {
-	width:150px;
-}
-
-.tech-item {
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.tech-item-text {
-    margin-top:10px;
-}
-
-.tech-item i {
-    font-size:5em;
-}
-
-.tech-tool-item {
-	margin-left:15px;
-    display: inline-block;
-}
-
 footer {
-    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    font-weight: 100;
     font-size: 14px;
-    padding: 40px 0;
+    padding: 12px;
 }
-
-footer .col-sm-8 {
-    display: flex;
-    justify-content: flex-end;
+footer a {
+    color: white;
 }
-
-footer ul {
-    list-style: none;
-}
-
-.profile-pic {
-	border-radius:50%;
-	width:50%;
-	max-width: 175px;
+.lastUpdated {
+    font-size: 12px;
+    color: yellow;
+    padding-top: 5px;
 }
