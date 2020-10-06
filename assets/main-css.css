@@ -2,7 +2,7 @@ body {
     margin:5px auto;
     padding:0;
     width: 750px;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
 }
 ul {
     margin:6px 0;
@@ -29,13 +29,23 @@ section {
     padding:24px 16px;
 }
 h1 {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 24px;
     color: #333;
     border-bottom: 1px solid #777777;
     padding-bottom: 5px;
     margin: 0;
 }
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    border-bottom: 1px solid #777777;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
 .lesson-span {
     color: #666;
     font-weight: 100;
