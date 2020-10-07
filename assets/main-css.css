@@ -96,8 +96,9 @@ nav {
 }
 
 .portrait {
-    width: 350px;
-    height: 300px;
+    border-radius:85%;
+	width:50%;
+	max-width: 300px;
 }
 
 figure img {
@@ -117,4 +118,19 @@ figure img {
 .color img{
     width: 100%;
     height: 200px;
+}
+
+.tableTitle {
+    font-weight: bold;
+    width: 20%;
+}
+
+td ul {
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+    list-style-type: none;
+}
+
+#scenarios {
+    list-style-type: none;
 }
