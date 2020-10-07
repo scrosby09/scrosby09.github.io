@@ -29,18 +29,18 @@ section {
     padding:24px 16px;
 }
 h1 {
+    color: #0099ff;
     font-weight: 900;
     font-size: 24px;
-    color: #333;
     border-bottom: 1px solid #777777;
     padding-bottom: 5px;
     margin: 0;
 }
 
 h2 {
+    color: #0099ff;
     font-weight: 700;
     font-size: 24px;
-    color: #333;
     border-bottom: 1px solid #777777;
     padding-bottom: 5px;
     margin: 0;
