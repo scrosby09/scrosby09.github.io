@@ -1,9 +1,21 @@
+body {
+    margin:5px auto;
+    padding:0;
+    width: 750px;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    color:#FFA000;
+    font-weight: 900;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
 header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    /*background-color: #002D52;*/
     height: 80px;
 }
 
@@ -13,7 +25,7 @@ p {
 }
 
 nav {
-    background-color: #002D52;
+    background-color: #455A64;
     text-align: center;
 }
 
@@ -48,12 +60,12 @@ nav {
 }
 
 nav ul li a.active {
-    color: #002D52;
+    color: #1976D2;
     background-color: #59C1FF;
 }
 
 nav ul li a:hover {
-    color: #196FFF;
+    color: #1976D2;
 }
 
 .responsive li {
@@ -74,7 +86,7 @@ nav ul li a:hover {
 
 h1{
     font-size: 2em;
-    color: white;
+    color: #FFA000;
 }
 
 h3 {
@@ -83,12 +95,12 @@ h3 {
 }
 
 h2 {
-    color: #B86602;
+    color: #FFA000;
 }
 
 #subtitle {
     font-size: 1em;
-    color: black;
+    color: #455A64;
     text-decoration: none;
     font-style: italic;
     text-align: center;
@@ -96,8 +108,8 @@ h2 {
 
 #title {
     font-size: 2em;
-    color: #B86602;
-    margin: 0em;
+    color: #FFA000;
+    margin: 0;
     text-align: center;
 }
 
@@ -112,9 +124,9 @@ section {
 .content {
     display: block;
     margin: 10px auto;
-    border: 1px solid black;
+    border: 1px solid #455A64;
     padding: 15px;
-    background-color: gray;
+    background-color: #212121;
     color: black;
     font-style: italic;
 }
@@ -126,7 +138,7 @@ section {
 }
 
 footer {
-    background-color: #002D52;
+    background-color: #212121;
     height: 50px;
     width: 100%;
     color: white;
@@ -136,3 +148,60 @@ footer {
     justify-content: center;
     flex-direction: column;
 }
+
+@media only screen and (min-width: 32.5em) {
+    header {
+        height: 125px;
+    }
+
+    main {
+        width: 75%;
+        margin: auto;
+    }
+
+    #title {
+        font-size: 2em;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    #logo {
+        height: 100px;
+        margin-left: 40%;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    footer {
+        font-size: 1em;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*Color Scheme
+
+dark-grey #212121
+blue-grey #455A64
+blue-700 #1976D2
+amber-700 #FFA000
+red-700 #d32f2f
+*/
