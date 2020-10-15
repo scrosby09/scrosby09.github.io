@@ -1,14 +1,45 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
 body {
-    margin:5px auto;
-    padding:0;
-    width: 750px;
-    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1976D2;
+    text-align: left;
+    background-color: black;
 }
 
 h1, h2, h3, h4, h5 {
     color:#FFA000;
-    font-weight: 900;
-    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -27,9 +58,11 @@ p {
 nav {
     background-color: #455A64;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navigation {
+    font-family: 'Montserrat', sans-serif;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -60,8 +93,8 @@ nav {
 }
 
 nav ul li a.active {
-    color: #1976D2;
-    background-color: #59C1FF;
+    color: #212121;
+    background-color: #1976D2;
 }
 
 nav ul li a:hover {
@@ -76,7 +109,7 @@ nav ul li a:hover {
     display: none;
 }
 
-#ham {
+#toggleMenu {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
@@ -84,23 +117,10 @@ nav ul li a:hover {
     color: white;
 }
 
-h1{
-    font-size: 2em;
-    color: #FFA000;
-}
-
-h3 {
-    margin: 0;
-    color: #1C8AFF;
-}
-
-h2 {
-    color: #FFA000;
-}
-
 #subtitle {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    color: #455A64;
+    color: #1976D2;
     text-decoration: none;
     font-style: italic;
     text-align: center;
@@ -124,10 +144,12 @@ section {
 .content {
     display: block;
     margin: 10px auto;
-    border: 1px solid #455A64;
+    border: 1px solid #1976D2;
+    border-radius: 5px;
     padding: 15px;
-    background-color: #212121;
-    color: black;
+    background-color: #455A64;
+    color: #FFA000;
+    font-weight: 200;
     font-style: italic;
 }
 
@@ -138,17 +160,28 @@ section {
 }
 
 footer {
-    background-color: #212121;
-    height: 50px;
+    background-color: #455A64;
+    color: #212121;
+    height: auto;
     width: 100%;
-    color: white;
-    font-size: .8em;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
     flex-direction: column;
 }
-
+/*
+footer {
+    width: auto;
+    padding: 10px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgb(27, 156, 199);
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+*/
 @media only screen and (min-width: 32.5em) {
     header {
         height: 125px;
