@@ -1,23 +1,46 @@
-document.getElementById("modified").innerHTML = todayDate();
-
-function todayDate() {
-    let today = new Date();
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const months = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
-    let month = months[today.getMonth()];
-    let day = days[today.getDay()];
-    let dayDate = today.getDate();
-    let year = today.getFullYear();
-    return  day + ", " + dayDate + " " + month + " " + year;
+//Toggle Menu Start
+function toggleMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
-function toggleMenu ()  {
-    if (document.getElementsByClassName("navigation")[0].classList === "navigation"){
-        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-        document.getElementById("ham").innerHTML= "&#x2715";
-    } else {
-        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-        document.getElementById("ham").innerHTML= "&#9776 Menu";
-    }
+//Current Date Updated Start
+const daynames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+];
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
+const d = new Date();
+const dayName = daynames[d.getDay()];
+const monthName = months[d.getMonth()];
+const year = d.getFullYear();
+const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
+document.getElementById("updated").textContent = fulldate;
 
+
+//Pancake Display Banner 
+
+const banner = document.getElementById('banner');
+if (d.getDay()==5){
+    banner.style.display = 'block';
+}
+else {
+    banner.style.display='none';
 }

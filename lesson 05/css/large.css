@@ -1,14 +1,51 @@
-@media only screen and (min-width: 56em) {
-	#logo {
-        height: 90px;
-	}
+@media only screen and (min-width: 992px) {
 
-    #title {
-        font-size: 3em;
+    main {
+        max-width: 800px;
+        margin: auto;
+        font-size: 25px;
     }
 
-    #subtitle {
-        font-size: 1.5em;
-        margin-top: 35px;
+    header img {
+        width: 100px;
+        padding: 1em;
     }
+
+    #snowboard{
+        position: relative;
+        margin: 10px auto;
+        width: 100%;
+        height:auto;
+    }
+
+    #weathersummary{
+        position: absolute;
+        top: 400px;
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #111;
+        opacity: .8;
+        background-color: #C0D6DF;
+	    border: 1px solid #DA5F2F;
+    }
+    
+    nav li:first-child {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1.0em;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.75em;
+        text-align: left;
+        text-decoration: none;
+    }
+
 }
