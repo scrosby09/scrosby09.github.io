@@ -8,8 +8,12 @@ body {
     text-align: left;
 }
 
-h1, h2, h3, h4, h5 {
-    color:#FFA000;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #FFA000;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
@@ -35,18 +39,18 @@ nav {
 
 .navigation {
     font-family: 'Montserrat', sans-serif;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
 .navigation li:first-child {
     display: block;
     font-weight: bold;
-	text-align: center;
-	padding: 0.75rem;
-	text-decoration: none;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
     font-size: 0.95rem;
 }
 
@@ -56,11 +60,11 @@ nav {
 }
 
 .navigation a {
-	display: block;
+    display: block;
     padding: .8rem 2%;
-	text-align: center;
-	text-decoration: none;
-	color: white;
+    text-align: center;
+    text-decoration: none;
+    color: white;
     font-weight: 700;
 }
 
@@ -141,54 +145,6 @@ footer {
     text-align: center;
     margin: 0 auto;
     flex-direction: column;
-}
-
-@media only screen and (min-width: 32.5em) {
-    header {
-        height: 125px;
-    }
-
-    main {
-        width: 75%;
-        margin: auto;
-    }
-
-    #title {
-        font-size: 2em;
-        margin-right: 10px;
-        margin-top: 15px;
-    }
-
-    #logo {
-        height: 100px;
-        margin-left: 40%;
-    }
-
-    .navigation {
-        display: flex;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
-    }
-
-    .navigation a {
-        text-align: center;
-    }
-    .navigation li:first-child {
-        display: none;
-    }
-
-    header {
-        justify-content: flex-start;
-    }
-
-    footer {
-        font-size: 1em;
-        width: 80%;
-        margin: auto;
-    }
 }
 
 /*Color Scheme

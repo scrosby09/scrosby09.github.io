@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--HEAD-->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/small.css" rel="stylesheet">
+    <link rel="stylesheet" href="" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
     <script src="/assets/main-js.js" type="text/javascript"></script>
     <title>Preston Town Weather Update</title>
 </head>
+
+<!--HEADER-->
 <header>
     <img id="logo" src="/images/we_logo.png" alt="Weather Eye Logo">
     <div id="titles">
-    <h1 id="title">WEATHER UPDATE</h1>
-    <p id="subtitle">"Know Your Weather Whenever"</p>
+        <h1 id="title">WEATHER UPDATE</h1>
+        <p id="subtitle">"Know Your Weather Whenever"</p>
     </div>
 </header>
+
+<!--NAVBAR-->
 <nav>
-	<ul class="navigation">
+    <ul class="navigation">
         <li><a id="toggleMenu" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-		<li><a href="#">Home</a></li>
-		<li><a class="active" href="/preston-5.html">Preston</a></li>
-		<li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="/preston-5.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
         <li><a href="#">Gallery</a></li>
-	</ul>
+    </ul>
 </nav>
+
+<!--MAIN CONTENT-->
 <main>
     <section>
         <h2>Preston Town</h2>
@@ -38,6 +48,8 @@
     <div class="content">Article</div>
     <div class="content">Contact information</div>
 </main>
+
+<!--FOOTER-->
 <footer>
     <div>
         &copy; <span id="yearData"></span> |
@@ -46,4 +58,5 @@
     </div>
     <div class="lastUpdated">Last Updated: <span id="lastUpdatedData"></span></div>
 </footer>
+
 </html>
