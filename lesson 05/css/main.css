@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1976D2;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5 {
+    color:#FFA000;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+p {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+}
+
+nav {
+    background-color: #455A64;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    font-family: 'Montserrat', sans-serif;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+.navigation li:first-child {
+    display: block;
+    font-weight: bold;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation li {
+    display: none;
+    border-right: 1px solid white;
+}
+
+.navigation a {
+	display: block;
+    padding: .8rem 2%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+    font-weight: 700;
+}
+
+nav ul li a.active {
+    color: #212121;
+    background-color: #1976D2;
+}
+
+nav ul li a:hover {
+    color: #1976D2;
+}
+
+.responsive li {
+    display: block;
+}
+
+.responsiveClose li {
+    display: none;
+}
+
+#toggleMenu {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+#subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #1976D2;
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+}
+
+#title {
+    font-size: 2em;
+    color: #FFA000;
+    margin: 0;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.content {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #1976D2;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #455A64;
+    color: #FFA000;
+    font-weight: 200;
+    font-style: italic;
+}
+
+#logo {
+    border-radius: 12px;
+    height: 60px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #455A64;
+    color: #212121;
+    height: auto;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 32.5em) {
+    header {
+        height: 125px;
+    }
+
+    main {
+        width: 75%;
+        margin: auto;
+    }
+
+    #title {
+        font-size: 2em;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    #logo {
+        height: 100px;
+        margin-left: 40%;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    footer {
+        font-size: 1em;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*Color Scheme
+
+dark-grey #212121
+blue-grey #455A64
+blue-700 #1976D2
+amber-700 #FFA000
+red-700 #d32f2f
+*/
