@@ -22,66 +22,69 @@
 </head>
 
 <!--HEADER-->
-<div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
-<header>
-    <img id="logo" src="images/we_logo.png" alt="Weather Eye Logo">
-    <div id="titles">
-        <h1 id="title">WEATHER UPDATE</h1>
-        <p id="subtitle">"Know Your Weather Whenever"</p>
-    </div>
-</header>
 
-<!--NAVBAR-->
-<nav>
-    <ul class="navigation">
-        <li><a id="toggleMenu" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a class="active" href="/lesson 05/preston-5.html">Preston</a></li>
-        <li><a href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
-    </ul>
-</nav>
-
-<!--MAIN CONTENT-->
-<main>
-    <div class="mainContent">
-
-        <h2>Preston Idaho</h2>
-
-        <img src="images/rainbow.jpg" id="snowboard">
-
-        <section class="title" id="weathersummary">
-            Weather Summary <br>
-            Partly Cloudy
-            59*
+<body>
+    <div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <img src="images/we_logo.png" alt="logo">
+        <section class="heading">
+            <h1>Final Forecast</h1>
+            <div class="motto">Latest weather for sport enthusiasts. </div>
         </section>
+    </header>
 
-        <div class="title" id="forecast">
-            <h3>Five Day Forecast</h3> <br>
-            <img src="images/clouds_1.jpg" id="5dayforecast" height="200px" width="420">
+    <nav>
+        <ul class="navigation">
+            <li><a id="toggleMenu" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a class="active" href="/lesson 04/preston-4.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>>
+
+    <main>
+        <div class="mainContent">
+
+            <h2>Preston Idaho</h2>
+
+            <img src="images/landscape_2.jpg" id="snowboard">
+
+            <section class="title" id="weathersummary">
+                Weather Summary <br>
+                Partly Cloudy
+                59*
+            </section>
+
+            <div class="title" id="forecast">
+                <h3>Five Day Forecast</h3> <br>
+                <img src="images/rainbow.jpg" id="5dayforecast" height="200px" width="420">
+            </div>
+
+            <div class="title" id="article">
+                <h3>What's Hapenning Today in Preston </h3><br>
+                <img src="images/clouds_1.jpg" id="sky" height="200px" width="200px"> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolore mollitia assumenda voluptate quae eius tempore ea
+                facere nesciunt aspernatur quo corrupti cum eligendi
+                distinctio, dolorum numquam itaque ipsa, sequi eos.
+            </div>
+
         </div>
+    </main>
 
-        <div class="title" id="article">
-            <h3>What's Hapenning Today in Preston </h3><br>
-            <img src="images/landscape_2.jpg" id="sky" height="200px" width="200px"> <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dolore mollitia assumenda voluptate quae eius tempore ea
-            facere nesciunt aspernatur quo corrupti cum eligendi
-            distinctio, dolorum numquam itaque ipsa, sequi eos.
+    <footer>
+        <div id="Contact">
+            <p>Contact Information</p><br>
+            <p>contactus@weathereye.com</p><br>
+            <p>(208)987-1206</p>
         </div>
+        &copy; 2020 | Steven Crosby | WeatherEye Forcast
+        <br> <span id="updated"> </span>
+    </footer>
 
-    </div>
-</main>
-
-<!--FOOTER-->
-<footer>
-    <div id="footer_info">
-        <p>&copy; <span id="yearData"></span> | Steven Crosby | WeatherEye Forcast |</p>
-        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-    </div>
-    <div class="lastUpdated">Last Updated: <span id="lastUpdatedData"></span></div>
-</footer>
+</body>
 
 </html>
