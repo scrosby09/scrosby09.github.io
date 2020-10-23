@@ -7,27 +7,32 @@
     }
 
     header img {
-        width: 100px;
+        width: 150px;
         padding: 1em;
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 0.1875em;
     }
 
-    #snowboard{
+    #snowboard {
         position: relative;
         margin: 10px auto;
         width: 100%;
-        height:auto;
+        height: auto;
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 0.1875em;
     }
 
-    #weathersummary{
+    #weathersummary {
         position: absolute;
         top: 400px;
         padding: 1.5rem;
-        box-shadow: 0 0 30px #111;
         opacity: .8;
         background-color: #C0D6DF;
-	    border: 1px solid #DA5F2F;
+        border: 1px solid #DA5F2F;
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 0.1875em;
     }
-    
+
     nav li:first-child {
         display: none;
     }
