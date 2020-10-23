@@ -1,4 +1,13 @@
 @media only screen and (min-width: 60rem) {
+    nav {
+
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cecece+0,444444+100 */
+        background: #cecece;
+        /* Old browsers */
+        background: linear-gradient(to bottom, #cecece 0%, #444444 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    }
 
     nav button {
         display: none;
@@ -11,9 +20,11 @@
     .weather {
         display: grid;
         position: relative;
+
     }
 
     nav ul li {
+
         float: left;
     }
 
@@ -42,11 +53,13 @@
         grid-column: 1/8;
         grid-row: 1;
         padding: 10px;
+
     }
 
     .Forecast p {
+
         display: grid;
-        grid-column: 1/8;
+        grid-column: 1/;
         grid-row: 2;
         width: 80px;
         height: 150px;
@@ -58,6 +71,7 @@
         background-color: lightgrey;
         box-shadow: 0 0 3px white;
     }
+
 
     footer {
         text-align: center;
