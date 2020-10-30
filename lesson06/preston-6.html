@@ -18,19 +18,19 @@
 </head>
 
 <body>
-    <div id="banner-msg">
-        <h3>Saturday = Preston Pancakes in the Park! </h3> 9:00 a.m. Saturday at the city park pavilion.
-    </div>
+    <!-- HEADER -->
     <header>
-        <img id="we-logo" src="images/we_logo.png" alt="weathereye logo">
+        <img id="logo" src="./Images/weather_logo.jpg" alt="Sun and cloud">
         <div id="titles">
-        <h1 id="title">WeatherEye Forcasting</h1>
-        <p id="subtitle">Know your weather whenever</p>
+            <h1 id="title">Weather News</h1>
+            <p id="subtitle">"Your weather live and on demand"</p>
         </div>
     </header>
-    <nav class="navbar clearfix">
-        <button href="#" onclick="toggleMenu()">&#9776; Menu</button>
-        <ul c>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul class="navbar clearfix">
+            <li><a id="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -39,45 +39,77 @@
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
+
     <!-- PAGE CONTENT -->
-    <main class="container">
-        <section class="page-content">
-            <h2>PRESTON IDAHO</h2>
-            <section class="weather-info">
-                <div class="weather-now">
-                    <h4> Weather Summary </h4>
-                    <div class="weather-now-points">
-                        <p>Currently: </p>
-                        <p>High: </p>
-                        <p>Wind Chill: </p>
-                        <p>Humidity: </p>
-                        <p>WindSpeed: </p>
-                    </div>
-                    <div class="weather-now-data">
-                        <p>Sunny </p>
-                        <p>76 F </p>
-                        <p>60 F </p>
-                        <p>69% </p>
-                        <p>5 mph </p>
-                    </div>
-                </div>
-                <picture>
-                    <img class="location-img" src="images/landscape_2.jpg" alt="Preston Idaho">
-                </picture>
-                <div class="weather-forecast">
-                    <h2>5 day Forecast</h2>
-                    <p>Mon</p>
-                    <p>Tue</p>
-                    <p>Wed</p>
-                    <p>Thu</p>
-                    <p>Fri</p>
-                    <p>Sat</p>
-                    <p>Sun</p>
-                </div>
+    <main>
+        <h2>PRESTON IDAHO</h2>
+        <div class="hero">
+            <picture id="hero-img">
+                <source media="(max-width: 32.5em)" srcset="./Images/small.jpg">
+                    <source media="(max-width: 56em)" srcset="./Images/medium.jpg">
+                    <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Preston Image">
+            </picture>
+            <section id="weather-summary">
+                <h3>Weather Summary</h3>
+                <span><b>Currently:</b> Rainy</span>
+                <span id="high"><b>High: </b>49 &#176;F</span>
+                <span id="windchill"></span>
+                <span><b>Humidity:</b> 1%</span>
+                <span id="windspeed"><b>Wind Speed:</b> 4 mph E</span>
             </section>
-            <section class="weather-article">
-                <h2>Why Our Weather Is Like This</h2>
-                <img src="images/pricing4.jpg" alt="article picture">
+        </div>
+        <h3 id="forecast-title">5 Day Forecast</h3>
+        <section class="fiveDay">
+            <div id="day1">
+                <h3>Date</h3>
+                <div>
+                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                </div>
+                <div>Sunny</div>
+                <div id="day1_weather"><b>78</b>&#176;F</div>
+            </div>
+            <div id="day2">
+                <h3>Date</h3>
+                <div>
+                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                </div>
+                <div>Sunny</div>
+                <div id="day2_weather"><b>78</b>&#176;F</div>
+            </div>
+            <div id="day3">
+                <h3>Date</h3>
+                <div>
+                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                </div>
+                <div>Sunny</div>
+                <div id="day3_weather"><b>78</b>&#176;F</div>
+            </div>
+            <div id="day4">
+                <h3>Date</h3>
+                <div>
+                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                </div>
+                <div>Sunny</div>
+                <div id="day4_weather"><b>78</b>&#176;F</div>
+            </div>
+            <div id="day5">
+                <h3>Date</h3>
+                <div>
+                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                </div>
+                <div>Sunny</div>
+                <div id="day5_weather"><b>78</b>&#176;F</div>
+            </div>
+        </section>
+        <div class="weather-article">
+            <h3>WHY YOUR WEATHER IS HOW IT IS</h3>
+            <figure id="articleImg">
+                <picture>
+                    <source media="(max-width: 32.5em)" srcset="./Images/white-house-small.jpg">
+                    <source media="(max-width: 56em)" srcset="./Images/white-house-medium.jpg">
+                    <img src="images/mountains-2.jpg" alt="mountains-idaho">
+                </picture>
+                <figcaption>Idaho Terrain</figcaption>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod dolor velit, vel scelerisque
                     lorem aliquet sed. Aliquam erat volutpat.
@@ -85,24 +117,20 @@
                     massa vitae ipsum fermentum facilisis.
                     Cras eu pellentesque diam. Ut vulputate tempus velit quis faucibus.
                 </p>
-            </section>
-            <section class="contactus">
-                <h2>Contact Information</h2>
-                <p>Boise, ID 43279</p>
-                <p>contact@weathereye.com</p>
-            </section>
-        </section>
+            </figure>
+        </div>
+        <div class="contactus">
+            <h4>Contact Us</h4>
+            <p class="contactus-heading">WeatherEye Forecasting</h4>
+            <p>Boise, Idaho 43279</p>
+            <p>support@weathereye.com</p>
+        </div>
     </main>
     <footer>
-        <div>
-            &copy; <span id="yearData"></span> |
-            Steven Crosby
-            <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-        </div>
-        <div class="lastUpdated">Last Updated: <span id="lastUpdatedData"></span></div>
+        <div>&copy; <span id="copyright"></span> Weather News | Attributions | Michael Kendall</div>
+        <span id="modified"></span>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
