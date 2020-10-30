@@ -1,12 +1,8 @@
 /*-------------- CORE --------------*/
 
-@-ms-viewport {
-    width: device-width;
-}
-
 body {
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -16,19 +12,124 @@ body {
 }
 
 h1,
-h2,
+h2
+{
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+    font-weight: 800;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 800;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+h6
+{
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 
-/*-------------- HEADER --------------*/
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* --- HEADER --- */
 header {
     display: flex;
     padding: 5px 0;
@@ -40,24 +141,15 @@ header {
 header img {
     width: 100px;
     height: auto;
-    margin: 8px;
-    box-shadow: none;
+    margin: auto;
 }
 
-.pageinfo {
-    font-family: 'Rubik', sans-serif;
+.page-content {
+    font-family: 'Fira Sans', sans-serif;
     background-color: transparent;
     border: none;
     text-align: center;
 }
-
-h4#catchphrase{
-    font-style: italic;
-    color: #ff5630;
-    margin: 0 0 0 17px;
-    font-size: .9rem;
-    
- }
 
 /*-------------- NAVBAR --------------*/
 nav button {
@@ -106,7 +198,15 @@ nav ul.hide {
     display: none;
 }
 
-/*-------------- MAIN CONTENT --------------*/
+/*-------------- PAGE CONTENT --------------*/
+
+.page-content {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
 .weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -118,7 +218,7 @@ nav ul.hide {
     box-shadow: 0 0 20px var(--neutral-100);
     position: relative;
     text-align: center;
-    background-color: var(--ochre-yellow)
+    background-color: var(--ochre-yellow);
     line-height: .2rem;
     top: 200px;
 }
@@ -160,7 +260,6 @@ img {
 
     display: none;
     border: 1px solid black;
-    border-right: 1px solid black;
 }
 
 .info a {
@@ -183,8 +282,8 @@ footer {
 }
 
 
-/*--------------COLOR SCHEME--------------*/
-/*ACTION*/
+/*-------------- COLOR SCHEME --------------*/
+/*action colors*/
 :root {
     --dark-grey: #121212;
     --primary-blue: #303f9f;
@@ -193,10 +292,8 @@ footer {
     --warning-amber: #303f9f;
     --remove-red: #c6282b;
     --help-purple: #673ab7;
-}
 
-/*NEUTRAL*/
-:root {
+    /*neutral colors*/
     --neutral-1000: #24292e;
     --neutral-900: #383f45;
     --neutral-800: #454c52;
@@ -207,19 +304,15 @@ footer {
     --neutral-300: #ced2d6;
     --neutral-200: #e5e7ea;
     --neutral-100: #f6f7f9;
-}
 
-/*SECONDARY*/
-:root {
+    /*secondary colors*/
     --dark-red: #8f0031;
     --ochre-yellow: #f79b19;
     --sea-green: #028fa3;
     --baby-blue: #00a8cc;
     --violet: #91198e;
-}
 
-/*EXTENDED*/
-:root {
+    /*extended colors*/
     --yellow-500: #ff991f;
     --yellow-400: #ffab00;
     --yellow-300: #ffc400;
@@ -260,5 +353,5 @@ footer {
     --green: #28a745;
     --teal: #20c997;
     --cyan: #17a2b8;
-    --white: #fff;
+    --white: #ffffff;
 }
