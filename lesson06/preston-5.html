@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Good Weather Website</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+<body onload="date()">
+
+<!-- HEADER -->
+<header>
+    <picture>
+        <img src="images/we_logo.png" alt="weather_eye logo">
+    </picture>
+    <section class="heading">
+        <h1>Good Weather</h1>
+        <h4 id="message">We only have the best weather for you</h4>
+    </section>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+</nav>
+<main>
+    <!-- PAGE CONTENT -->
+    <section class="page-content">
+        <h2>PRESTON IDAHO</h2>
+        <div class="today-view">
+            <div class="weather-now">
+                <h4> Weather Summary </h4>
+                <article class="weather-now-points">
+                    <p>Currently:  </p>
+                    <p>High: </p>
+                    <p>Wind Chill: </p>
+                    <p>Humidity: </p>
+                    <p>WindSpeed: </p>
+                </article>
+                <article class="weather-now-data">
+                    <p>Sunny </p>
+                    <p>76 F </p>
+                    <p>60 F </p>
+                    <p>69% </p>
+                    <p>5 mph </p>
+                </article>
+            </div>
+            <picture>
+                <img class="location-img" src="images/landscape_2.jpg" alt="Preston Idaho">
+            </picture>
+            <div class="Forecast">
+                <h2>5 day Forecast</h2>
+                <p>Mon</p>
+                <p>Tue</p>
+                <p>Wed</p>
+                <p>Thu</p>
+                <p>Fri</p>
+                <p>Sat</p>
+                <p>Sun</p>
+            </div>
+            <div class="ArticleInfo">
+                <h2>Why Our Weather Is Like This</h2>
+                <img src="images/pricing4.jpg" alt="article picture">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="ContactUs">
+                <h2>Contact Information</h2>
+                <p>23 Shallow Bay Drive</p>
+                <p>Boise, ID 43279</p>
+                <p>contact@goodweather.net</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div>
+        &copy; <span id="yearData"></span> |
+        Steven Crosby
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+    </div>
+    <div class="lastUpdated">Last Updated: <span id="lastUpdatedData"></span></div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
