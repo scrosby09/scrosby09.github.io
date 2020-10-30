@@ -33,6 +33,12 @@ h6 {
     margin-bottom: 0.5em;
 }
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html {
     color: var(--dark-grey);
     font-size: 1em;
@@ -143,6 +149,15 @@ header img {
     background-color: transparent;
     border: none;
     text-align: center;
+}
+
+#banner-msg {
+    background: var(--secondary-grey);
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-red);
+    text-align: center;
+    margin: 0;
+    padding: 1rem 1rem 2rem 1rem;
 }
 
 /*-------------- NAVBAR --------------*/
