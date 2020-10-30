@@ -1,20 +1,19 @@
-/*-------------- CORE CONFIG --------------*/
+/*-------------- CORE --------------*/
 
 body {
     margin: 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--primary-blue);
+    color: var(--blue);
     text-align: left;
     background-color: var(--dark-grey);
 }
 
 h1,
-h2
-{
-    font-family: 'Fira Sans', sans-serif;
+h2 {
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-blue);
     position: relative;
     font-weight: 800;
@@ -25,10 +24,9 @@ h2
 h3,
 h4,
 h5,
-h6
-{
-    font-family: 'Fira Sans', sans-serif;
-    color: var(--primary-blue);
+h6 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--blue);
     position: relative;
     font-weight: 700;
     margin-top: 0.5em;
@@ -56,7 +54,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--secondary-grey);
     margin: 1em 0;
     padding: 0;
 }
@@ -120,6 +118,7 @@ textarea {
     content: " ";
     display: table;
 }
+
 .clearfix::after {
     clear: both;
 }
@@ -140,7 +139,7 @@ header img {
 }
 
 .page-content {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: transparent;
     border: none;
     text-align: center;
@@ -153,13 +152,13 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.4rem;
-    color: white;
-    font-family: 'Rubik', sans-serif;
+    color: var(--blue-100);
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
-    font-family: 'Rubik', sans-serif;
-    background: #cecece;
+    font-family: 'Roboto', sans-serif;
+    background: var(--neutral-100);
 
 
 }
@@ -172,21 +171,21 @@ nav ul {
 }
 
 nav ul li a {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     padding: .8rem 4%;
     text-decoration: none;
-    color: whitesmoke;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    color: var(--neutral-100);
+    border-top: 1px solid var(--neutral-900);
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--neutral-800);
 }
 
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
+    background-color: var(--neutral-700);
+    color: var(--neutral-100);
 }
 
 nav ul.hide {
@@ -196,24 +195,24 @@ nav ul.hide {
 /*-------------- PAGE CONTENT --------------*/
 
 .page-content {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: transparent;
     border: none;
     text-align: center;
 }
 
-.weather-info{
+.weather-info {
     margin-top: -170px;
     padding: 10px;
     max-width: 960px;
     text-align: center;
 }
 
-.today-box h2{
+.today-box h2 {
 
     font-size: 1.2rem;
-    font-family: 'Playfair Display', serif;
-    border-bottom: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid var(--neutral-1000);
 }
 
 .weather-now {
@@ -223,11 +222,11 @@ nav ul.hide {
     width: 200px;
     height: 200px;
     padding: 10px;
-    border: 1px solid var(--neutral-900);
-    box-shadow: 0 0 20px var(--neutral-200);
+    border: 1px solid var(--neutral-1000);
+    box-shadow: 0 0 20px var(--neutral-500);
     position: relative;
     text-align: center;
-    background-color: var(--ochre-yellow);
+    background-color: var(--yellow-100);
     line-height: .2rem;
     top: 200px;
 }
@@ -258,7 +257,7 @@ img {
     height: 300px;
     align-items: center;
     margin: 0 auto;
-    box-shadow: 0 0 10px var(--neutral-600);
+    box-shadow: 0 0 10px var(--neutral-700);
 }
 
 .forecast h2 {
@@ -273,11 +272,11 @@ img {
 
 /*-------------- FOOTER --------------*/
 footer {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 5px 10px;
     background: var(--neutral-900);
     font-size: 1.0em;
-    color: var(--primary-blue);
+    color: var(--blue);
 }
 
 
