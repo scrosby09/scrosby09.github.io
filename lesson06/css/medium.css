@@ -1,145 +1,70 @@
-@media only screen and (min-width: 32.5em) {
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 38rem) {
     header {
-        height: 125px;
+        font-size: 20pt;
     }
 
-    main {
-        width: 75%;
-        margin: auto;
-    }
-
-    #title {
-        font-size: 2em;
-        margin-right: 10px;
-        margin-top: 15px;
-    }
-
-    #logo {
-        height: 100px;
-        margin-left: 40%;
-    }
-
-    .navigation {
-        display: flex;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
-    }
-
-    .navigation a {
-        text-align: center;
-    }
-
-    .navigation li:first-child {
+    nav button {
         display: none;
     }
 
-    #hero img {
-        max-width: 75%;
-        position: relative;
+    nav ul {
+        margin-left: .5%;
     }
 
-    #summary {
-        width: 250px;
-        font-size: 1em;
-    }
-
-    header {
-        justify-content: flex-start;
-    }
-
-    .fiveDay {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 5px;
-        justify-content: center;
-    }
-
-    #forecast-title {
+    nav ul.hide {
         display: block;
     }
-
-    #day1,
-    #day2,
-    #day3,
-    #day4,
-    #day5 {
-        border: 1px solid black;
-        padding: 5px;
-        background-color: rgb(180, 176, 176);
-        margin: 5px;
+    nav ul li {
+        float: left;
     }
 
-    #day1 {
-        grid-column: 1;
-    }
-
-    #day2 {
-        grid-column: 2;
-    }
-
-    #day3 {
-        grid-column: 3;
-    }
-
-    #day4 {
-        grid-column: 4;
-    }
-
-    #day5 {
-        grid-column: 5;
-    }
-
-    .weather_icon {
-        width: 100%;
-    }
-
-    .fiveDay h3 {
+    nav ul li a {
         text-align: center;
+        padding-left: 0;
     }
 
-    .article {
-        display: block;
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 
-    #articleImg {
-        width: 50%;
-        margin: 2% 2% 0 2%;
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+        font-size: 11pt;
+    }
+
+    section.forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    section.forecast div {
+        text-align: center;
+        border-right: 1px solid whitesmoke;
+    }
+
+    section.forecast div:last-child {
+        border-right: none;
+    }
+
+    section.forecast img {
+        width: 75px;
+    }
+
+    article figure {
         float: right;
+        width: 60%;
+        margin: 1em;
     }
 
-    #content {
-        grid-column: 1;
-        text-align: left;
+    div div#map {
+        display: block;
+        float: right;
+        width: 40%;
+        clear: both;
     }
-
-    #mapLink {
-        margin: auto;
-    }
-
-    .contactUs {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .contact {
-        margin: auto;
-        text-align: left;
-        grid-column-start: 2;
-        grid-column-end: auto;
-        grid-row: auto;
-    }
-
-    #map {
-        grid-column-start: 1;
-        grid-column-end: auto;
-        grid-row: auto;
-    }
-
-    footer {
-        font-size: 1em;
-        width: 80%;
-        margin: auto;
-    }
-}
+} /* end of media query */

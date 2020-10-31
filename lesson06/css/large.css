@@ -1,14 +1,15 @@
-@media only screen and (min-width: 56em) {
-    #logo {
-        height: 90px;
+@media only screen and (min-width: 64rem) {
+    main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }  
+
+    nav ul li a {
+        padding: .6rem 1rem;
+        font-size: 12pt;
     }
 
-    #title {
-        font-size: 3em;
+    div div#map {
+        width: 50%;
     }
-
-    #subtitle {
-        font-size: 1.5em;
-        margin-top: 35px;
-    }
-}
+} /* end of media query */
