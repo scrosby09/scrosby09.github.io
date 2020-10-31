@@ -6,60 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherEye Forecasting</title>
     <!--CSS-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
-    <!-- HEADER -->
+    <div id="banner"></div>
     <header>
-        <img id="we-logo" src="images/we-logo.png" alt="logo">
-        <div>
-            <h1>WeatherEye Forcasting</h1>
-            <p id="catchphrase">Know your weather whenever</p>
+        <img id="logo" src="images/we-logo.png" alt="Sun and cloud">
+        <div id="titles">
+            <h1 id="title">Weather News</h1>
+            <p id="subtitle">"Your weather live and on demand"</p>
         </div>
     </header>
-
-    <!-- NAVBAR -->
     <nav>
-        <ul class="navbar clearfix">
+        <ul class="navigation">
             <li><a id="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li><a class="active" href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-
-    <!-- PAGE CONTENT -->
     <main>
-        <h2>PRESTON IDAHO</h2>
+        <h2>Preston Idaho</h2>
         <div class="hero">
-            <picture id="hero-img">
-                <source media="(max-width: 32.5em)" srcset="./Images/small.jpg">
-                    <source media="(max-width: 56em)" srcset="./Images/medium.jpg">
-                    <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Preston Image">
+            <picture id="heropic">
+                <source media="(max-width: 32.5em)" srcset="images/wdd230_image_small.jpg">
+                <source media="(max-width: 56em)" srcset="images/wdd230_image_medium.jpg">
+                <img src="images/wdd230_image_large.jpg" alt="Preston Landscape">
             </picture>
-            <section class="weather-summary">
+            <section id="summary">
                 <h3>Weather Summary</h3>
                 <span><b>Currently:</b> Rainy</span>
-                <span id="high"><b>High: </b>49 &#176;F</span>
+                <span id="high"><b>High: </b>50 &#176;F</span>
                 <span id="windchill"></span>
-                <span><b>Humidity:</b> 1%</span>
-                <span id="windspeed"><b>Wind Speed:</b> 4 mph E</span>
+                <span><b>Humidity:</b> 2%</span>
+                <span id="windspeed"><b>Wind Speed:</b> 5 mph E</span>
             </section>
         </div>
-        <section class="weather-forecast">
-            <h3>5 DAY FORECAST</h3>
+        <h3 id="forecast-title">5 Day Forecast</h3>
+        <section class="fiveDay">
             <div id="day1">
                 <h3>Date</h3>
                 <div>
@@ -101,36 +95,43 @@
                 <div id="day5_weather"><b>78</b>&#176;F</div>
             </div>
         </section>
-        <div class="weather-article">
-            <h3>WHY YOUR WEATHER IS HOW IT IS</h3>
-            <figure id="weather-article-imgf">
+        <div class="article">
+            <h3>White House highlights Idaho as leader</h3>
+            <p id="author">By NECIA P. SEAMONS Citizen editor</p>
+            <figure id="articleImg">
                 <picture>
-                    <source media="(max-width: 32.5em)" srcset="./Images/white-house-small.jpg">
-                    <source media="(max-width: 56em)" srcset="./Images/white-house-medium.jpg">
-                    <img src="images/mountains-2.jpg" alt="mountains-idaho">
+                    <source media="(max-width: 32.5em)" srcset="images/wdd230_image_small.jpg">
+                    <source media="(max-width: 56em)" srcset="images/wdd230_image_medium.jpg">
+                    <img src="images/wdd230_image_large.jpg" alt="Preston Landscape">
                 </picture>
-                <figcaption>Idaho Terrain</figcaption>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod dolor velit, vel scelerisque
-                    lorem aliquet sed. Aliquam erat volutpat.
-                    Pellentesque pellentesque ex nec massa maximus dapibus. Maecenas vitae euismod diam. Nulla facilisis
-                    massa vitae ipsum fermentum facilisis.
-                    Cras eu pellentesque diam. Ut vulputate tempus velit quis faucibus.
-                </p>
+                <figcaption>The White House</figcaption>
             </figure>
+            <p id="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod dolor velit, vel scelerisque
+                lorem aliquet sed. Aliquam erat volutpat.
+                Pellentesque pellentesque ex nec massa maximus dapibus. Maecenas vitae euismod diam. Nulla facilisis
+                massa vitae ipsum fermentum facilisis.
+                Cras eu pellentesque diam. Ut vulputate tempus velit quis faucibus.
+            </p>
         </div>
-        <div class="contactus">
-            <h4>Contact Us</h4>
-            <p class="contactus-heading">WeatherEye Forecasting</h4>
-            <p>Boise, Idaho 43279</p>
-            <p>support@weathereye.com</p>
+        <div class="contactUs">
+            <div class="contact">
+                <h3>Weather News</h3>
+                <p>Boise, ID</p>
+                <p>P: 888-208-555</p>
+                <p>E: support@weathereye.com</p>
+                <img class="social" src="images/ig_icon.jpeg" alt="Instagram">
+                <img class="social" src="images/fb_icon.jpeg" alt="Facebook">
+                <img class="social" src="images/li_icon.jpeg" alt="LinkedIn">
+            </div>
         </div>
     </main>
     <footer>
         <div>&copy; <span id="copyright"></span> Weather News | Attributions | Michael Kendall</div>
         <span id="modified"></span>
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
+
 </html>
