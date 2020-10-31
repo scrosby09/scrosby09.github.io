@@ -20,10 +20,10 @@
 <body>
     <!-- HEADER -->
     <header>
-        <img id="logo" src="./Images/weather_logo.jpg" alt="Sun and cloud">
-        <div id="titles">
-            <h1 id="title">Weather News</h1>
-            <p id="subtitle">"Your weather live and on demand"</p>
+        <img id="we-logo" src="images/we-logo.png" alt="logo">
+        <div>
+            <h1>WeatherEye Forcasting</h1>
+            <p id="catchphrase">Know your weather whenever</p>
         </div>
     </header>
 
@@ -49,7 +49,7 @@
                     <source media="(max-width: 56em)" srcset="./Images/medium.jpg">
                     <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Preston Image">
             </picture>
-            <section id="weather-summary">
+            <section class="weather-summary">
                 <h3>Weather Summary</h3>
                 <span><b>Currently:</b> Rainy</span>
                 <span id="high"><b>High: </b>49 &#176;F</span>
@@ -58,12 +58,12 @@
                 <span id="windspeed"><b>Wind Speed:</b> 4 mph E</span>
             </section>
         </div>
-        <h3 id="forecast-title">5 Day Forecast</h3>
-        <section class="fiveDay">
+        <section class="weather-forecast">
+            <h3>5 DAY FORECAST</h3>
             <div id="day1">
                 <h3>Date</h3>
                 <div>
-                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
                 </div>
                 <div>Sunny</div>
                 <div id="day1_weather"><b>78</b>&#176;F</div>
@@ -71,7 +71,7 @@
             <div id="day2">
                 <h3>Date</h3>
                 <div>
-                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
                 </div>
                 <div>Sunny</div>
                 <div id="day2_weather"><b>78</b>&#176;F</div>
@@ -79,7 +79,7 @@
             <div id="day3">
                 <h3>Date</h3>
                 <div>
-                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
                 </div>
                 <div>Sunny</div>
                 <div id="day3_weather"><b>78</b>&#176;F</div>
@@ -87,7 +87,7 @@
             <div id="day4">
                 <h3>Date</h3>
                 <div>
-                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
                 </div>
                 <div>Sunny</div>
                 <div id="day4_weather"><b>78</b>&#176;F</div>
@@ -95,7 +95,7 @@
             <div id="day5">
                 <h3>Date</h3>
                 <div>
-                    <img class="weather_icon" src="./Images/sunny.png" alt="Sunny">
+                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
                 </div>
                 <div>Sunny</div>
                 <div id="day5_weather"><b>78</b>&#176;F</div>
@@ -103,7 +103,7 @@
         </section>
         <div class="weather-article">
             <h3>WHY YOUR WEATHER IS HOW IT IS</h3>
-            <figure id="articleImg">
+            <figure id="weather-article-imgf">
                 <picture>
                     <source media="(max-width: 32.5em)" srcset="./Images/white-house-small.jpg">
                     <source media="(max-width: 56em)" srcset="./Images/white-house-medium.jpg">

@@ -91,7 +91,6 @@ textarea {
     display: none !important;
 }
 
-
 .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -129,6 +128,13 @@ textarea {
     clear: both;
 }
 
+section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
 /*-------------- HEADER --------------*/
 header {
     display: flex;
@@ -154,13 +160,39 @@ header img {
 #banner-msg {
     background: var(--secondary-grey);
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     color: var(--dark-red);
+    margin: auto;
+    height: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 0;
-    padding: 1rem 1rem 2rem 1rem;
 }
 
+#we-logo {
+    border-radius: 12px;
+    height: 60px;
+    margin: 10px;
+}
+
+#catchphrase {
+    font-size: 1em;
+    margin: 0 0 20px 0;
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+}
+
+
 /*-------------- NAVBAR --------------*/
+nav {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    background: var(--neutral-1000);
+}
+
 nav button {
     margin: .2rem 2%;
     padding: 10px;
@@ -171,40 +203,59 @@ nav button {
     font-family: 'Roboto', sans-serif;
 }
 
-nav {
-    font-family: 'Roboto', sans-serif;
-    background: var(--neutral-100);
-
-
-}
-
-nav ul {
-
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    padding: .8rem 4%;
-    text-decoration: none;
-    color: var(--neutral-100);
-    border-top: 1px solid var(--neutral-900);
+nav ul li a.active {
+    color: #002D52;
+    background-color: #59C1FF;
 }
 
 nav ul li a:hover {
-    background-color: var(--neutral-800);
+    color: #196FFF;
 }
 
-nav ul li.active a {
-    background-color: var(--neutral-700);
-    color: var(--neutral-100);
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
 }
 
-nav ul.hide {
+.navbar li:first-child {
+    display: block;
+    font-weight: bold;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navbar li {
     display: none;
+    border-right: 1px solid white;
+}
+
+.navbar a {
+	display: block;
+    padding: .8rem 2%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+
+.responsiveClose li {
+    display: none;
+}
+
+#toggle {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
 }
 
 /*-------------- PAGE CONTENT --------------*/
@@ -216,75 +267,45 @@ nav ul.hide {
     text-align: center;
 }
 
-.weather-info {
-    margin-top: -170px;
-    padding: 10px;
-    max-width: 960px;
-    text-align: center;
-}
-
-.today-box h2 {
-
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid var(--neutral-1000);
-}
-
-.weather-now {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid var(--neutral-1000);
-    box-shadow: 0 0 20px var(--neutral-500);
+.hero {
     position: relative;
-    text-align: center;
-    background-color: var(--yellow-100);
-    line-height: .2rem;
-    top: 200px;
 }
 
-.weather-now h4 {
-    grid-column: 1/2;
-    grid-row: 1;
-    line-height: .8rem;
-    height: 5px;
+#herop-img {
+    max-width: 100%;
+    margin: 10px auto;
 }
 
-.weather-now-points {
-    grid-row: 2;
-    grid-column: 1;
-    text-align: right;
-    padding: 3px;
+.weather-summary {
+    display: grid;
+    background-color: var(--neutral-200);
+    border-radius: 12px;
+    border: 2px solid black;
+    text-align: left;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    padding: 10px;
 }
 
-.weather-now-data {
-    grid-row: 2;
-    grid-column: 2;
-    text-align: center;
-    padding: 3px;
+.weather-summary span {
+    margin-left: 10px;
 }
 
-img {
-    width: 100%;
-    height: 300px;
-    align-items: center;
-    margin: 0 auto;
-    box-shadow: 0 0 10px var(--neutral-700);
+.weather-summary ul {
+    list-style: none;
 }
 
-.forecast h2 {
+
+
+#forecast-title {
     display: none;
 }
 
-.forecast p {
-
-    display: none;
-    border: 1px solid var(--neutral-900);
+#forecast {
+    display: grid;
+    text-align: left;
 }
-
 /*-------------- FOOTER --------------*/
 footer {
     font-family: 'Roboto', sans-serif;
