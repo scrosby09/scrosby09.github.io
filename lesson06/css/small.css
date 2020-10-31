@@ -1,42 +1,4 @@
 /*-------------- CORE --------------*/
-body {
-    margin: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--primary-blue);
-    text-align: left;
-}
-
-h1,
-h2 {
-    font-family: 'Noto Sans JP', sans-serif;
-    color: var(--primary-blue);
-    position: relative;
-    font-weight: 900;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Noto Sans JP', sans-serif;
-    color: var(--primary-blue);
-    position: relative;
-    font-weight: 700;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-html {
-    font-family: sans-serif;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -351,17 +313,33 @@ section {
     grid-column-end: 2;
     grid-row: 1;
     padding: 10px;
-    color: var(--neutral-100);
-    background-color: black;
+    background-color: rgb(180, 176, 176);
     margin-bottom: 10px;
+}
+
+#map {
+    max-width: 70%;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: auto 15%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+}
+
+#mapIcon,
+#phone,
+#email {
+    max-height: 20px;
 }
 
 .contactUs {
     display: grid;
     grid-template-columns: 1fr;
-    border: 1px solid var(--dark-grey);
+    border: 1px solid black;
     padding: 10px;
-    background-color: black margin-bottom: 10px;
+    background-color: rgb(180, 176, 176);
+    margin-bottom: 10px;
 }
 
 .contact {
@@ -388,6 +366,7 @@ footer {
     justify-content: center;
     flex-direction: column;
 }
+
 
 /*-------------- COLOR SCHEME --------------*/
 /*action colors*/
