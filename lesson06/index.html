@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainCasters: Preston</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <div id="message"><h3>Saturday = Preston Pancakes in the Park! </h3> 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <img src="images/logo.png" alt="RainCasters Logo">
+        <section id="headings">
+            <h1>RainCasters</h1>
+            <h2>Know When to Dance in the Rain</h2>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="x">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="x">Soda Springs</a></li>
+            <li><a href="x">Fish Haven</a></li>
+            <li><a href="x">Storm Center</a></li>
+            <li><a href="x">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Town of Preston</h1>
+        <div class="heroDiv">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/franklin500.jpeg">
+                <source media="(max-width: 800px)" srcset="images/franklin800.jpeg">
+                <source media="(min-width: 800px)" srcset="images/franklin1000.jpeg">
+                <img src="images/franklinOriginal.jpeg" alt="Hero Image">
+            </picture> 
+            <table class="stats">
+                <tr>
+                    <th colspan="2">Weather Summary</th>
+                </tr>
+                <tr>
+                    <td>Currently: </td>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <td>Temperature: </td>
+                    <td><span id="temp">48</span>&deg;F</td>
+                </tr>
+                <tr>
+                    <td>Humidity: </td>
+                    <td><span id="humid">34</span>&percnt;</td>
+                </tr>
+                <tr>
+                    <td>Precipitation: </td>
+                    <td>0.00"</td>
+                </tr>
+                <tr>
+                    <td>Wind Speed: </td>
+                    <td><span id="windspeed">9</span>mph</td>
+                </tr>
+                <tr>
+                    <td>Wind Chill: </td>
+                    <td><span id="windchill"></span></td>
+                </tr>
+            </table>
+        </div>
+        <section class="clearfix forecast">
+            <div>
+                <h5>Monday</h5>
+                <img src="images/sun.png" alt="sun">
+                <p>75&deg;</p>
+            </div>
+            <div>
+                <h5>Tuesday</h5>
+                <img src="images/cloudy.png" alt="clouds">
+                <p>61&deg;</p>
+            </div>
+            <div>
+                <h5>Wednesday</h5>
+                <img src="images/storm.png" alt="storm">
+                <p>53&deg;</p>
+            </div>
+            <div>
+                <h5>Thursday</h5>
+                <img src="images/rain.png" alt="clouds">
+                <p>58&deg;</p>
+            </div>
+            <div>                
+                <h5>Friday</h5>
+                <img src="images/snow.png" alt="clouds">
+                <p>35&deg;</p>
+            </div>
+        </section>
+        <article>
+            <figure>
+                <img src="images/girls-with-leaves.jpg" alt="Two girls playing with fall leaves.">
+            </figure>
+            <h2>Founders Day Fresco</h2>
+            <p id="author">by Amanda Stokes</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est similique neque earum! Libero error sapiente tenetur, labore ea molestias itaque sed consequuntur numquam! Esse, ullam! Blanditiis voluptatibus laborum maiores? Facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque hic tempora labore debitis, numquam, porro quas quam dolor ducimus dolores odit quae, illo eum. Enim adipisci consectetur quod earum! Dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nesciunt assumenda recusandae hic ipsum doloribus sunt aperiam, pariatur dolorum dolore. Similique omnis veniam magni quisquam animi consectetur iure quidem distinctio?</p>
+        </article>
+        <div id="contactInfo" class="clearfix">
+            <div id="map"><iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=42.0963133, -111.8766173&amp;q=Preston%20ID+(RainCasters)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/draw-radius-circle-map/">Radius map tool</a></iframe></div>
+            <h2>Contact Us</h2>
+            <div id="contact" class="clearfix">
+                <div id="address">
+                    <h4>&#128236; Address</h4>
+                    <p>RainCasters Center <br>
+                        123 Main Street<br>
+                        Preston, ID 12345</p>
+                </div>
+                <div id="phone">
+                    <h4>&#128222; Phone</h4>
+                    <p>720-555-1234</p>
+                </div>
+                <div id="email">
+                    <h4>&#128231; Email</h4>
+                    <p>raincasters@rc.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; Amanda Stokes | <span id="currentDate"></span>
+    </footer>
+    <script src="js/function.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script>WebFont.load ({google: {families: ['Pacifico','Open Sans']}});</script>  
+    <script src="js/windchill.js"></script>
+</body>
+</html>
