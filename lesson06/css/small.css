@@ -1,5 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans'); */
-
+/*-------------- CORE --------------*/
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -12,30 +11,57 @@ html {
 }
 
 div#message {
-    background: rgb(5,55,106);
-    background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    
-    font-family: Open Sans, sans-serif;
-    color: whitesmoke;
+    background-color: var(--neutral-900);
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
     text-align: center;
     margin: 0;
     padding: 1rem 1rem 2rem 1rem;
 }
 
-div.showme {display: block;}
-
-div.hideme {display: none;}
-
-/* BODY */
-body {
-    font-family: Open Sans, sans-serif;
-    color: #333;
-    background-color: whitesmoke;
+div.showme {
+    display: block;
 }
 
-/* HEADER */
+div.hideme {
+    display: none;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--blue);
+    background-color: #121212;
+}
+
+h1,
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--primary-blue);
+    position: relative;
+    font-weight: 900;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--primary-blue);
+    position: relative;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/*-------------- HEADER --------------*/
 header {
-    background-color: #c1dff0;
-    font-family: Pacifico, Open Sans, sans-serif;
+    background-color: black;
+    font-family: 'Red Hat Display', sans-serif;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -52,7 +78,8 @@ header img {
     flex-direction: column;
 }
 
-#headings h1, h2 {
+#headings h1,
+h2 {
     margin: 0;
 }
 
@@ -61,10 +88,10 @@ header img {
     margin-top: 5px;
 }
 
-/* NAVIGATION */
+/*-------------- NAVIGATION --------------*/
 nav {
-    background: rgb(5,55,106);
-    background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    
+    background: rgb(5, 55, 106);
+    background: linear-gradient(180deg, rgba(5, 55, 106, 1) 13%, rgba(29, 79, 130, 1) 75%, rgba(42, 91, 142, 1) 88%, rgba(98, 144, 195, 1) 100%);
     font-family: Open Sans, sans-serif;
 }
 
@@ -112,7 +139,7 @@ nav ul li.active a {
     font-weight: bold;
 }
 
-/* MAIN */
+/*-------------- MAIN CONTENT --------------*/
 main {
     padding: 1rem;
 }
@@ -143,8 +170,8 @@ main table {
     border: 1px solid darkslategray;
     box-shadow: 0 0 10px #333;
     opacity: .8;
-    background: rgb(5,55,106);
-    background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    
+    background: rgb(5, 55, 106);
+    background: linear-gradient(180deg, rgba(5, 55, 106, 1) 13%, rgba(29, 79, 130, 1) 75%, rgba(42, 91, 142, 1) 88%, rgba(98, 144, 195, 1) 100%);
     color: whitesmoke;
     padding: 1rem 2%;
 }
@@ -158,8 +185,8 @@ main table tr td:first-child {
 }
 
 main section {
-    background: rgb(5,55,106);
-    background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    
+    background: rgb(5, 55, 106);
+    background: linear-gradient(180deg, rgba(5, 55, 106, 1) 13%, rgba(29, 79, 130, 1) 75%, rgba(42, 91, 142, 1) 88%, rgba(98, 144, 195, 1) 100%);
     border-radius: 10px;
     padding: 1rem;
     color: white;
@@ -194,7 +221,7 @@ article figure img {
 }
 
 #contactInfo {
-    background: rgb(5,55,106);
+    background: rgb(5, 55, 106);
     color: whitesmoke;
     border-radius: 10px;
     padding: 1rem 3%;
@@ -204,7 +231,7 @@ article figure img {
 div#contact {
     display: grid;
     grid-template-columns: 160px 160px;
-    grid-template-rows: 60px 60px; 
+    grid-template-rows: 60px 60px;
 }
 
 div#address {
@@ -231,7 +258,7 @@ div#map iframe {
     width: 100%;
 }
 
-/* FOOTER */
+/*-------------- FOOTER --------------*/
 footer {
     background-color: #c1dff0;
     padding: .5rem 2%;
@@ -244,4 +271,78 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+/*-------------- COLOR SCHEME --------------*/
+/*action colors*/
+:root {
+    --dark-grey: #121212;
+    --primary-blue: #303f9f;
+    --secondary-grey: #bdbdbd;
+    --confirm-green: #00897b;
+    --warning-amber: #303f9f;
+    --remove-red: #c6282b;
+    --help-purple: #673ab7;
+
+    /*neutral colors*/
+    --neutral-1000: #24292e;
+    --neutral-900: #383f45;
+    --neutral-800: #454c52;
+    --neutral-700: #596066;
+    --neutral-600: #676e76;
+    --neutral-500: #7f8790;
+    --neutral-400: #9ea5ad;
+    --neutral-300: #ced2d6;
+    --neutral-200: #e5e7ea;
+    --neutral-100: #f6f7f9;
+
+    /*secondary colors*/
+    --dark-red: #8f0031;
+    --ochre-yellow: #f79b19;
+    --sea-green: #028fa3;
+    --baby-blue: #00a8cc;
+    --violet: #91198e;
+
+    /*extended colors*/
+    --yellow-500: #ff991f;
+    --yellow-400: #ffab00;
+    --yellow-300: #ffc400;
+    --yellow-200: #ffe380;
+    --yellow-100: #fff0b3;
+
+    --red-500: #de350b;
+    --red-400: #ff5630;
+    --red-300: #ff7452;
+    --red-200: #ff8f73;
+    --red-100: #ffbdad;
+
+    --blue-500: #00a3bf;
+    --blue-400: #00b8d9;
+    --blue-300: #00c7e6;
+    --blue-200: #79e2f2;
+    --blue-100: #b3f5ff;
+
+    --violet-500: #a239a0;
+    --violet-400: #c054be;
+    --violet-300: #c270c0;
+    --violet-200: #d6a9d5;
+    --violet-100: #e1c7e0;
+
+    --green-500: #006644;
+    --green-400: #00875a;
+    --green-300: #36b37e;
+    --green-200: #57d9a3;
+    --green-100: #abf5d1;
+
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #ffffff;
 }
