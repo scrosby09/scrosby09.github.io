@@ -8,111 +8,91 @@ main h1 {
     margin-bottom: 1rem;
 }
 
-main div.heroDiv {
-    margin: 10px auto;
+.hero-div {
+    background-color: #212026;
+    border-top: #f2e313 solid 1px;
+    padding-top: 1em;
+}
+
+.hero-div h1 {
+    color: #f2e313;
+    margin-top: 0;
+    text-align: center;
+}
+
+.hero-div img,
+.article img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero-img {
+    margin: 5px auto;
     position: relative;
 }
 
-div.heroDiv picture {
-    display: block;
-    width: 100%;
-}
-
-div.heroDiv picture img {
-    width: 100%;
-}
-
-main table {
+.current-weather {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    border: 1px solid darkslategray;
-    box-shadow: 0 0 10px #333;
-    opacity: .8;
-    background: var(--blue-300);
-    color: whitesmoke;
-    padding: 1rem 2%;
-}
-
-main table tr th {
-    padding-bottom: 10px;
-}
-
-main table tr td:first-child {
-    text-align: right;
-}
-
-main section {
-    background: var(--blue-500);
-    border-radius: 10px;
+    top: 25px;
+    right: 50px;
+    background: radial-gradient(#eee, #a3b4bf);
+    border: 1px solid #000;
     padding: 1rem;
-    color: white;
-    margin-bottom: 1rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
 }
 
-section.forecast {
+.current-weather p {
+    margin: 3px 0;
+}
+
+.forecast {
     display: none;
 }
 
-article {
-    padding: 2rem 4%;
-    background-color: var(--blue-500);
-    border: 1px solid var(--secondary-grey);
-    border-radius: 10px;
-    margin: .5em;
+.article h2 {
+    color: #f2e313;
+    margin: 19.92px 0 5px 0;
 }
 
-article p#author {
-    font-size: 10pt;
+.author {
+    margin: 0;
 }
 
-article figure {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2em;
+.article p {
+    color: #a3b4bf;
 }
 
-article figure img {
-    width: 100%;
-    box-shadow: 5px 5px 15px var(--secondary-grey);
+.article,
+.forecast {
+    background-color: #212026;
+    padding: 2em;
 }
 
-#contactInfo {
-    background: var(--neutral-900);
-    color: whitesmoke;
-    border-radius: 10px;
-    padding: 1rem 3%;
-    font-size: 12px;
-}
-
-div#contact {
+.contact-us {
     display: grid;
-    grid-template-columns: 160px 160px;
-    grid-template-rows: 60px 60px;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(180, 176, 176);
+    margin-bottom: 10px;
 }
 
-div#address {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
+.contact-us-info {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    padding: 10px;
+    background-color: rgb(180, 176, 176);
+    margin-bottom: 10px;
 }
 
-div#phone {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-div#email {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-div#map {
-    width: 100%;
-    display: none;
-}
-
-div#map iframe {
-    width: 100%;
+.social-media {
+    max-width: 25px;
+    max-height: 25px;
+    padding: 5px;
 }
 
 /*-------------- HEADER --------------*/
