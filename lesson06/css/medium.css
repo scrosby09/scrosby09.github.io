@@ -1,44 +1,34 @@
 @media only screen and (min-width: 32.5em) {
-    .navbar {
+    .navigation {
         display: flex;
         justify-content: space-evenly;
     }
 
-    .navbar li {
+    .navigation li {
         display: block;
         /* change state in small view */
         /* flex: 1 1 auto; */
     }
 
-    .navbar li:first-child {
+    .navigation li:first-child {
         display: none;
     }
 
-    /* ARTICLE */
-
-    .article-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        border-top: #f2e313 2px solid;
-        grid-gap: .5em;
+    #hero img {
+        max-width: 75%;
+        position: relative;
     }
 
-    .content {
-        grid-column: 1/2;
+    #summary {
+        width: 250px;
+        font-size: 1em;
     }
 
-    .content-2 {
-        grid-column: 1/3;
+    header {
+        justify-content: flex-start;
     }
 
-    .article-img {
-        grid-column: 2/3;
-        grid-row: 1/3;
-        padding-top: 20px;
-    }
-
-    /* END OF ARTICLE */
-
+    /*----- FORECAST -----*/
     main {
         padding: 0 8rem;
     }
@@ -55,15 +45,15 @@
     }
 
     .forecast h2 {
-        color:
-            grid-column: 1/6;
+        color: #f2e313;
+        grid-column: 1/6;
     }
 
     .forecast div {
         border: 2px solid #f2e313;
     }
 
-    .forecast h3 {
+    .forecast h4 {
         background-color: #f2e313;
         text-align: center;
         margin: 0;
@@ -82,77 +72,36 @@
         margin: 0 auto;
     }
 
-    /*-------------- COLOR SCHEME --------------*/
-    /*action colors*/
-    :root {
-        --dark-grey: #121212;
-        --primary-blue: #303f9f;
-        --secondary-grey: #bdbdbd;
-        --confirm-green: #00897b;
-        --warning-amber: #303f9f;
-        --remove-red: #c6282b;
-        --help-purple: #673ab7;
+    /*----- ARTICLE -----*/
+    .weather-article-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: #f2e313 2px solid;
+        grid-gap: .5em;
+    }
 
-        /*neutral colors*/
-        --neutral-1000: #24292e;
-        --neutral-900: #383f45;
-        --neutral-800: #454c52;
-        --neutral-700: #596066;
-        --neutral-600: #676e76;
-        --neutral-500: #7f8790;
-        --neutral-400: #9ea5ad;
-        --neutral-300: #ced2d6;
-        --neutral-200: #e5e7ea;
-        --neutral-100: #f6f7f9;
+    .weather-article-img {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding-top: 20px;
+    }
 
-        /*secondary colors*/
-        --dark-red: #8f0031;
-        --ochre-yellow: #f79b19;
-        --sea-green: #028fa3;
-        --baby-blue: #00a8cc;
-        --violet: #91198e;
+    /*----- CONTACT US -----*/
+    .contact-us {
+        grid-template-columns: 1fr 1fr;
+    }
 
-        /*extended colors*/
-        --yellow-500: #ff991f;
-        --yellow-400: #ffab00;
-        --yellow-300: #ffc400;
-        --yellow-200: #ffe380;
-        --yellow-100: #fff0b3;
+    .contact-us-info {
+        margin: auto;
+        text-align: left;
+        grid-column-start: 2;
+        grid-column-end: auto;
+        grid-row: auto;
+    }
 
-        --red-500: #de350b;
-        --red-400: #ff5630;
-        --red-300: #ff7452;
-        --red-200: #ff8f73;
-        --red-100: #ffbdad;
-
-        --blue-500: #00a3bf;
-        --blue-400: #00b8d9;
-        --blue-300: #00c7e6;
-        --blue-200: #79e2f2;
-        --blue-100: #b3f5ff;
-
-        --violet-500: #a239a0;
-        --violet-400: #c054be;
-        --violet-300: #c270c0;
-        --violet-200: #d6a9d5;
-        --violet-100: #e1c7e0;
-
-        --green-500: #006644;
-        --green-400: #00875a;
-        --green-300: #36b37e;
-        --green-200: #57d9a3;
-        --green-100: #abf5d1;
-
-        --blue: #007bff;
-        --indigo: #6610f2;
-        --purple: #6f42c1;
-        --pink: #e83e8c;
-        --red: #dc3545;
-        --orange: #fd7e14;
-        --yellow: #ffc107;
-        --green: #28a745;
-        --teal: #20c997;
-        --cyan: #17a2b8;
-        --white: #ffffff;
+    footer {
+        font-size: 1em;
+        width: 80%;
+        margin: auto;
     }
 }

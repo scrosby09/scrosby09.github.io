@@ -145,114 +145,64 @@ header .title {
 
 /*-------------- NAVIGATION --------------*/
 nav {
-    background: var(--neutral-1000);
-    font-family: 'Roboto', sans-serif;
-    color: var(--yellow-300);
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav button {
-    margin: .4rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: white;
-}
-
-nav ul.hide {
-    display: none;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: 14pt;
-    padding-left: 2rem;
-    transition-property: color, background-color;
-    transition-duration: 350ms;
-}
-
-nav ul li:first-child {
-    border-top: 1px solid #333;
-}
-
-nav ul li a:hover {
-    background-color: #91c4f2;
-    color: #333;
-}
-
-nav ul li.active a {
-    background-color: var(--yellow-300);
-    color: var(--yellow-100);
-    font-weight: bold;
-}
-
-.nav-fill .nav-item {
-    flex: 1 1 auto;
-    text-align: center
-}
-
-.nav-justified .nav-item {
-    flex-basis: 0;
-    flex-grow: 1;
-    text-align: center
-}
-
-.tab-content>.tab-pane {
-    display: none
-}
-
-.tab-content>.active {
-    display: block
-}
-
-.navbar {
+    background-color: black;
     position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: .5rem 1rem
 }
 
-.navbar,
-.navbar>.container,
-.navbar>.container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.navbar-brand {
-    display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap
+nav a:link {
+    color: #a3b4bf;
+    text-decoration: none;
 }
 
-.navbar-brand:focus,
-.navbar-brand:hover {
-    text-decoration: none
+nav a:visited {
+    color: #a3b4bf;
 }
 
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none
+nav a:hover {
+    color: #f2e313;
+    font-weight: bold;
 }
 
-.navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0
+nav a:active {
+    color: blue;
+}
+
+.active {
+    border-bottom: solid 2px #f2e313;
+}
+
+.navigation li:first-child {
+    display: block;
+    text-decoration: underline;
+}
+
+.navigation li {
+    display: none;
+    padding: 3px 0;
+}
+
+.responsive li {
+    display: block;
+}
+
+/* ----FORECAST---- */
+
+.forecast {
+    display: none;
 }
 
 /*-------------- FOOTER --------------*/

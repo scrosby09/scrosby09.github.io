@@ -30,9 +30,10 @@
         </div>
     </header>
     <!-- NAVIGATION -->
-    <nav class="clearfix navbar">
-        <ul>
-            <li><a class="ham" href="#">&#9776; Home</a></li>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
@@ -43,7 +44,7 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        <section class=" clearfix hero-div">
+        <section class="hero-div container">
             <h1>Preston, Idaho</h1>
             <div class="hero-img">
                 <picture>
@@ -60,70 +61,76 @@
                     <p>Wind Speed: 12mph</p>
                 </section>
             </div>
-        </section>
-        <section class="forecast">
-            <h2>5 Day Forecast</h2>
-            <div>
-                <h4>Monday</h4>
-                <img src="images/sun.png" alt="sunny">
-                <p><span>30&deg;F</span></p>
-            </div>
-            <div>
-                <h4>Tuesday</h4>
-                <img src="images/sun.png" alt="sunny">
-                <p><span>30&deg;F</span></p>
-            </div>
-            <div>
-                <h4>Wednesday</h4>
-                <img src="images/sun.png" alt="sunny">
-                <p><span>30&deg;F</span></p>
-            </div>
-            <div>
-                <h4>Thursday</h4>
-                <img src="images/sun.png" alt="sunny">
-                <p><span>30&deg;F</span></p>
-            </div>
-            <div>
-                <h4>Friday</h4>
-                <img src="images/sun.png" alt="sunny">
-                <p><span>30&deg;F</span></p>
-            </div>
-        </section>
-        <section class="article">
-            <h2>Cloudy With A Chance Of Meatballs</h2>
-            <p class="author">By John Doe</p>
-            <div class="article-grid">
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor tortor at nisl
-                    euismod tempus. Donec pretium convallis lorem mollis tempus. Suspendisse faucibus tincidunt elit in
-                    bibendum. Suspendisse commodo diam accumsan turpis placerat elementum. Cras porttitor erat eget
-                    dapibus dignissim. Phasellus vel viverra ex, non elementum odio. Sed sed volutpat felis.
-                    Pellentesque lobortis mauris id erat auctor volutpat.
-                </p>
-                <div class="article-img">
-                    <img src="images/rainbow-lake.jpg" alt="Article Image">
-                </div>
-            </div>
-        </section>
 
-        <section class="contact-us">
-            <div class="contact-us-info">
-                <h4>WEATHEREYE FORECASTING</h4>
-                <p>PHONE: 208-791-7867</p>
-                <p>EMAIL: support@weathereye.com</p>
-                <p>Boise, Idaho</p>
-            </div>
-            <div class="social-media">
-                <img class="social" src="images/fb_icon.jpeg" alt="Facebook">
-                <img class="social" src="images/ig_icon.jpeg" alt="Instagram">
-                <img class="social" src="images/li_icon.jpeg" alt="Instagram">
-            </div>
+            <section class="forecast">
+                <h2>5 Day Forecast</h2>
+                <div>
+                    <h4>Monday</h4>
+                    <img src="images/sun.png" alt="sunny day">
+                    <p><span>30&deg;F</span></p>
+                </div>
+                <div>
+                    <h4>Tuesday</h4>
+                    <img src="images/sun.png" alt="sunny day">
+                    <p><span>30&deg;F</span></p>
+                </div>
+                <div>
+                    <h4>Wednesday</h4>
+                    <img src="images/sun.png" alt="sunny day">
+                    <p><span>30&deg;F</span></p>
+                </div>
+                <div>
+                    <h4>Thursday</h4>
+                    <img src="images/sun.png" alt="sunny day">
+                    <p><span>30&deg;F</span></p>
+                </div>
+                <div>
+                    <h4>Friday</h4>
+                    <img src="images/sun.png" alt="sunny day">
+                    <p><span>30&deg;F</span></p>
+                </div>
+            </section>
+
+            <section class="weather-article container">
+                <h2>Cloudy With A Chance Of Meatballs</h2>
+                <p class="author">By John Doe</p>
+                <div class="weahter-article-content">
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor tortor at
+                        nisl
+                        euismod tempus. Donec pretium convallis lorem mollis tempus. Suspendisse faucibus tincidunt elit
+                        in
+                        bibendum. Suspendisse commodo diam accumsan turpis placerat elementum. Cras porttitor erat eget
+                        dapibus dignissim. Phasellus vel viverra ex, non elementum odio. Sed sed volutpat felis.
+                        Pellentesque lobortis mauris id erat auctor volutpat.
+                    </p>
+                    <div class="weather-article-img">
+                        <img src="images/rainbow-lake.jpg" alt="Article Image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-us container">
+                <div class="contact-us-info">
+                    <h4>WEATHEREYE FORECASTING</h4>
+                    <p>PHONE: 208-791-7867</p>
+                    <p>EMAIL: support@weathereye.com</p>
+                    <p>Boise, Idaho</p>
+                </div>
+                <div class="social-media">
+                    <img class="social" src="images/fb_icon.jpeg" alt="Facebook">
+                    <img class="social" src="images/ig_icon.jpeg" alt="Instagram">
+                    <img class="social" src="images/li_icon.jpeg" alt="Instagram">
+                </div>
     </main>
+
+    <!-- FOOTER -->
     <footer>
         &copy; Steven Crosby | WDD230 BYUI <span id="currentDate"></span>
     </footer>
     <script src="js/main.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
