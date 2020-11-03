@@ -1,4 +1,114 @@
 @media only screen and (min-width: 32.5em) {
+
+    /*---------- MAIN CONTENT ----------*/
+    /*--- HERO ---*/
+    .page-content {
+        background-color: var(--neutral-1000);
+        padding-top: 2em;
+    }
+
+    .page-content h1 {
+        color: yellow;
+        margin-top: 1em;
+        text-align: center;
+        background-color: var(--dark-grey);
+        opacity: 80%;
+    }
+
+    .page-content img,
+    .article img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .hero-img {
+        margin: 5px auto;
+        position: relative;
+    }
+
+    /*--- WEATHER TODAY ---*/
+    .weather-today {
+        width: 250px;
+        font-size: 1em;
+    }
+
+    /*--- WEATHER FORECAST ---*/
+    .weather-forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .weather-forecast h2 {
+        color: yellow;
+        grid-column: 1/6;
+    }
+
+    .weather-forecast div {
+        border: 1px solid var(--secondary-grey);
+        background-color: var(--neutral-1000);
+        opacity: 80%;
+    }
+
+    .weather-forecast h4 {
+        background-color: black;
+        opacity: 90%;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+        color: yellow;
+    }
+
+    .weather-forecast p {
+        text-align: center;
+        color: white;
+    }
+
+    .weather-forecast img {
+        display: block;
+        padding: 10px 0;
+        margin: 10px auto;
+        height: 75%;
+        width: 75%;
+    }
+
+    /*--- WEATHER ARTICLE ---*/
+    .weather-article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: #f2e313 2px solid;
+        grid-gap: .5em;
+      }
+    
+      .weather-article-content {
+        grid-column: 1/2;
+      }
+    
+      .weather-article-img {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding-top: 20px;
+      }
+  
+    /*--- CONTACT US ---*/
+    .contact-us {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-us-info {
+        margin: auto;
+        text-align: left;
+        grid-column-start: 2;
+        grid-column-end: auto;
+        grid-row: auto;
+    }
+
+    /*---------- HEADER ----------*/
+    header {
+        justify-content: flex-start;
+    }
+
+    /*---------- NAVIGATION ----------*/
     .navigation {
         display: flex;
         justify-content: space-evenly;
@@ -14,99 +124,17 @@
         display: none;
     }
 
-    #hero img {
-        max-width: 75%;
-        position: relative;
-    }
-
-    .current-weather {
-        width: 250px;
-        font-size: 1em;
-    }
-
-    header {
-        justify-content: flex-start;
-    }
-
-    /*----- FORECAST -----*/
-    main {
-        padding: 0 8rem;
-    }
-
-    .forecast {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .forecast h2 {
-        color: yellow;
-        grid-column: 1/6;
-    }
-
-    .forecast div {
-        border: 1px solid var(--secondary-grey);
-        background-color: var(--neutral-1000);
-        opacity: 80%;
-    }
-
-    .forecast h4 {
-        background-color: black;
-        opacity: 90%;
-        text-align: center;
-        margin: 0;
-        padding: 5px 0;
-        color: yellow;
-    }
-
-    .forecast p {
-        text-align: center;
-        color: white;
-    }
-
-    .forecast img {
-        display: block;
-        padding: 10px 0;
-        margin: 10px auto;
-        height: 75%;
-        width: 75%;
-    }
-
-    /*----- ARTICLE -----*/
-    .weather-article-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        border-top: #f2e313 2px solid;
-        grid-gap: .5em;
-    }
-
-    .weather-article-img {
-        grid-column: 2/3;
-        grid-row: 1/3;
-        padding-top: 20px;
-    }
-
-    /*----- CONTACT US -----*/
-    .contact-us {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .contact-us-info {
-        margin: auto;
-        text-align: left;
-        grid-column-start: 2;
-        grid-column-end: auto;
-        grid-row: auto;
-    }
-
+    /*---------- FOOTER ----------*/
     footer {
         font-size: 1em;
         width: 80%;
         margin: auto;
     }
 
-    /*-------------- COLOR SCHEME --------------*/
-    /*action colors*/
+    /*---------- CORE ----------*/
+    /*---------- COLOR SCHEME ----------*/
     :root {
+        /*--- Action Colors ---*/
         --dark-grey: #121212;
         --primary-blue: #303f9f;
         --secondary-grey: #bdbdbd;
@@ -115,7 +143,7 @@
         --remove-red: #c6282b;
         --help-purple: #673ab7;
 
-        /*neutral colors*/
+        /*--- Neutral Colors ---*/
         --neutral-1000: #24292e;
         --neutral-900: #383f45;
         --neutral-800: #454c52;
@@ -127,14 +155,14 @@
         --neutral-200: #e5e7ea;
         --neutral-100: #f6f7f9;
 
-        /*secondary colors*/
+        /*--- Secondary Colors ---*/
         --dark-red: #8f0031;
         --ochre-yellow: #f79b19;
         --sea-green: #028fa3;
         --baby-blue: #00a8cc;
         --violet: #91198e;
 
-        /*extended colors*/
+        /*--- Extended Colors ---*/
         --yellow-500: #ff991f;
         --yellow-400: #ffab00;
         --yellow-300: #ffc400;

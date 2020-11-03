@@ -64,9 +64,19 @@
         padding-top: 20px;
     }
 
-    /*-------------- COLOR SCHEME --------------*/
-    /*action colors*/
+    /*---------- MAIN CONTENT ----------*/
+    /*--- HERO ---*/
+    /*--- WEATHER TODAY ---*/
+    /*--- WEATHER FORECAST ---*/
+    /*--- WEATHER ARTICLE ---*/
+    /*--- CONTACT US ---*/
+    /*---------- HEADER ----------*/
+    /*---------- NAVIGATION ----------*/
+    /*---------- FOOTER ----------*/
+    /*---------- CORE ----------*/
+    /*---------- COLOR SCHEME ----------*/
     :root {
+        /*--- Action Colors ---*/
         --dark-grey: #121212;
         --primary-blue: #303f9f;
         --secondary-grey: #bdbdbd;
@@ -75,7 +85,7 @@
         --remove-red: #c6282b;
         --help-purple: #673ab7;
 
-        /*neutral colors*/
+        /*--- Neutral Colors ---*/
         --neutral-1000: #24292e;
         --neutral-900: #383f45;
         --neutral-800: #454c52;
@@ -87,14 +97,14 @@
         --neutral-200: #e5e7ea;
         --neutral-100: #f6f7f9;
 
-        /*secondary colors*/
+        /*--- Secondary Colors ---*/
         --dark-red: #8f0031;
         --ochre-yellow: #f79b19;
         --sea-green: #028fa3;
         --baby-blue: #00a8cc;
         --violet: #91198e;
 
-        /*extended colors*/
+        /*--- Extended Colors ---*/
         --yellow-500: #ff991f;
         --yellow-400: #ffab00;
         --yellow-300: #ffc400;

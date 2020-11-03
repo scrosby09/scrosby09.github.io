@@ -1,14 +1,6 @@
-/*-------------- MAIN CONTENT --------------*/
-main {
-    padding: 1rem;
-    background-color: #121212;
-}
+/*---------- MAIN CONTENT ----------*/
 
-main h1 {
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 1em;
-}
-
+/*----- HERO----- */
 .page-content {
     background-color: var(--neutral-1000);
     padding-top: 2em;
@@ -34,7 +26,8 @@ main h1 {
     position: relative;
 }
 
-.current-weather {
+/*----- WEATHER TODAY ----- */
+.weather-today {
     display: grid;
     background-color: black;
     border: 1px solid var(--secondary-grey);
@@ -46,34 +39,41 @@ main h1 {
     opacity: 90%;
 }
 
-.current-weather p {
+.weather-today p {
     margin: 3px 0;
 }
 
-.forecast {
+
+/*----- WEATHER FORECAST ----- */
+.weather-forecast {
     display: none;
 }
 
-.article,
-.forecast {
+/*-- WEATHER ARTICLE-- */
+.weather-forecast {
     background-color: var(--neutral-900);
     padding: 2em;
     opacity: 80%;
 }
 
-.article h2 {
+.weather-article h2 {
     color: yellow;
     margin: 19.92px 0 5px 0;
 }
 
-.author {
-    margin: 0;
-}
-
-.article p {
+.weather-article p {
     color: #a3b4bf;
 }
 
+.weather-article-author {
+    margin: 0;
+}
+
+.weather-article p {
+    color: #a3b4bf;
+}
+
+/*----- CONTACT US ----- */
 .contact-us {
     display: grid;
     grid-template-columns: 1fr;
@@ -93,28 +93,22 @@ main h1 {
     margin-bottom: 10px;
 }
 
-.social-media {
+.contact-us-social {
     max-width: 25px;
     max-height: 25px;
     padding: 5px;
 }
 
-/*-------------- HEADER --------------*/
+/*---------- HEADER ----------*/
 header {
     background-color: black;
-    color: var(--ochre-yellow);
-}
-
-header h1 {
-    padding: 0 10px;
-    font-weight: 900;
-    font-size: 2em;
+    color: yellow;
 }
 
 header img {
     height: 100px;
     background-color: black;
-    padding: 20px 10px;
+    padding: 20px 20px;
 }
 
 header .title {
@@ -125,7 +119,7 @@ header .title {
 
 .title {
     background-color: black;
-    color: var(--ochre-yellow);
+    color: yellow;
 }
 
 .title p {
@@ -147,7 +141,7 @@ header .title {
     font-family: 'Roboto', sans-serif;
 }
 
-/*-------------- NAVIGATION --------------*/
+/*---------- NAVIGATION ----------*/
 nav {
     background-color: black;
     position: relative;
@@ -168,16 +162,16 @@ nav ul {
 }
 
 nav a:link {
-    color: #a3b4bf;
+    color: var(--neutral-200);
     text-decoration: none;
 }
 
 nav a:visited {
-    color: #a3b4bf;
+    color: var(--neutral-200);
 }
 
 nav a:hover {
-    color: #f2e313;
+    color: var(--yellow-300);
     font-weight: bold;
 }
 
@@ -186,7 +180,7 @@ nav a:active {
 }
 
 .active {
-    border-bottom: solid 2px #f2e313;
+    border-bottom: solid 2px var(--ochre-yellow);
 }
 
 .navigation li:first-child {
@@ -203,22 +197,7 @@ nav a:active {
     display: block;
 }
 
-/* ----FORECAST---- */
-
-.forecast {
-    display: none;
-}
-
-/*-------------- FOOTER --------------*/
-footer {
-    background-color: var(--neutral-1000);
-    padding: .5rem 2%;
-    text-align: center;
-    font-size: 10pt;
-    color: var(--ochre-yellow);
-}
-
-/*-------------- CORE --------------*/
+/*---------- CORE ----------*/
 *,
 *::before,
 *::after {
