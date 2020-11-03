@@ -155,8 +155,8 @@
 }
 
 .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .navbar-nav .dropdown-menu {

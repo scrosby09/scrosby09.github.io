@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherEye Forecasting</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
@@ -15,41 +15,31 @@
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
     <div id="banner">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park.</p>
     </div>
-    <!-- HEADER -->
     <header>
         <div class="title">
-            <img src="images/we-logo.png" alt="weathereye logo">
+            <img src="images/we-logo.png" alt="Viewfinder Forecast Logo">
             <div>
-                <h1>WeatherEye Forcasting</h1>
-                <p>Know your weather whenever, wherever</p>
+                <h1>WeatherEye Forecasting</h1>
+                <p>Know your weather whenever, wherever.</p>
             </div>
         </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-dark bg-dark">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active"><a href="#">Preston</a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Soda Springs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Fish Haven</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Storm Center</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-            </li>
-        </ul>
-    </nav>
 
     <!-- MAIN CONTENT -->
     <main>
@@ -140,6 +130,5 @@
     <script src="js/windchill.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-</body>
 
 </html>
