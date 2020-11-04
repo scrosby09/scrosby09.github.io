@@ -24,7 +24,7 @@
     <header>
         <!-- HEADER-TITLE -->
         <div class="title">
-            <img src="images/we-logo.png" alt="Viewfinder Forecast Logo">
+            <img src="images/we-logo.png" alt="WeatherEye Logo">
             <div>
                 <h1>WeatherEye Forecasting</h1>
                 <p>Know your weather whenever, wherever.</p>
@@ -46,92 +46,95 @@
 
     <!-- PAGE CONTENT -->
     <main>
-        <!-- WEATHER HERO -->
-        <section class="weather-hero">
-            <div class="city">
-                <h1>Preston, Idaho</h1>
-            </div>
-            <div class="weather-hero-img">
-                <picture>
-                    <source srcset="images/franklinOriginal-1200w.jpg" media="(min-width: 900px)">
-                    <source srcset="images/franklinOriginal-900w.jpg" media="(min-width: 520px)">
-                    <img src="images/franklinOriginal-450w.jpg" alt="Franklin, Idaho">
-                </picture>
-                <section class="weather-today">
-                    <h2>Weather Summary</h2>
-                    <p>Currently: Rainy</p>
-                    <p>High: 54 &deg;F</p>
-                    <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
-                    <p>Humidity: 95%</p>
-                    <p>Wind Speed: 12mph</p>
-                </section>
-            </div>
-        </section>
-
-        <!-- WEATHER FORECAST -->
-        <section class="weather-forecast">
-            <h2>5 DAY FORECAST</h2>
-            <div>
-                <h4 class="weather-forecast-heading">Monday</h4>
-                <p><span>30&deg;F</span></p>
-                <img src="images/sun.png">
-            </div>
-            <div>
-                <h4 class="weather-forecast-heading">Tuesday</h4>
-                <p><span>30&deg;F</span></p>
-                <img src="images/sun.png">
-            </div>
-            <div>
-                <h4 class="weather-forecast-heading">Wednesday</h4>
-                <p><span>30&deg;F</span></p>
-                <img src="images/sun.png">
-            </div>
-            <div>
-                <h4 class="weather-forecast-heading">Thursday</h4>
-                <p><span>30&deg;F</span></p>
-                <img src="images/sun.png">
-            </div>
-            <div>
-                <h4 class="weather-forecast-heading">Friday</h4>
-                <p><span>30&deg;F</span></p>
-                <img src="images/sun.png">
-            </div>
-        </section>
-
-        <section class="weather-article">
-            <h2>Cloudy With A Chance Of Meatballs</h2>
-            <h4>By John Doe</h4>
-            <div class="weather-article-content">
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor tortor at nisl
-                    euismod tempus. Donec pretium convallis lorem mollis tempus. Suspendisse faucibus tincidunt elit in
-                    bibendum. Suspendisse commodo diam accumsan turpis placerat elementum. Cras porttitor erat eget
-                    dapibus dignissim. Phasellus vel viverra ex, non elementum odio. Sed sed volutpat felis.
-                    Pellentesque lobortis mauris id erat auctor volutpat.
-                </p>
-                <div class="weather-article-img">
-                    <img src="images/clouds-2.jpg" alt="cloudy">
+        <div class="container">
+            <!-- WEATHER HERO -->
+            <section class="weather-hero">
+                <div class="city">
+                    <h1>Preston, Idaho</h1>
                 </div>
-            </div>
-        </section>
+                <div class="weather-hero-img">
+                    <picture>
+                        <source srcset="images/franklinOriginal-1200w.jpg" media="(min-width: 900px)">
+                        <source srcset="images/franklinOriginal-900w.jpg" media="(min-width: 520px)">
+                        <img src="images/franklinOriginal-450w.jpg" alt="Franklin, Idaho">
+                    </picture>
+                    <section class="weather-today">
+                        <h2>Weather Summary</h2>
+                        <p>Currently: Rainy</p>
+                        <p>High: 54 &deg;F</p>
+                        <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
+                        <p>Humidity: 95%</p>
+                        <p>Wind Speed: 12mph</p>
+                    </section>
+                </div>
+            </section>
 
-        <section class="contact-us">
-            <div class="contact-us-info">
-                <p>WEATHEREYE FORECASTING</p>
-                <p>Boise, ID</p><br>
-                <p>PHONE: 888-555-12349</p>
-                <p>EMAIL: support@weathereye.com</p>
-            </div>
-            <div class="contact-us-social">
-                <img src="images/fb_icon.jpeg">
-                <img src="images/ig_icon.jpeg">
-                <img src="images/li_icon.jpeg">
-            </div>
-        </section>
+            <!-- WEATHER FORECAST -->
+            <section class="weather-forecast">
+                <h2>5 DAY FORECAST</h2>
+                <div>
+                    <h3>Monday</h3>
+                    <p><span>30&deg;F</span></p>
+                    <img src="images/sun.png">
+                </div>
+                <div>
+                    <h3>Monday</h3>
+                    <p><span>30&deg;F</span></p>
+                    <img src="images/sun.png">
+                </div>
+                <div>
+                    <h3>Monday</h3>
+                    <p><span>30&deg;F</span></p>
+                    <img src="images/sun.png">
+                </div>
+                <div>
+                    <h3>Monday</h3>
+                    <p><span>30&deg;F</span></p>
+                    <img src="images/sun.png">
+                </div>
+                <div>
+                    <h3>Monday</h3>
+                    <p><span>30&deg;F</span></p>
+                    <img src="images/sun.png">
+                </div>
+            </section>
+
+            <section class="weather-article">
+                <h2>Cloudy With A Chance Of Meatballs</h2>
+                <h4>By John Doe</h4>
+                <div class="weather-article-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor tortor at nisl
+                        euismod tempus. Donec pretium convallis lorem mollis tempus. Suspendisse faucibus tincidunt elit
+                        in
+                        bibendum. Suspendisse commodo diam accumsan turpis placerat elementum. Cras porttitor erat eget
+                        dapibus dignissim. Phasellus vel viverra ex, non elementum odio. Sed sed volutpat felis.
+                        Pellentesque lobortis mauris id erat auctor volutpat.
+                    </p>
+                    <div class="weather-article-img">
+                        <img src="images/clouds-2.jpg" alt="cloudy">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-us">
+                <div class="contact-us-info">
+                    <h3>WEATHEREYE FORECASTING</h3>
+                    <p>Boise Idaho</p>
+                    <p>P: 888-555-1234</p>
+                    <p>E: contactus@weathereye.com</p>
+                    <img class="social" src="images/fb_icon.jpeg" alt="Facebook Logo">
+                    <img class="social" src="images/ig_icon.jpeg" alt="Instagram Logo">
+                    <img class="social" src="images/li_icon.jpeg" alt="LinkedIn Logo">
+                </div>
+            </section>
+
+        </div>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        &copy; Steven Crosby | WDD230 BYUI <span id="currentDate"></span>
+        <div>&copy; <span id="copyright"></span> WeatherEye Forecasting | Steven Crosby | BYU Idaho</div>
+        <span id="modified"></span>
     </footer>
     <script src="js/main.js"></script>
     <script src="js/windchill.js"></script>

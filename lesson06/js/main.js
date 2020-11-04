@@ -1,4 +1,4 @@
-/*Display date in the footer*/
+
 document.getElementById("modified").innerHTML = todayDate();
 function todayDate() {
     var today = new Date();
@@ -11,7 +11,7 @@ function todayDate() {
     return day + ", " + dayDate + " " + month + " " + year;
 }
 
-/*Hamburger menu for small display*/
+
 function toggleMenu() {
     if (document.getElementsByClassName("navigation")[0].classList == "navigation") {
         document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
@@ -23,7 +23,6 @@ function toggleMenu() {
 
 }
 
-/*Banner at top of screen for Friday's*/
 document.getElementById("banner").innerHTML = banner();
 function banner() {
     var today = new Date();
