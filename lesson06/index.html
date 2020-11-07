@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherEye Forecasting</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+            rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -16,128 +16,155 @@
 </head>
 
 <body>
-    <!-- BANNER -->
-    <div id="banner">
-        <p>Saturday = Preston Pancakes in the Park!</p>
-        <p>9:00 a.m. Saturday at the city park.</p>
+
+<!-- ANNOUNCEMENT BANNER -->
+<div id="announcement">
+    <p>Saturday = Preston Pancakes in the Park!</p>
+    <p>9:00 a.m. Saturday at the city park.</p>
+</div>
+
+<!-- HEADER TITLE -->
+<header>
+    <div class="header-title">
+        <a class="logo" href="index.html"><img src="images/we-logo.png" alt="WeatherEye Forecasting"></a>
+        <div id="page-title">
+            <h1 id="we-title">WeatherEye Forecasting</h1>
+            <div id="we-subtitle">Know your weather whenever, wherever.</div>
+        </div>
     </div>
-    <header>
-        <!-- HEADER-TITLE -->
-        <div class="title">
-            <img src="images/we-logo.png" alt="WeatherEye Logo">
-            <div>
-                <h1>WeatherEye Forecasting</h1>
-                <p>Know your weather whenever, wherever.</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()"><span class="open">&#215;</span><span class="closed">&#9776;
+                        Menu</span></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+</nav>
+
+<!-- PAGE CONTENT -->
+<main>
+    <h1>Preston, Idaho</h1>
+
+    <!-- WEATHER HERO -->
+    <div class="section" id="weather-hero">
+        <figure>
+            <img src="images/wdd230_image_franklinOriginal.jpeg" alt="field" sizes="100vw"
+                 srcset="images/franklinOriginal-450w.jpg 400w, images/franklinOriginal-900w.jpg 800w, images/franklinOriginal-1200w.jpg 1200w">
+        </figure>
+        <section id="weather-now">
+            <h2>Weather Now</h2>
+            <p class="weather-now-data">
+                <span class="label">Currently:</span>
+                <span id="weather_desc" class="value"></span>
+            </p>
+            <p class="weather-now-data">
+                <span class="label">High / Low:</span>
+                <span id="high_low_temp" class="value"></span>
+            </p>
+            <p class="weather-now-data">
+                <span class="label">Current:</span>
+                <span id="current_temp" class="value"></span>
+            </p>
+            <p class="weather-now-data">
+                <span class="label">Wind Chill:</span>
+                <span id="wind_chill" class="value"></span>
+            </p>
+            <p class="weather-now-data">
+                <span class="label">Humidity:</span>
+                <span id="humidity" class="value"></span>
+            </p>
+            <p class="weather-now-data">
+                <span class="label">Wind Speed:</span>
+                <span id="wind_speed" class="value"></span>
+            </p>
+        </section>
+    </div>
+
+    <!-- WEATHER FORECAST -->
+    <section class="weather-forecast">
+        <h2>5 DAY FORECAST</h2>
+        <div>
+            <h3>Monday</h3>
+            <p><span>30&deg;F</span></p>
+            <img src="images/sun.png">
+        </div>
+        <div>
+            <h3>Monday</h3>
+            <p><span>30&deg;F</span></p>
+            <img src="images/sun.png">
+        </div>
+        <div>
+            <h3>Monday</h3>
+            <p><span>30&deg;F</span></p>
+            <img src="images/sun.png">
+        </div>
+        <div>
+            <h3>Monday</h3>
+            <p><span>30&deg;F</span></p>
+            <img src="images/sun.png">
+        </div>
+        <div>
+            <h3>Monday</h3>
+            <p><span>30&deg;F</span></p>
+            <img src="images/sun.png">
+        </div>
+    </section>
+
+    <section class="weather-article">
+        <h2>Cloudy With A Chance Of Meatballs</h2>
+        <h4>By John Doe</h4>
+        <div class="weather-article-content">
+            <p>South Florida and the Keys woke up Saturday to the reminder that hurricane season doesn’t officially
+                end until Nov. 30 (and Mother Nature doesn’t have to follow the calendar, either). A tropical
+                depression named Eta was upgraded to tropical storm status in the 10 a.m. National Hurricane Center
+                advisory and is already messing with our weather — and it’s going to get worse. The Florida Keys is
+                already under a tropical storm watch. “This could be a significant weather event,” Miami-Dade Mayor
+                Carlos Gimenez said at an 11 a.m. Zoom meeting that was also attended by Mayor-Elect Daniella Levine
+                Cava.</p>
+            <p>“We may experience extensive rainfall and gusty wind conditions as early as tonight through Tuesday,
+                with sustained tropical storm-force winds starting Sunday,” Gimenez said. “Since the ground is
+                already saturated with rain, flooding is a major concern, especially in low lying areas.” Also under
+                the tropical storm watch: Miami, Miami Beach, Key Biscayne, Perrine and Princeton, according to the
+                National Weather Service in Miami. Also in the tropical storm watch area: Islamorada, Key Largo,
+                Ocean Reef. And Fort Lauderdale, Hallandale Beach, Pompano Beach, Deerfield Beach. And West Palm
+                Beach, Boca Raton, Juno Beach and Jupiter. The entire region from the Keys to Palm Beach County is
+                under a flood watch and wind advisory. Monroe County declared a state of emergency Saturday
+                afternoon.</p>
+            <div class="weather-article-img">
+                <img src="images/clouds-2.jpg" alt="cloudy">
             </div>
         </div>
-        <!--NAVIGATION-->
-        <nav>
-            <ul class="navigation">
-                <li><a href="#">&#9776; Menu</a></li>
-                <li><a href="#">Home</a></li>
-                <li class="active"><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
+    </section>
 
-    <!-- PAGE CONTENT -->
-    <main>
-        <div class="container">
-            <!-- WEATHER HERO -->
-            <section class="weather-hero">
-                <div class="city">
-                    <h1>Preston, Idaho</h1>
-                </div>
-                <div class="weather-hero-img">
-                    <picture>
-                        <source srcset="images/franklinOriginal-1200w.jpg" media="(min-width: 900px)">
-                        <source srcset="images/franklinOriginal-900w.jpg" media="(min-width: 520px)">
-                        <img src="images/franklinOriginal-450w.jpg" alt="Franklin, Idaho">
-                    </picture>
-                    <section class="weather-today">
-                        <h2>Weather Summary</h2>
-                        <p>Currently: Rainy</p>
-                        <p>High: 54 &deg;F</p>
-                        <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
-                        <p>Humidity: 95%</p>
-                        <p>Wind Speed: 12mph</p>
-                    </section>
-                </div>
-            </section>
-
-            <!-- WEATHER FORECAST -->
-            <section class="weather-forecast">
-                <h2>5 DAY FORECAST</h2>
-                <div>
-                    <h3>Monday</h3>
-                    <p><span>30&deg;F</span></p>
-                    <img src="images/sun.png">
-                </div>
-                <div>
-                    <h3>Monday</h3>
-                    <p><span>30&deg;F</span></p>
-                    <img src="images/sun.png">
-                </div>
-                <div>
-                    <h3>Monday</h3>
-                    <p><span>30&deg;F</span></p>
-                    <img src="images/sun.png">
-                </div>
-                <div>
-                    <h3>Monday</h3>
-                    <p><span>30&deg;F</span></p>
-                    <img src="images/sun.png">
-                </div>
-                <div>
-                    <h3>Monday</h3>
-                    <p><span>30&deg;F</span></p>
-                    <img src="images/sun.png">
-                </div>
-            </section>
-
-            <section class="weather-article">
-                <h2>Cloudy With A Chance Of Meatballs</h2>
-                <h4>By John Doe</h4>
-                <div class="weather-article-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor tortor at nisl
-                        euismod tempus. Donec pretium convallis lorem mollis tempus. Suspendisse faucibus tincidunt elit
-                        in
-                        bibendum. Suspendisse commodo diam accumsan turpis placerat elementum. Cras porttitor erat eget
-                        dapibus dignissim. Phasellus vel viverra ex, non elementum odio. Sed sed volutpat felis.
-                        Pellentesque lobortis mauris id erat auctor volutpat.
-                    </p>
-                    <div class="weather-article-img">
-                        <img src="images/clouds-2.jpg" alt="cloudy">
-                    </div>
-                </div>
-            </section>
-
-            <section class="contact-us">
-                <div class="contact-us-info">
-                    <h3>WEATHEREYE FORECASTING</h3>
-                    <p>Boise Idaho</p>
-                    <p>P: 888-555-1234</p>
-                    <p>E: contactus@weathereye.com</p>
-                    <img class="social" src="images/fb_icon.jpeg" alt="Facebook Logo">
-                    <img class="social" src="images/ig_icon.jpeg" alt="Instagram Logo">
-                    <img class="social" src="images/li_icon.jpeg" alt="LinkedIn Logo">
-                </div>
-            </section>
-
+    <section class="contact-us">
+        <div class="contact-us-info">
+            <h3>WEATHEREYE FORECASTING</h3>
+            <p>Boise Idaho</p>
+            <p>P: 888-555-1234</p>
+            <p>E: contactus@weathereye.com</p>
+            <img class="social" src="images/fb_icon.jpeg" alt="Facebook Logo">
+            <img class="social" src="images/ig_icon.jpeg" alt="Instagram Logo">
+            <img class="social" src="images/li_icon.jpeg" alt="LinkedIn Logo">
         </div>
-    </main>
+    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div>&copy; <span id="copyright"></span> WeatherEye Forecasting | Steven Crosby | BYU Idaho</div>
-        <span id="modified"></span>
-    </footer>
-    <script src="js/main.js"></script>
-    <script src="js/windchill.js"></script>
-    <script src="js/modernizr.js"></script>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div>&copy; <span id="copyright"></span> WeatherEye Forecasting | Steven Crosby | BYU Idaho</div>
+    <span id="modified"></span>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/modernizr.js"></script>
 
 </html>
