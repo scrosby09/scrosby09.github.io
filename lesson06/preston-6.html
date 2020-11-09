@@ -13,7 +13,7 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -41,67 +41,77 @@
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-
-    <main>
-        <div class="weather-hero container">
-            <h2>Preston Idaho</h2>
-            <picture id="hero-img">
-                <source media="(max-width: 32.5em)" srcset="images/wdd230_image_franklinSmall1.jpg">
-                <source media="(max-width: 56em)" srcset="images/wdd230_image_franklinMed1.jpg">
-                <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Preston Landscape">
-            </picture>
-            <section id="weather-today">
-                <h3>Weather Summary</h3>
-                <span><b>Currently:</b> Rainy</span>
-                <span id="high"><b>High: </b>49 &#176;F</span>
-                <span id="windchill"></span>
-                <span><b>Humidity:</b> 1%</span>
-                <span id="windspeed"><b>Wind Speed:</b> 4 mph E</span>
-            </section>
+    <main class="container">
+        <div class="card">
+            <div class="weather-hero card">
+                <div class="card-header">
+                    <h2 class="card-title">Preston Idaho</h2>
+                </div>
+                <div class="card-body">
+                    <picture id="hero-img">
+                        <source media="(max-width: 32.5em)" srcset="images/wdd230_image_franklinSmall1.jpg">
+                        <source media="(max-width: 56em)" srcset="images/wdd230_image_franklinMed1.jpg">
+                        <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Preston Landscape">
+                    </picture>
+                </div>
+                <section id="weather-today">
+                    <h3>Weather Summary</h3>
+                    <span><b>Currently:</b> Rainy</span>
+                    <span id="high"><b>High: </b>49 &#176;F</span>
+                    <span id="windchill"></span>
+                    <span><b>Humidity:</b> 1%</span>
+                    <span id="windspeed"><b>Wind Speed:</b> 4 mph E</span>
+                </section>
+            </div>
+            <div class="section">
+                <div class="weather-forecast card">
+                    <h3 id="forecast-title">5 Day Forecast</h3>
+                    <section class="card-body fiveDay">
+                        <div class="card card-body" id="day1">
+                            <h3>Date</h3>
+                            <div>
+                                <img class="weather_icon" src="images/sun.png" alt="Sunny">
+                            </div>
+                            <div>Sunny</div>
+                            <div id="day1_weather"><b>78</b>&#176;F</div>
+                        </div>
+                        <div class="card card-body" id="day2">
+                            <h3>Date</h3>
+                            <div>
+                                <img class="weather_icon" src="images/sun.png" alt="Sunny">
+                            </div>
+                            <div>Sunny</div>
+                            <div id="day2_weather"><b>78</b>&#176;F</div>
+                        </div>
+                        <div class="card card-body" id="day3">
+                            <h3>Date</h3>
+                            <div>
+                                <img class="weather_icon" src="images/sun.png" alt="Sunny">
+                            </div>
+                            <div>Sunny</div>
+                            <div id="day3_weather"><b>78</b>&#176;F</div>
+                        </div>
+                        <div class="card card-body" id="day4">
+                            <h3>Date</h3>
+                            <div>
+                                <img class="weather_icon" src="images/sun.png" alt="Sunny">
+                            </div>
+                            <div>Sunny</div>
+                            <div id="day4_weather"><b>78</b>&#176;F</div>
+                        </div>
+                        <div class="card card-body" id="day5">
+                            <h3>Date</h3>
+                            <div>
+                                <img class="weather_icon" src="images/sun.png" alt="Sunny">
+                            </div>
+                            <div>Sunny</div>
+                            <div id="day5_weather"><b>78</b>&#176;F</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
-        orecast-title">5 Day Forecast</h3>
-        <section class="fiveDay">
-            <div id="day1">
-                <h3>Date</h3>
-                <div>
-                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
-                </div>
-                <div>Sunny</div>
-                <div id="day1_weather"><b>78</b>&#176;F</div>
-            </div>
-            <div id="day2">
-                <h3>Date</h3>
-                <div>
-                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
-                </div>
-                <div>Sunny</div>
-                <div id="day2_weather"><b>78</b>&#176;F</div>
-            </div>
-            <div id="day3">
-                <h3>Date</h3>
-                <div>
-                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
-                </div>
-                <div>Sunny</div>
-                <div id="day3_weather"><b>78</b>&#176;F</div>
-            </div>
-            <div id="day4">
-                <h3>Date</h3>
-                <div>
-                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
-                </div>
-                <div>Sunny</div>
-                <div id="day4_weather"><b>78</b>&#176;F</div>
-            </div>
-            <div id="day5">
-                <h3>Date</h3>
-                <div>
-                    <img class="weather_icon" src="images/sun.png" alt="Sunny">
-                </div>
-                <div>Sunny</div>
-                <div id="day5_weather"><b>78</b>&#176;F</div>
-            </div>
-        </section>
+
         <div class="article">
             <h3>White House highlights Idaho as leader</h3>
             <p id="author">By NECIA P. SEAMONS Citizen editor</p>
@@ -114,7 +124,8 @@
                 <figcaption>The White House</figcaption>
             </figure>
             <p id="content">The White House is highlighting Idaho as a leader among states
-                for plans to safely and responsibly reopen the economy and for how the state has allocated federal
+                for plans to safely and responsibly reopen the economy and for how the state has allocated
+                federal
                 relief
                 funds.
                 <br>
@@ -122,12 +133,15 @@
                 Preston native, Brandon Woolf has also been noted for his role in the process.
                 <br>
                 <br>
-                “We are encouraged to see so many states embracing the phased approach to reopening their economies
+                “We are encouraged to see so many states embracing the phased approach to reopening their
+                economies
                 that’s
-                contemplated in our guidelines for Opening Up America Again. Governor Brad Little of Idaho released
+                contemplated in our guidelines for Opening Up America Again. Governor Brad Little of Idaho
+                released
                 ‘Rebound
                 Idaho’
-                …that will consist of four phases and require specific criteria that Idaho and businesses need to
+                …that will consist of four phases and require specific criteria that Idaho and businesses need
+                to
                 meet
                 to
                 begin to
@@ -142,7 +156,8 @@
                 at https://coronavirus.idaho.gov/coronavirus-financial-advisory-committee/.
                 <br>
                 <br>
-                Two-thirds of the federal funds that have been allocated so far in Idaho – more than $300 million –
+                Two-thirds of the federal funds that have been allocated so far in Idaho – more than $300
+                million –
                 will
                 go directly to small businesses in the form of cash grants and cash for personal protective
                 equipment to
@@ -150,7 +165,8 @@
                 business.
                 <br>
                 <br>
-                The majority of the remaining amount has been allocated to local governments and tribal governments
+                The majority of the remaining amount has been allocated to local governments and tribal
+                governments
                 throughout Idaho.
                 <br>
                 <br>
@@ -168,7 +184,7 @@
                 <img class="social" src="images/ig_icon.jpeg" alt="Instagram">
             </div>
         </div>
-    </main>
+        </main>
 </body>
 <footer>
     <div>&copy; <span id="copyright"></span> Weather News | Attributions | Michael Kendall</div>
