@@ -22,25 +22,26 @@
 </head>
 <div id="banner"></div>
 <header>
-    <img id="logo" src="images/we-logo.png" alt="WeatherEye Forecasting">
-    <div id="titles">
-        <h1 id="title">WeatherEye Forecasting</h1>
-        <p id="subtitle">"Know your weather whenever, wherever."</p>
+    <img id="we-logo" src="images/we-logo.png" alt="WeatherEye Forecasting">
+    <div>
+        <h1 id="we-title">WeatherEye Forecasting</h1>
+        <p id="we-subtitle">"Know your weather whenever, wherever."</p>
     </div>
 </header>
 <nav>
-    <ul class="navigation">
-        <li><a id="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+    <ul class="navigation nav-tabs">
+        <li><a id="menu-toggle" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a href="/index.html">Home</a></li>
-        <li><a class="active" href="#">Preston</a></li>
-        <li><a href="#">Soda Springs</a></li>
+        <li><a class="nav-link active" href="#">Preston</a></li>
+        <li><a class="nav-link" href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
         <li><a href="#">Gallery</a></li>
     </ul>
 </nav>
-<main>
-    <article class="main-content">
+
+<body>
+    <main>
         <h2>Preston Idaho</h2>
         <div class="hero">
             <picture id="heropic">
@@ -125,7 +126,8 @@
                 contemplated in our guidelines for Opening Up America Again. Governor Brad Little of Idaho released
                 ‘Rebound
                 Idaho’
-                …that will consist of four phases and require specific criteria that Idaho and businesses need to meet
+                …that will consist of four phases and require specific criteria that Idaho and businesses need to
+                meet
                 to
                 begin to
                 reopen,” Vice President Mike Pence said recently.
@@ -139,8 +141,10 @@
                 at https://coronavirus.idaho.gov/coronavirus-financial-advisory-committee/.
                 <br>
                 <br>
-                Two-thirds of the federal funds that have been allocated so far in Idaho – more than $300 million – will
-                go directly to small businesses in the form of cash grants and cash for personal protective equipment to
+                Two-thirds of the federal funds that have been allocated so far in Idaho – more than $300 million –
+                will
+                go directly to small businesses in the form of cash grants and cash for personal protective
+                equipment to
                 support workers and customers. No other state is putting up more money to directly support small
                 business.
                 <br>
@@ -163,12 +167,11 @@
                 <img class="social" src="images/ig_icon.jpeg" alt="Instagram">
             </div>
         </div>
-
-    </article>
-</main>
+    </main>
+</body>
 <footer>
     <div>&copy; <span id="copyright"></span> Weather News | Attributions | Michael Kendall</div>
-    <span id="modified"></span>
+    <span id="update-date"></span>
 </footer>
 <script src="js/main.js"></script>
 <script src="js/windchill.js"></script>

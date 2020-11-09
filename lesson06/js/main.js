@@ -1,5 +1,5 @@
 /*Display date in the footer*/
-document.getElementById("modified").innerHTML = todayDate();
+document.getElementById("update-date").innerHTML = todayDate();
 function todayDate() {
     var today = new Date();
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -11,28 +11,28 @@ function todayDate() {
     return day + ", " + dayDate + " " + month + " " + year;
 }
 
-/*Hamburger menu for small display*/
-function toggleMenu() {
-    if (document.getElementsByClassName("navigation")[0].classList == "navigation") {
-        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-        document.getElementById("ham").innerHTML = "&#x2715";
-    } else {
-        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-        document.getElementById("ham").innerHTML = "&#9776 Menu";
-    }
-
-}
-
 /*Banner at top of screen for Friday's*/
-document.getElementById("banner").innerHTML = banner();
-function banner() {
+document.getElementById("announcement").innerHTML = announcement();
+function announcement() {
     var today = new Date();
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var day = days[today.getDay()];
     if (day == "Friday") {
-        document.getElementById("banner").style.display = "flex";
+        document.getElementById("announcement").style.display = "flex";
     } else {
-        document.getElementById("banner").style.display = "none";
+        document.getElementById("announcement").style.display = "none";
     }
     return "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."
+}
+
+/*Nav Toggle*/
+function toggleMenu() {
+    if (document.getElementsByClassName("navigation")[0].classList == "navigation") {
+        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+        document.getElementById("nav-toggle").innerHTML = "&#x2715";
+    } else {
+        document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+        document.getElementById("nav-toggle").innerHTML = "&#9776 Menu";
+    }
+
 }
