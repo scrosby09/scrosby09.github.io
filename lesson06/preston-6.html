@@ -20,15 +20,15 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="icon" href="favicon.ico">
 </head>
-<div id="banner"></div>
-<header>
-    <img id="we-logo" src="images/we-logo.png" alt="WeatherEye Forecasting">
+<div id="announcement"></div>
+<header class="container">
     <div>
         <h1 id="we-title">WeatherEye Forecasting</h1>
-        <p id="we-subtitle">"Know your weather whenever, wherever."</p>
+        <p id="we-subtitle">Know your weather whenever, wherever.</p>
     </div>
+    <img id="we-logo" src="images/we-logo.png" alt="WeatherEye Forecasting">
 </header>
-<nav>
+<nav class="container">
     <ul class="navigation nav-tabs">
         <li><a id="menu-toggle" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a href="/index.html">Home</a></li>
@@ -41,15 +41,15 @@
 </nav>
 
 <body>
-    <main>
-        <h2>Preston Idaho</h2>
-        <div class="hero">
-            <picture id="heropic">
+    <main class="container">
+        <div class="weather-hero card">
+            <h2 class="">Preston Idaho</h2>
+            <picture id="weather-hero">
                 <source media="(max-width: 32.5em)" srcset="images/wdd230_image_franklinSmall1.jpg">
                 <source media="(max-width: 56em)" srcset="images/wdd230_image_franklinMed1.jpg">
                 <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Preston Landscape">
             </picture>
-            <section id="summary">
+            <section class="card" id="summary">
                 <h3>Weather Summary</h3>
                 <span><b>Currently:</b> Rainy</span>
                 <span id="high"><b>High: </b>49 &#176;F</span>

@@ -228,6 +228,15 @@ label {
     margin-bottom: 0.5rem;
 }
 
+.container,
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* HEADER 
 --------------------*/
 #announcement {
@@ -247,26 +256,26 @@ header {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
-
 #we-title {
-    font-size: 2em;
-    color: var(--yellow-500);
-    margin: .5em;
+    font-size: 3em;
+    color: var(--ochre-yellow);
+    margin: 0 .5em 0 .5em;
 }
 
 #we-subtitle {
     font-size: 1em;
     color: var(--secondary);
     font-style: italic;
+    margin: .5em;
 }
 
 #we-logo {
-    border-radius: 12px;
     height: 60px;
-    margin: 10px;
+    margin: 15px;
 }
 
 h1 {
@@ -291,12 +300,12 @@ h3 {
 /* NAVBAR 
 --------------------*/
 nav {
-    background-color: #002D52;
+    background-color: var(--neutral-1000);
     text-align: center;
 }
 
 nav ul li a.active {
-    color: #002D52;
+    color: var(--dark-grey);
     background-color: #59C1FF;
 }
 
@@ -322,23 +331,20 @@ nav ul li a:hover {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
 }
 
 .navigation li:first-child {
     display: block;
-    font-weight: bold;
     text-align: center;
-    padding: 0.75rem;
     text-decoration: none;
 }
 
 .navigation a {
     display: block;
-    padding: .8rem 2%;
+    padding: .8rem;
     text-align: center;
-    color: white;
-    font-weight: 700;
+    color: var(--ochre-yellow);
+    font-weight: 500;
 }
 
 #menu-toggle {
@@ -353,10 +359,7 @@ nav ul li a:hover {
 /* MAIN CONTENT
 --------------------*/
 main {
-    background-color: whitesmoke;
-    margin: -18px 30px 0px;
-    border-radius: 6px;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    background-color: var(--dark-grey);
 }
 
 p {
@@ -372,21 +375,36 @@ section {
     padding: 10px;
 }
 
+.weather-hero {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--neutral-100);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+#hero-title {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#weather-hero img {
+    max-width: 100%;
+    margin: 10px auto;
+}
+
 /* FOOTER 
 --------------------*/
 /* MISC 
 --------------------*/
-
-
-
-.hero {
-    position: relative;
-}
-
-#heropic img {
-    max-width: 100%;
-    margin: 10px auto;
-}
 
 #summary {
     display: grid;
