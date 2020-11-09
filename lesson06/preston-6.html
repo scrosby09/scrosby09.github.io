@@ -20,36 +20,37 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="icon" href="favicon.ico">
 </head>
-<div id="announcement"></div>
-<header class="container">
-    <div>
-        <h1 id="we-title">WeatherEye Forecasting</h1>
-        <p id="we-subtitle">Know your weather whenever, wherever.</p>
-    </div>
-    <img id="we-logo" src="images/we-logo.png" alt="WeatherEye Forecasting">
-</header>
-<nav class="container">
-    <ul class="navigation nav-tabs">
-        <li><a id="menu-toggle" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li><a href="/index.html">Home</a></li>
-        <li><a class="nav-link active" href="#">Preston</a></li>
-        <li><a class="nav-link" href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
-    </ul>
-</nav>
 
 <body>
-    <main class="container">
-        <div class="weather-hero card">
-            <h2 class="">Preston Idaho</h2>
-            <picture id="weather-hero">
+    <div id="announcement"></div>
+    <header class="container">
+        <div>
+            <h1 id="we-title">WeatherEye Forecasting</h1>
+            <p id="we-subtitle">Know your weather whenever, wherever.</p>
+        </div>
+        <img id="we-logo" src="images/we-logo.png" alt="WeatherEye Forecasting">
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a id="menu-toggle" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="weather-hero container">
+            <h2>Preston Idaho</h2>
+            <picture id="hero-img">
                 <source media="(max-width: 32.5em)" srcset="images/wdd230_image_franklinSmall1.jpg">
                 <source media="(max-width: 56em)" srcset="images/wdd230_image_franklinMed1.jpg">
                 <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Preston Landscape">
             </picture>
-            <section class="card" id="summary">
+            <section id="weather-today">
                 <h3>Weather Summary</h3>
                 <span><b>Currently:</b> Rainy</span>
                 <span id="high"><b>High: </b>49 &#176;F</span>
@@ -58,7 +59,7 @@
                 <span id="windspeed"><b>Wind Speed:</b> 4 mph E</span>
             </section>
         </div>
-        <h3 id="forecast-title">5 Day Forecast</h3>
+        orecast-title">5 Day Forecast</h3>
         <section class="fiveDay">
             <div id="day1">
                 <h3>Date</h3>
