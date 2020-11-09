@@ -1,23 +1,14 @@
-@media only screen and (min-width: 870px) {
-    nav {
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+@media only screen and (min-width: 56em) {
+    #logo {
+        height: 90px;
     }
 
-    nav ul {
-        display: flex;
+    #title {
+        font-size: 3em;
     }
 
-    nav ul li {
-        flex: 1 1 100%;
-        display: block;
-        border-top: none;
+    #subtitle {
+        font-size: 1.5em;
+        margin-top: 35px;
     }
-
-    .navigation li:first-child {
-        display: none;
-    }
-    .weather-forecast {
-        margin: 0 50px 50px 50px;
-    }
-
 }
