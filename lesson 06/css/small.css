@@ -66,59 +66,6 @@ STYLE CONTENTS
 
 /* PAGE CONTENT
 ----------------------------------*/
-h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: var(--ochre-yellow);
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 900;
-    color: var(--ochre-yellow);
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--ochre-yellow);
-    margin: 5px;
-    text-decoration: underline;
-}
-
-#header-slogan {
-    font-weight: bold;
-    font-family: "Open Sans", sans-serif;
-    color: var(--yellow-300);
-    font-size: 1.1em;
-    font-style: italic;
-    text-align: center;
-    margin: 40px 0 20px 0;
-}
-
-#header-h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    color: var(--ochre-yellow);
-    text-align: center;
-}
-
-section {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
-
-#we-logo {
-    border-radius: 6px;
-    height: 50px;
-    justify-content: center;
-    align-content: center;
-}
-
 .weather-hero {
     border-radius: 6px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -278,6 +225,59 @@ header {
     justify-content: center;
     align-items: center;
     height: 80px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--ochre-yellow);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--ochre-yellow);
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--ochre-yellow);
+    margin: 5px;
+    text-decoration: underline;
+}
+
+#header-slogan {
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    color: var(--yellow-300);
+    font-size: 1.1em;
+    font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+#header-h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--ochre-yellow);
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#we-logo {
+    border-radius: 6px;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
 }
 
 p {
