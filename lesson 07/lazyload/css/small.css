@@ -1,6 +1,6 @@
 body {
-    display: grid;
-    grid-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 img[data-src] {
@@ -11,4 +11,14 @@ img[data-src] {
 img {
     filter: blur(0em);
     transition: filter .5s;
-  }
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+    transition: filter .5s;
+}
+
+img {
+    filter: blur(0em);
+    transition: filter .5s;
+}

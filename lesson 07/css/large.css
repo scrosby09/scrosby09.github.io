@@ -1,56 +1,38 @@
-/* COLORS
-----------------------------------*/
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-}
-
-
 @media only screen and (min-width: 56em) {
 
-    /* VARIABLE CONTENT
-    ----------------*/
-    section {
-        grid-template-columns: repeat(3, 1fr);
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .row-cols-3>* {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
     }
 
     figure:hover {
         box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     }
 
-    /* STATIC CONTENT
-    ----------------*/
     #header-h1 {
-        font-size: 3em;
-        font-weight: bolder;
-        font-family: "Red Hat Display", sans-serif;
+        font-size: 3rem;
+        font-weight: 900;
         color: var(--ochre-yellow);
+        text-align: center;
     }
 
     #header-slogan {
         font-weight: bold;
-        font-family: 'Inter', sans-serif;
-        color: var(--orange);
-        font-size: 1.5em;
-        margin-top: 35px;
+        font-family: "Open Sans", sans-serif;
+        color: var(--yellow-300);
+        font-size: 1.1em;
+        font-style: italic;
+        text-align: center;
+        margin: 1.5rem 0 1rem 0;
     }
 }
