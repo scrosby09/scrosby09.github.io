@@ -1,0 +1,19 @@
+@media only screen and (min-width: 56em) {
+    #header-h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        color: var(--ochre-yellow);
+        text-align: center;
+    }
+
+    #header-slogan {
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        color: var(--yellow-300);
+        font-size: 1.1em;
+        font-style: italic;
+        text-align: center;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+}
