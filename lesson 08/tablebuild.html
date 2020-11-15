@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Table Build</title>
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+<table>
+    <caption><h2>ACME Wildwest</h2></caption>
+    <thead>
+    <tr>
+        <th>Period</th>
+        <th>Sales</th>
+        <th>Sales Goal</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>August</td>
+        <td>$3,590</td>
+        <td>$4,000</td>
+    </tr>
+    <tr>
+        <td>September</td>
+        <td>$4,420</td>
+        <td>$5,000</td>
+    </tr>
+    <tr>
+        <td>October</td>
+        <td>$4,870</td>
+        <td>$5,000</td>
+    </tr>
+    <tr>
+        <td>November</td>
+        <td>$8,610</td>
+        <td id="highlighted">$7,500</td>
+    </tr>
+    <tr>
+        <td>Black Friday</td>
+        <td colspan="2">$3,200</td>
+    </tr>
+    <tr>
+        <td>December</td>
+        <td>$6,820</td>
+        <td>$7,500</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3">Compiled 11.15.2020 by Steven Crosby</td>
+    </tr>
+    </tfoot>
+</table>
+
+
+<script src="js/main.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Ubuntu']
+        }
+    });
+</script>
+</body>
+</html>
