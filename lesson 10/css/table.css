@@ -1,0 +1,53 @@
+body {
+    font-family: Ubuntu, sans-serif, Tahoma, sans-serif;
+
+}
+
+table, caption {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    box-shadow: 5px 5px 8px #000000;
+}
+
+th {
+    background-color: #628ca6;
+    color: #ffffff;
+
+}
+
+th, td, caption {
+    padding: 5px;
+    border: 0.4px solid #b8beb9;
+
+}
+
+table {
+    background-color: #e7f0ed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tfoot tr td {
+    background-color: #7fb9c2;
+    font-size: 0.6rem;
+    line-height: 20px;
+    text-align: center;
+}
+
+caption {
+    background-color: #7fb9c2;
+    line-height: 0.2rem;
+    margin: 0;
+
+
+}
+
+#highlighted {
+    background-color: #628ca6;
+    color: #ffffff;
+}

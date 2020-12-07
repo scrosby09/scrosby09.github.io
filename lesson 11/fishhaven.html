@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>WeatherEye Forecasting | Preston ID</title>
+    <!-- CSS -->
+    <link href="favicon.ico" rel="icon"/>
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="css/small.css" rel="stylesheet"/>
+    <link href="css/medium.css" rel="stylesheet"/>
+    <link href="css/large.css" rel="stylesheet"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Red+Hat+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap"
+            rel="stylesheet">
+</head>
+
+<!-- HEADER -->
+<div id="banner-friday"></div>
+<header class="page-header">
+    <div>
+        <img alt="WeatherEye Logo" id="we-logo" src="images/we-logo_256x256.png"/>
+        <h1 id="header-h1">WeatherEye Forecasting</h1>
+        <p id="header-slogan">Foresight for your weather</p>
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<div class="nav-header">
+    <nav>
+        <ul class="nav-bar">
+            <li><a href="#" onclick="toggleMenu()"><span class="open">&#215;</span><span class="closed">&#9776;
+                        Menu</span></a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a class="active" href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- PAGE CONTENT -->
+<main>
+    <div class="main main-raised">
+        <!-- WEATHER ARTICLE -->
+        <div class="container clearfix">
+            <div class="card">
+                <h2>FISH HAVEN, ID</h2>
+            </div>
+            <div class="weather-hero">
+                <picture id="heropic">
+                    <source media="(max-width: 32.5em)" srcset="images/hero-small.jpg"/>
+                    <source media="(max-width: 56em)" srcset="images/hero-medium.jpg"/>
+                    <img alt="Preston Landscape" src="images/hero-large.jpg"/>
+                </picture>
+                <section id="weather-today">
+                    <h3>Weather Summary</h3>
+                    <span><b>Currently:</b> Rainy</span>
+                    <span id="highNum"><b>High: </b>49 &#176;F</span>
+                    <span id="windChill"></span>
+                    <span><b>Humidity:</b> 1%</span>
+                    <span id="windSpeed"><b>Wind Speed:</b> 4 mph E</span>
+                </section>
+            </div>
+        </div>
+
+        <!-- WEATHER FORECAST -->
+        <div class="container clearfix">
+            <div class="card">
+                <h2>5 DAY FORECAST</h2>
+            </div>
+            <section class="weather-forecast">
+                <div id="forecast-1">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast1-weather"><b>78</b>&#176;F</div>
+                </div>
+                <div id="forecast-2">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast2-weather"><b>78</b>&#176;F</div>
+                </div>
+                <div id="forecast-3">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast3-weather"><b>78</b>&#176;F</div>
+                </div>
+                <div id="forecast-4">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast4-weather"><b>78</b>&#176;F</div>
+                </div>
+                <div id="forecast-5">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast5-weather"><b>78</b>&#176;F</div>
+                </div>
+                <br>
+            </section>
+            <br>
+        </div>
+
+        <!-- WEATHER ARTICLE -->
+        <div class="container clearfix">
+            <div class="weather-article">
+                <div class="card">
+                    <h3>WEATHER?</h3>
+                    <p id="article-author">By Anonymous</p>
+                </div>
+                <picture id="article-image">
+                    <source media="(max-width: 32.5em)" srcset="images/article-img-small.jpg"/>
+                    <source media="(max-width: 56em)" srcset="images/article-img-medium.jpg"/>
+                    <img src="images/article-img-large.jpg" alt="Mountains"/>
+                </picture>
+                <p id="article-body">
+                    The 2020 Atlantic hurricane season has already shattered the record
+                    for named storms. If history is any guide, it may continue to blow
+                    past that previous record set 15 years ago.
+                    <br/>
+                    <br/>
+                    With the formation of tropical storm Theta, 2020 has now logged more
+                    tropical cyclones than ever recorded. Theta is 2020's 29th named
+                    storm in the Atlantic Ocean. Theta, which doesn't pose a danger to
+                    land, formed a few hundred miles off the coast of Liberia Monday
+                    (Nov. 9), shattering the record for total number of named storms in
+                    the Atlantic hurricane season. (When a tropical cyclone's sustained
+                    winds reach 39 to 73 mph (63 to 118 km/h), it is considered a
+                    tropical storm and gets a name.)
+                    <br/>
+                    <br/>
+                    The previous record for busiest hurricane season was 28, set in 2005
+                    — the only other time in history that the National Hurricane Center
+                    has exhausted its list of Atlantic storm names and moved on to Greek
+                    letters. In 2005, the final storm didn't form until late December,
+                    so there's still plenty of time for 2020 to run up the score.
+                    <br/>
+                    <br/>
+                    Climate change is making hurricanes more powerful and dangerous, on
+                    average, but it's not yet clear whether it's making them more
+                    common, according to Yale Climate Connections. In the U.S., the Gulf
+                    of Mexico took the brunt of the beating from this Atlantic storm
+                    season. A record-breaking five named storms made landfall in
+                    Louisiana. The worst of these was Hurricane Laura in August, one of
+                    the most powerful storms ever to hit the state — arriving just after
+                    the weaker Tropical Storm Marco. After Laura left thousands
+                    homeless, three more storms made landfall along the Louisiana
+                    coastline and several more made landfall in the surrounding region
+                    before passing over Louisiana.
+                    <br/>
+                    <br/>
+                </p>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="contact-us">
+                <img alt="Preston Idaho Map" id="map" src="images/map.JPG"/>
+                <div class="contact-items">
+                    <h3>WeatherEye Forecasting</h3>
+                    <p>
+                        <img alt="Map indicator" id="map-icon" src="images/contact-map.png"/>Boise, ID 83263
+                    </p>
+                    <p>
+                        <img alt="Phone" id="phone-icon" src="images/contact-phone.png"/>208-555-1234
+                    </p>
+                    <p>
+                        <img alt="Email" id="email-icon" src="images/contact-email.png"/>contactus@weathereye.com
+                    </p>
+                    <img alt="Facebook Logo" class="social-icon" src="images/social-FB.png"/>
+                    <img alt="Twitter Logo" class="social-icon" src="images/social-TW.png"/>
+                    <img alt="Instagram Logo" class="social-icon" src="images/social-IG.png"/>
+                    <img alt="LinkedIn Logo" class="social-icon" src="images/social-IN.png"/>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</main>
+<br>
+<br>
+
+<footer class="container clearfix">
+    <div class="card">
+        <br>
+        &copy; <span id="copyright"></span> WeatherEye Forecasting | Steven Crosby |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br>
+        <span id="updated"></span>
+        <br>
+        <br>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+
+</html>

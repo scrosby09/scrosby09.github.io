@@ -1,0 +1,543 @@
+.fiveDay {
+    display: none;
+}
+
+#forecast-title {
+    display: none;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.button input {
+    background-color: #FFB200;
+    font-family: Krona One, sans-serif;
+    color: #002D52;
+    border-radius: 12px;
+    padding: .5%;
+}
+
+/*Navigation*/
+nav {
+    background-color: #B86602;
+    text-align: center;
+}
+
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+.navigation li:first-child {
+    display: block;
+    font-weight: bold;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation li {
+    display: none;
+    border: 2px solid black;
+}
+
+.navigation a {
+	display: block;
+    padding: .8rem 2%;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+    font-family: Krona One, sans-serif;;
+}
+
+nav ul li a.active {
+    color: black;
+    background-color: #FFB200;
+}
+
+nav ul li a:hover {
+    color: #FFB200;
+}
+
+.responsive li {
+    display: block;
+}
+
+.responsiveClose li {
+    display: none;
+}
+
+/*Contact on home page*/
+.social {
+    grid-row: 1;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 5px;
+}
+
+.contactUs {
+    text-align: center;
+    background-color: #FFB200;
+    border-radius: 12px;
+    border: 2px solid #002D52;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.contact {
+    grid-row: 1;
+}
+
+.contactUs p{
+    font-size: .8em;
+    text-align: left;
+    padding: 2%;
+}
+
+.mapIcon, .phone, .email {
+    max-height: 25px;
+    padding-right: 2%;
+}
+
+.social {
+    max-height: 30px;
+}
+
+/*Headings and Paragraphs*/
+#logo {
+    max-width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+h2 {
+    color: #002D52;
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    color: #002D52;
+    font-family: "Krona One", sans-serif;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 5px;
+    color: #002D52;
+    text-decoration: underline;
+    font-family: "Krona One", sans-serif;
+}
+
+p {
+    margin: 0;
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    font-family: "PT Serif", serif;
+}
+
+#explain {
+    font-size: 1em;
+    font-weight: bold;
+    max-width: 600px;
+    margin: auto;
+    background-color: #FFB200;
+    border: 2px solid #002D52;
+    color: #002D52;
+    border-radius: 12px;
+    padding: 2%;
+}
+
+#title {
+    margin-left: 55px;
+    font-size: 2em;
+    color: #59C1FF;
+}
+
+#subtitle {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-left: 25px;
+    color: white;
+}
+
+#welcome {
+    font-family: "Krona One", sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    margin-top: -25px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #002D52;
+}
+
+.hero {
+    position: relative;
+    margin-top: 10px;
+}
+
+#heropic img {
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 12px;
+}
+
+/*Home Page Slideshow*/
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: black;
+  background-color: #bbb;
+  font-size: 1em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -10px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dots {
+    text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Table summary for home page*/
+#rentals {
+    margin: auto;
+    text-align:center;
+}
+
+#rentalHead {
+    margin: auto;
+    text-align:center;
+}
+
+#rentals p{
+    font-size: 1em;
+}
+
+/*Weather Summary*/
+
+#summary {
+    display: grid;
+    background-color: #59C1FF;
+    border-radius: 12px;
+    border: 2px solid #002D52;
+    text-align: left;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    top: 25px;
+    left: 15%;
+}
+
+#summary ul {
+    list-style: none;
+}
+
+#summaryTitle {
+    text-align: center;
+    font-size: 1em;
+}
+
+/*Contact page*/
+.contactInfo {
+    padding-top: 0%;
+}
+
+form {
+    max-width: 900px;
+    margin: auto;
+}
+
+form fieldset {
+    margin: 0 2em 2em 2em;
+    border: 2px solid #B86602;
+    border-radius: 12px;
+    padding: 2em 2%;
+    font-family: "Krona One", sans-serif;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1.5em;
+    color: #002D52;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+#comments {
+    height: 80px;
+    width: 200px;
+}
+
+#comment {
+    display: grid;
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 10rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form input.submitBtn {
+    display: block;
+    border: none;
+    background-color: #B86602;
+    color: black;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: .75rem 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 20em;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#ferry, #term {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: auto;
+    border: 2px solid #002D52;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+#term p {
+    text-align: center;
+    font-size: 1em;
+    padding: 2%;
+}
+
+#ferry p {
+    text-align: center;
+    font-size: 1em;
+    padding: 2%;
+}
+
+h4 {
+    font-size: 1.5em;
+    color: #002D52;
+    text-align: center;
+}
+
+.map iframe{
+    max-width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/*Reserve*/
+#agree {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid #002D52;
+    background-color: #002D52;
+    border-radius: 12px;
+    padding: 2%;
+    max-width: 500px;
+}
+
+#agree h3 {
+    font-size: 1em;
+    color: #59C1FF;
+}
+
+#agree li {
+    font-size: 1em;
+    color: white;
+    text-align: left;
+}
+
+/*Footer*/
+footer {
+    background-color: #B86602;
+    height: 50px;
+    width: 100%;
+    color: black;
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    font-size: 1em;
+}
+
+footer a:visited{
+    color: #002D52;
+}
+
+/*Image scroll*/
+img[data-src] {
+    filter: blur(0.2em);
+    transition: filter .5s;
+}
+
+img {
+    filter: blur(0em);
+    transition: filter .5s;
+    max-width: 100%;
+}
+
+/*Tours*/
+.tours {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+}
+
+figure {
+    border: 2px solid #59C1FF;
+}
+
+figcaption {
+    padding: 5px;
+    text-align: center;
+    font-family: "PT Serif", serif;
+    color: #002D52;
+    font-weight: bold;
+}
+
+.tour-heading {
+    text-align: center;
+}
+
+/*Rental Page*/
+#rental {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.rentalDiv {
+    border: 2px solid #002D52;
+    margin-bottom: 10px;
+}
+
+.rentalDetail {
+    padding: 2%;
+}
+.rentalDetail p {
+    color: #002D52;
+}
+
+.rentalDetail h4 {
+    color: #59C1FF;
+    background-color: #002D52;
+    padding: 2%;
+    border-radius: 12px;
+}
+
+.rentalImage {
+    width: 100%;
+}
