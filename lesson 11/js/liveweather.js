@@ -11,7 +11,7 @@ const townIDs = [{
 
 function townIDLookup() {
     const pathName = window.location.pathname;
-    for (i = 0; i < townIDs.length; i++) {
+    for (let i = 0; i < townIDs.length; i++) {
         let townName = townIDs[i].name;
         if (pathName.includes(townName)) {
             return townIDs[i].id;
@@ -20,7 +20,7 @@ function townIDLookup() {
 }
 
 const townID = townIDLookup();
-const appID = "1baa862cedcf9f408f4fdb40df762b22";
+const appID = "4a734b6bccba91cbab2bd77dba07fc5c";
 const unit = "imperial";
 const currentWeatherDataURL = "https://api.openweathermap.org/data/2.5/weather?id=" + townID + "&units=" + unit + "&APPID=" + appID;
 const forecastDataURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + townID + "&units=" + unit + "&APPID=" + appID;
@@ -38,55 +38,63 @@ const windChillCalc = (t, s) => {
 fetch(currentWeatherDataURL)
     .then((response) => response.json())
     .then((currentWeatherObject) => {
+
         //console.log(currentWeatherObject);
         let h = currentWeatherObject.main.temp_max;
         let l = currentWeatherObject.main.temp_min;
         let t = currentWeatherObject.main.temp;
         let s = currentWeatherObject.wind.speed;
-        document.getElementById("weather_desc").innerText = currentWeatherObject.weather[0].main;
-        document.getElementById("high_low_temp").innerHTML = Math.round(h) + "&deg;F / " + Math.round(l) + "&deg;F";
-        document.getElementById("current_temp").innerHTML = Math.round(t) + "&deg;F";
-        document.getElementById("wind_chill").innerHTML = windChillCalc(t, s);
+        document.getElementById("currentCondition").innerText = currentWeatherObject.weather[0].main;
+        document.getElementById("highTemp").innerHTML = Math.round(h) + "&deg;F / " + Math.round(l) + "&deg;F";
+        document.getElementById("currentTemp").innerHTML = Math.round(t) + "&deg;F";
+        document.getElementById("windChill").innerHTML = windChillCalc(t, s);
         document.getElementById("humidity").innerHTML = currentWeatherObject.main.humidity + "&percnt;";
-        document.getElementById("wind_speed").innerText = Math.round(s) + "mph";
+        document.getElementById("windSpeed").innerText = Math.round(s) + "mph";
     });
 
 fetch(forecastDataURL)
     .then((response) => response.json())
     .then((weatherForecastObject) => {
+
         //console.log(weatherForecastObject);
-        for (i = 0; i < weatherForecastObject.list.length; i++) {
+        for (let i = 0; i < weatherForecastObject.list.length; i++) {
             let dateCheck = weatherForecastObject.list[i].dt_txt;
             if (dateCheck.includes("18:00:00")) {
                 //Create day wrapper
-                let newDay = document.createElement("div");
-                newDay.className = "daily-forecast";
+                let forecast_day = document.createElement("div");
+                forecast_day.className = "forecast-day";
+
                 //Format and append Weekday
-                let fullDate = new Date(weatherForecastObject.list[i].dt_txt);
-                let dateOptions = {
+                let full_date = new Date(weatherForecastObject.list[i].dt_txt);
+                let date_selection = {
                     weekday: 'long'
                 };
-                let weekDay = fullDate.toLocaleDateString("en-US", dateOptions);
-                let dayOfWeek = document.createElement("div");
-                dayOfWeek.className = "day-of-week";
-                dayOfWeek.innerText = weekDay;
-                newDay.appendChild(dayOfWeek);
+                let date_forecast = full_date.toLocaleDateString("en-US", date_selection);
+                let day_forecast = document.createElement("div");
+                day_forecast.className = "day-forecast";
+                day_forecast.innerText = date_forecast;
+                forecast_day.appendChild(day_forecast);
+
                 //Create weather detail wrapper
                 let weather = document.createElement("div");
                 weather.className = "weather";
+
                 //Create and append image to weather detail wrapper
-                let weatherIcon = document.createElement("img");
-                weatherIcon.setAttribute('src', 'https://openweathermap.org/img/w/' + weatherForecastObject.list[i].weather[0].icon + '.png');
-                weatherIcon.setAttribute('alt', weatherForecastObject.list[i].weather[0].description);
-                weather.appendChild(weatherIcon);
+                let weather_icon = document.createElement("img");
+                weather_icon.setAttribute('src', 'https://openweathermap.org/img/w/' + weatherForecastObject.list[i].weather[0].icon + '.png');
+                weather_icon.setAttribute('alt', weatherForecastObject.list[i].weather[0].description);
+                weather.appendChild(weather_icon);
+
                 //Create and append high/low to weather detail wrapper
                 let temp = document.createElement("p");
                 temp.innerHTML = Math.round(weatherForecastObject.list[i].main.temp) + "&deg;F";
                 weather.appendChild(temp);
+
                 //Append weather info to day wrapper
-                newDay.appendChild(weather);
-                //Output new day in forecast
-                document.getElementById("forecast_wrapper").appendChild(newDay);
+                forecast_day.appendChild(weather);
+
+                //Output new day in weather-forecast
+                document.getElementById("forecast-container").appendChild(forecast_day);
             }
         }
     });

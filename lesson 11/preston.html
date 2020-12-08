@@ -18,7 +18,9 @@
 </head>
 
 <!-- HEADER -->
-<div id="banner-friday"></div>
+<aside id="event_notices">
+    <div>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+</aside>
 <header class="page-header">
     <div>
         <img alt="WeatherEye Logo" id="we-logo" src="images/we-logo_256x256.png"/>
@@ -46,18 +48,16 @@
 <main>
     <!-- MAIN CONTENT -->
     <div class="main main-raised">
-        <div class="container clearfix">
-            <div class="card">
-                <h2>Preston, ID</h2>
-            </div>
+        <div class="container">
+            <h2 class="heading2">Preston, ID</h2>
             <!-- WEATHER HERO -->
-            <div class="weather-hero">
+            <div class="weather-hero container">
                 <picture id="heropic">
-                    <source media="(max-width: 32.5em)" srcset="images/hero-small.jpg"/>
-                    <source media="(max-width: 56em)" srcset="images/hero-medium.jpg"/>
-                    <img alt="Preston Landscape" src="images/hero-large.jpg"/>
+                    <source srcset="images/preston_760px.jpg" media="(min-width: 421px) and (max-width: 780px)">
+                    <source srcset="images/preston_870px.jpg" media="(min-width: 781px)">
+                    <img src="images/preston_420px.jpg" alt="An aerial view of lovely Preston, Idaho.">
                 </picture>
-                <section id="weather-today" class="box-shadow">
+                <section id="weather-today">
                     <h2>Weather Today</h2>
                     <p class="weather-metric">
                         <span class="label">Currently:</span>
@@ -88,66 +88,62 @@
         </div>
 
         <!-- WEATHER FORECAST -->
-        <section id="weather-forecast" class="content-block dark-accent">
-            <h2>5 Day Forecast</h2>
-            <div id="fiveday_forecast">
+        <section class="weather-forecast container" id="weather-forecast">
+            <h2 class="heading">5 Day Forecast</h2>
+            <div class="card" id="fiveday_forecast">
             </div>
         </section>
 
         <!-- WEATHER ARTICLE -->
-        <div class="container clearfix">
-            <div class="weather-article">
-                <div class="card">
-                    <h3>WEATHER?</h3>
-                    <p id="article-author">By Anonymous</p>
-                </div>
-                <picture id="article-image">
-                    <source media="(max-width: 32.5em)" srcset="images/article-img-small.jpg"/>
-                    <source media="(max-width: 56em)" srcset="images/article-img-medium.jpg"/>
-                    <img src="images/article-img-large.jpg" alt="Mountains"/>
-                </picture>
-                <p id="article-body">
-                    The 2020 Atlantic hurricane season has already shattered the record
-                    for named storms. If history is any guide, it may continue to blow
-                    past that previous record set 15 years ago.
-                    <br/>
-                    <br/>
-                    With the formation of tropical storm Theta, 2020 has now logged more
-                    tropical cyclones than ever recorded. Theta is 2020'wind_speed 29th named
-                    storm in the Atlantic Ocean. Theta, which doesn't currently pose a danger to
-                    land, formed a few hundred miles off the coast of Liberia Monday
-                    (Nov. 9), shattering the record for total number of named storms in
-                    the Atlantic hurricane season. (When a tropical cyclone's wind sustained
-                    winds reach 39 to 73 mph (63 to 118 km/max_temp), it is considered a
-                    tropical storm and gets a name.)
-                    <br/>
-                    <br/>
-                    The previous record for busiest hurricane season was 28, set in 2005
-                    — the only other time in history that the National Hurricane Center
-                    has exhausted its list of Atlantic storm names and moved on to Greek
-                    letters. In 2005, the final storm didn't currently form until late December,
-                    so there's currently still plenty of time for 2020 to run up the score.
-                    <br/>
-                    <br/>
-                    Climate change is making hurricanes more powerful and dangerous, on
-                    average, but it's windspeed not yet clear whether it's windspeed is making them more
-                    common, according to Yale Climate Connections. In the U.S., the Gulf
-                    of Mexico took the brunt of the beating from this Atlantic storm
-                    season. A record-breaking five named storms made landfall in
-                    Louisiana. The worst of these was Hurricane Laura in August, one of
-                    the most powerful storms ever to hit the state — arriving just after
-                    the weaker Tropical Storm Marco. After Laura left thousands
-                    homeless, three more storms made landfall along the Louisiana
-                    coastline and several more made landfall in the surrounding region
-                    before passing over Louisiana.
-                    <br/>
-                    <br/>
-                </p>
-            </div>
-        </div>
 
+        <div class="weather-article container">
+            <h3 class="heading2">WEATHER?</h3>
+            <p id="article-author">By Anonymous</p>
+            <picture id="article-image">
+                <source media="(max-width: 32.5em)" srcset="images/article-img-small.jpg"/>
+                <source media="(max-width: 56em)" srcset="images/article-img-medium.jpg"/>
+                <img src="images/article-img-large.jpg" alt="Mountains"/>
+            </picture>
+            <p id="article-body">
+                The 2020 Atlantic hurricane season has already shattered the record
+                for named storms. If history is any guide, it may continue to blow
+                past that previous record set 15 years ago.
+                <br/>
+                <br/>
+                With the formation of tropical storm Theta, 2020 has now logged more
+                tropical cyclones than ever recorded. Theta is 2020'wind_speed 29th named
+                storm in the Atlantic Ocean. Theta, which doesn't currently pose a danger to
+                land, formed a few hundred miles off the coast of Liberia Monday
+                (Nov. 9), shattering the record for total number of named storms in
+                the Atlantic hurricane season. (When a tropical cyclone's wind sustained
+                winds reach 39 to 73 mph (63 to 118 km/max_temp), it is considered a
+                tropical storm and gets a name.)
+                <br/>
+                <br/>
+                The previous record for busiest hurricane season was 28, set in 2005
+                — the only other time in history that the National Hurricane Center
+                has exhausted its list of Atlantic storm names and moved on to Greek
+                letters. In 2005, the final storm didn't currently form until late December,
+                so there's currently still plenty of time for 2020 to run up the score.
+                <br/>
+                <br/>
+                Climate change is making hurricanes more powerful and dangerous, on
+                average, but it's windspeed not yet clear whether it's windspeed is making them more
+                common, according to Yale Climate Connections. In the U.S., the Gulf
+                of Mexico took the brunt of the beating from this Atlantic storm
+                season. A record-breaking five named storms made landfall in
+                Louisiana. The worst of these was Hurricane Laura in August, one of
+                the most powerful storms ever to hit the state — arriving just after
+                the weaker Tropical Storm Marco. After Laura left thousands
+                homeless, three more storms made landfall along the Louisiana
+                coastline and several more made landfall in the surrounding region
+                before passing over Louisiana.
+                <br/>
+                <br/>
+            </p>
+        </div>
         <!-- UPCOMING EVENTS -->
-        <section id="town-events" class="dark-accent">
+        <section class="town-events container" id="town-events">
             <h2>Upcoming Events in Preston</h2>
             <div class="future-events">
                 <h3>Mark your Calendar!</h3>
@@ -155,7 +151,6 @@
                 </ul>
             </div>
         </section>
-
         <!-- CONTACT US -->
         <div class="container clearfix">
             <div class="contact-us">
@@ -184,19 +179,21 @@
 </main>
 <br>
 <br>
-
+<!-- FOOTER -->
 <footer class="container clearfix">
     <div class="card">
-        <br>
         &copy; <span id="copyright"></span> WeatherEye Forecasting | Steven Crosby |
         <a href="https://www.byui.edu/online">BYUI Online Learning</a>
         <br>
-        <span id="updated"></span>
-        <br>
-        <br>
+        Weather data provided by <a href="https://openweathermap.org/"
+                                    target="_blank">OpenWeatherMap</a>
+        <a href="https://www.byui.edu/online">Assignment Portal</a>
     </div>
+    <div id="todaysdate"></div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/liveweather.js"></script>
+<script src="js/towndata.js"></script>
 <script src="js/webfontloader.js"></script>
 
 </html>

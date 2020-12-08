@@ -121,6 +121,19 @@ STYLE CONTENTS
 }
 
 /*--- TOWN PAGES ---*/
+#event-banner {
+    background-color: var(--light-accent);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#event-banner div {
+    text-align: center;
+    color: var(--light-shades);
+    font-family: 'Caveat';
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
 .weather-hero {
     border-radius: 6px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -136,9 +149,10 @@ STYLE CONTENTS
 #weather-today {
     font-family: "Open Sans", sans-serif;
     color: var(--ochre-yellow);
+    font-weight: 700;
     display: grid;
     background-color: black;
-    opacity: 90%;
+    opacity: 85%;
     border-radius: 6px;
     text-align: left;
     position: absolute;
@@ -302,8 +316,6 @@ p.weather-metric {
     padding: 5px;
 }
 
-/*--- SODA SPRINGS ---*/
-/*--- FISH HAVEN ---*/
 /*--- STORM CENTER ---*/
 form {
     max-width: 900px;
@@ -647,12 +659,23 @@ section {
 }
 
 .container {
+    position: relative;
     width: 100%;
-    padding: 1rem;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
     border-radius: 0.25rem;
 }
+
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 .card {
     position: center;
@@ -665,10 +688,6 @@ section {
     padding: 0.5rem;
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}
-
-.card h2 {
-    font-size: 2.5rem;
 }
 
 .card2 {
@@ -687,7 +706,6 @@ section {
     font-weight: 700;
     color: var(--ochre-yellow);
     text-align: center;
-    text-decoration: underline;
     position: center;
     display: block;
     background: var(--dark-grey);
@@ -699,13 +717,17 @@ section {
 
 .heading2 {
     font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
     font-weight: 700;
     color: var(--ochre-yellow);
     text-align: center;
     display: block;
     background: var(--dark-grey);
     width: 50%;
+    position: center;
+    margin: 1em auto;
     border-radius: 0.25rem;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 body {
