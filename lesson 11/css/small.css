@@ -191,14 +191,14 @@ p.weather-metric {
     display: none;
 }
 
-#fiveday_forecast {
+#fiveday-forecast {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
     margin: 0 0 50px 0;
 }
 
-.day-of-week {
+.day-forecast {
     background-color: var(--neutral-100);
     color: var(--dark-grey);
     padding: .5em 0;
