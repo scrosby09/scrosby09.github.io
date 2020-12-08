@@ -13,9 +13,15 @@
         max-width: 100%;
     }
 
-    /*--- PRESTON TOWN ---*/
-    /*--- SODA SPRINGS ---*/
-    /*--- FISH HAVEN ---*/
+    /*--- TOWN PAGES ---*/
+    #fiveday_forecast {
+        margin: 0 50px 50px 50px;
+    }
+
+    section#town-events {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /*--- STORM CENTER ---*/
     /*--- GALLERY ---*/
     /*--- CORE ---*/

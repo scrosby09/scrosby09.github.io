@@ -34,65 +34,90 @@
             <li><a href="#" onclick="toggleMenu()"><span class="open">&#215;</span><span class="closed">&#9776;
                         Menu</span></a></li>
             <li><a href="/index.html">Home</a></li>
-            <li><a class="active" href="preston.html">Preston</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a class="active" href="fish-haven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 </div>
 
+<!-- PAGE CONTENT -->
 <main>
-    <!-- MAIN CONTENT -->
     <div class="main main-raised">
+        <!-- WEATHER ARTICLE -->
         <div class="container clearfix">
             <div class="card">
-                <h2>Preston, ID</h2>
+                <h2>FISH HAVEN, ID</h2>
             </div>
-            <!-- WEATHER HERO -->
             <div class="weather-hero">
                 <picture id="heropic">
                     <source media="(max-width: 32.5em)" srcset="images/hero-small.jpg"/>
                     <source media="(max-width: 56em)" srcset="images/hero-medium.jpg"/>
                     <img alt="Preston Landscape" src="images/hero-large.jpg"/>
                 </picture>
-                <section id="weather-today" class="box-shadow">
-                    <h2>Weather Today</h2>
-                    <p class="weather-metric">
-                        <span class="label">Currently:</span>
-                        <span id="current-conditions" class="value"></span>
-                    </p>
-                    <p class="weather-metric">
-                        <span class="label">High / Low:</span>
-                        <span id="high-temp" class="value"></span>
-                    </p>
-                    <p class="weather-metric">
-                        <span class="label">Current:</span>
-                        <span id="current-temp" class="value"></span>
-                    </p>
-                    <p class="weather-metric">
-                        <span class="label">Wind Chill:</span>
-                        <span id="wind-chill" class="value"></span>
-                    </p>
-                    <p class="weather-metric">
-                        <span class="label">Humidity:</span>
-                        <span id="humidity" class="value"></span>
-                    </p>
-                    <p class="weather-metric">
-                        <span class="label">Wind Speed:</span>
-                        <span id="wind-speed" class="value"></span>
-                    </p>
+                <section id="weather-today">
+                    <h3>Weather Summary</h3>
+                    <span><b>Currently:</b> Rainy</span>
+                    <span id="highNum"><b>High: </b>49 &#176;F</span>
+                    <span id="wind_chill"></span>
+                    <span><b>Humidity:</b> 1%</span>
+                    <span id="wind_speed"><b>Wind Speed:</b> 4 mph E</span>
                 </section>
             </div>
         </div>
 
         <!-- WEATHER FORECAST -->
-        <section id="weather-forecast" class="content-block dark-accent">
-            <h2>5 Day Forecast</h2>
-            <div id="fiveday_forecast">
+        <div class="container clearfix">
+            <div class="card">
+                <h2>5 DAY FORECAST</h2>
             </div>
-        </section>
+            <section class="weather-forecast">
+                <div id="forecast-1">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast1-weather"><b>78</b>&#176;F</div>
+                </div>
+                <div id="forecast-2">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast2-weather"><b>78</b>&#176;F</div>
+                </div>
+                <div id="forecast-3">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast3-weather"><b>78</b>&#176;F</div>
+                </div>
+                <div id="forecast-4">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast4-weather"><b>78</b>&#176;F</div>
+                </div>
+                <div id="forecast-5">
+                    <h3>Date</h3>
+                    <div>
+                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
+                    </div>
+                    <div>Sunny</div>
+                    <div id="forecast5-weather"><b>78</b>&#176;F</div>
+                </div>
+                <br>
+            </section>
+            <br>
+        </div>
 
         <!-- WEATHER ARTICLE -->
         <div class="container clearfix">
@@ -114,10 +139,10 @@
                     <br/>
                     With the formation of tropical storm Theta, 2020 has now logged more
                     tropical cyclones than ever recorded. Theta is 2020'wind_speed 29th named
-                    storm in the Atlantic Ocean. Theta, which doesn't currently pose a danger to
+                    storm in the Atlantic Ocean. Theta, which doesn'current_temp pose a danger to
                     land, formed a few hundred miles off the coast of Liberia Monday
                     (Nov. 9), shattering the record for total number of named storms in
-                    the Atlantic hurricane season. (When a tropical cyclone's wind sustained
+                    the Atlantic hurricane season. (When a tropical cyclone'wind_speed sustained
                     winds reach 39 to 73 mph (63 to 118 km/max_temp), it is considered a
                     tropical storm and gets a name.)
                     <br/>
@@ -125,12 +150,12 @@
                     The previous record for busiest hurricane season was 28, set in 2005
                     — the only other time in history that the National Hurricane Center
                     has exhausted its list of Atlantic storm names and moved on to Greek
-                    letters. In 2005, the final storm didn't currently form until late December,
-                    so there's currently still plenty of time for 2020 to run up the score.
+                    letters. In 2005, the final storm didn'current_temp form until late December,
+                    so there'wind_speed still plenty of time for 2020 to run up the score.
                     <br/>
                     <br/>
                     Climate change is making hurricanes more powerful and dangerous, on
-                    average, but it's windspeed not yet clear whether it's windspeed is making them more
+                    average, but it'wind_speed not yet clear whether it'wind_speed making them more
                     common, according to Yale Climate Connections. In the U.S., the Gulf
                     of Mexico took the brunt of the beating from this Atlantic storm
                     season. A record-breaking five named storms made landfall in
@@ -145,18 +170,6 @@
                 </p>
             </div>
         </div>
-
-        <!-- UPCOMING EVENTS -->
-        <section id="town-events" class="dark-accent">
-            <h2>Upcoming Events in Preston</h2>
-            <div class="future-events">
-                <h3>Mark your Calendar!</h3>
-                <ul id="listed-events">
-                </ul>
-            </div>
-        </section>
-
-        <!-- CONTACT US -->
         <div class="container clearfix">
             <div class="contact-us">
                 <img alt="Preston Idaho Map" id="map" src="images/map.JPG"/>
@@ -197,6 +210,5 @@
     </div>
 </footer>
 <script src="js/main.js"></script>
-<script src="js/webfontloader.js"></script>
 
 </html>

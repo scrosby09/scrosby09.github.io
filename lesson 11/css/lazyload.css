@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+picture {
+    margin: 10px auto;
+    width: 300px;
+    height: 400px;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}

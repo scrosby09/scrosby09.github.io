@@ -2,26 +2,31 @@
 
     /*--- HOME ---*/
     #town-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #town-cards .towns-card-gallery {
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         text-align: center;
     }
 
     #town-cards #soda_springs {
-        flex-flow: row-reverse nowrap;
+        flex-flow: row;
     }
 
     .towns-card-gallery img {
         max-width: 50%;
     }
 
-    /*--- PRESTON TOWN ---*/
-    #hero img {
+    /*--- TOWN PAGES ---*/
+    #heropic {
         max-width: 75%;
         position: relative;
+        border-radius: 0.25rem;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+
+    .weather-hero img {
         border-radius: 0.25rem;
         box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     }
@@ -33,58 +38,8 @@
         box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     }
 
-    .weather-forecast {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 5px;
-        justify-content: center;
-        border-radius: 0.25rem;
-        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    }
-
-    #weather-forecast-title {
+    #weather-forecast {
         display: block;
-        margin-top: 2rem;
-    }
-
-    #forecast-1,
-    #forecast-2,
-    #forecast-3,
-    #forecast-4,
-    #forecast-5 {
-        border: 1px solid black;
-        padding: 5px;
-        background-color: var(--dark-grey);
-        margin: 5px;
-        border-radius: 0.25rem;
-        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    }
-
-    #forecast-1 {
-        grid-column: 1;
-    }
-
-    #forecast-2 {
-        grid-column: 2;
-    }
-
-    #forecast-3 {
-        grid-column: 3;
-    }
-
-    #forecast-4 {
-        grid-column: 4;
-    }
-
-    #forecast-5 {
-        grid-column: 5;
-    }
-
-    .forecast-icon {
-        width: 100%;
-    }
-
-    .weather-forecast h3 {
         text-align: center;
     }
 
@@ -134,8 +89,6 @@
         grid-row: auto;
     }
 
-    /*--- SODA SPRINGS ---*/
-    /*--- FISH HAVEN ---*/
     /*--- STORMCENTER ---*/
     #user-comments {
         height: 100%;

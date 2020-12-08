@@ -66,9 +66,9 @@ STYLE CONTENTS
 
 /* PAGE CONTENT
 ----------------------------------*/
+
 /*--- HOME ---*/
 #towns-gallery {
-    padding: 10px;
     text-align: center;
 }
 
@@ -92,14 +92,14 @@ STYLE CONTENTS
     grid-template-columns: 1fr;
     gap: 1em;
     text-align: center;
-    margin: 25px auto;
+    margin: auto;
 }
 
 #town-cards .towns-card-gallery {
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
 }
 
 .towns-card-gallery div,
@@ -120,7 +120,7 @@ STYLE CONTENTS
     order: 3;
 }
 
-/*--- PRESTON TOWN ---*/
+/*--- TOWN PAGES ---*/
 .weather-hero {
     border-radius: 6px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -129,13 +129,13 @@ STYLE CONTENTS
 
 #heropic img {
     max-width: 100%;
+    border-radius: 6px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 #weather-today {
     font-family: "Open Sans", sans-serif;
     color: var(--ochre-yellow);
-    font-weight: 300;
     display: grid;
     background-color: black;
     opacity: 90%;
@@ -152,25 +152,52 @@ STYLE CONTENTS
     margin-left: 10px;
 }
 
-#weather-today ul {
-    list-style: none;
+#weather-today h2 {
+    color: var(--ochre-yellow);
+    padding-bottom: 5px;
 }
 
-.weather-forecast {
-    display: none;
-    border-radius: 0.25rem;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}
-
-#weather-forecast-title {
-    display: none;
-}
-
-#forecast {
+p.weather-metric {
+    margin: 0;
     display: grid;
-    text-align: left;
-    border-radius: 0.25rem;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    grid-template-columns: 1fr 1.25fr;
+    column-gap: 10px;
+}
+
+.weather-metric .label {
+    text-align: right;
+    font-style: italic;
+}
+
+.weather-metric .value {
+    font-weight: 600;
+}
+
+#weather-forecast {
+    display: none;
+}
+
+#fiveday_forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin: 0 0 50px 0;
+}
+
+.day-of-week {
+    background-color: var(--neutral-100);
+    color: var(--dark-grey);
+    padding: .5em 0;
+}
+
+.weather {
+    padding: .5em 0;
+    background-color: var(--neutral-100);
+    color: var(--dark-grey);
+}
+
+.weather p {
+    margin: 0.25em 0;
 }
 
 .weather-article {
@@ -217,6 +244,21 @@ STYLE CONTENTS
     width: 100%;
     border-radius: 6px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+#town-events {
+    display: grid;
+    gap: 25px;
+    padding: 25px 7vw;
+}
+
+#town-events h2 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+#listed-events {
+    line-height: 2rem;
 }
 
 #map {
@@ -636,7 +678,6 @@ section {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid black;
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
