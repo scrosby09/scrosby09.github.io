@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>WeatherEye Forecasting | Preston ID</title>
+    <title>WeatherEye Forecasting | Thank you</title>
     <!-- CSS -->
     <link href="favicon.ico" rel="icon"/>
     <link href="css/normalize.css" rel="stylesheet"/>
@@ -18,7 +18,6 @@
 </head>
 
 <!-- HEADER -->
-<div id="banner-friday"></div>
 <header class="page-header">
     <div>
         <img alt="WeatherEye Logo" id="we-logo" src="images/we-logo_256x256.png"/>
@@ -34,34 +33,45 @@
             <li><a href="#" onclick="toggleMenu()"><span class="open">&#215;</span><span class="closed">&#9776;
                         Menu</span></a></li>
             <li><a href="/index.html">Home</a></li>
-            <li><a class="active" href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a class="active" href="fish-haven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 </div>
 <main>
-    <h2>THANK YOU!</h2>
-    <p style="text-align: center">Thanks for updating us on this storm. We will take this information and update our
-        forecast accordingly.</p>
-
+    <div class="main main-raised">
+        <div class="container">
+            <div class="card">
+                <h2>THANK YOU!</h2>
+                <div class="card2">
+                    <p style="text-align: center">Thanks for updating us on this storm. We will take this information
+                        and update our forecast accordingly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="container clearfix">
+<footer class="container">
     <div class="card">
-        &copy; <span id="copyright"></span> WeatherEye Forecasting | Steven Crosby |
+        &copy; <span id="copyright"></span> WeatherEye Forecasting
+        <br>
+        Steven Crosby |
         <a href="https://www.byui.edu/online">BYUI Online Learning</a>
         <br>
         Weather data provided by <a href="https://openweathermap.org/"
                                     target="_blank">OpenWeatherMap</a>
-        <span id="updated"></span>
         <a href="https://www.byui.edu/online">Assignment Portal</a>
     </div>
+    <div id="updated"></div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/liveweather.js"></script>
+<script src="js/towndata.js"></script>
 <script src="js/webfontloader.js"></script>
 
 </html>
