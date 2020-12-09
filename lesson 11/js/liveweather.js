@@ -39,7 +39,6 @@ fetch(weather_api_url)
     .then((response) => response.json())
     .then((current_weather) => {
 
-        //console.log(current_weather);
         let high_temp = current_weather.main.temp_max;
         let low_temp = current_weather.main.temp_min;
         let current_temp = current_weather.main.temp;
@@ -60,41 +59,41 @@ fetch(forecast_api_url)
         for (let i = 0; i < weather_forecast.list.length; i++) {
             let check_date = weather_forecast.list[i].dt_txt;
             if (check_date.includes("18:00:00")) {
-                //Create day wrapper
-                let forecast_day = document.createElement("div");
-                forecast_day.className = "forecast-day";
+                // Build Daily Forecast
+                let daily_forecast = document.createElement("div");
+                daily_forecast.className = "forecast-day card2";
 
-                //Format and append Weekday
+                // Format and Append Day Forecast
                 let full_date = new Date(weather_forecast.list[i].dt_txt);
                 let date_selection = {
                     weekday: 'long'
                 };
                 let date_forecast = full_date.toLocaleDateString("en-US", date_selection);
                 let day_forecast = document.createElement("div");
-                day_forecast.className = "day-forecast";
+                day_forecast.className = "day-forecast card2";
                 day_forecast.innerText = date_forecast;
-                forecast_day.appendChild(day_forecast);
+                daily_forecast.appendChild(day_forecast);
 
-                //Create weather detail wrapper
+                // Build Weather Content
                 let weather = document.createElement("div");
-                weather.className = "weather";
+                weather.className = "weather card";
 
-                //Create and append image to weather detail wrapper
+                // Append Weather Icon
                 let weather_icon = document.createElement("img");
                 weather_icon.setAttribute('src', 'https://openweathermap.org/img/w/' + weather_forecast.list[i].weather[0].icon + '.png');
                 weather_icon.setAttribute('alt', weather_forecast.list[i].weather[0].description);
                 weather.appendChild(weather_icon);
 
-                //Create and append high/low to weather detail wrapper
+                // Append High-Low Temp
                 let temp = document.createElement("p");
                 temp.innerHTML = Math.round(weather_forecast.list[i].main.temp) + "&deg;F";
                 weather.appendChild(temp);
 
-                //Append weather info to day wrapper
-                forecast_day.appendChild(weather);
+                //Append Daily Forecast and Weather
+                daily_forecast.appendChild(weather);
 
-                //Output new day in weather-forecast
-                document.getElementById("fiveday-forecast").appendChild(forecast_day);
+                //Output To HTML
+                document.getElementById("fiveday-forecast").appendChild(daily_forecast);
             }
         }
     });

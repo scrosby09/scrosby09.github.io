@@ -1,16 +1,12 @@
 @media only screen and (min-width: 870px) {
     /*--- HOME ---*/
     #town-cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
     }
 
-    #town-cards .towns-card-gallery {
-        display: block;
-        text-align: center;
-    }
-
-    .towns-card-gallery img {
-        max-width: 100%;
+    #town-cards .town-card {
+        display: inline-grid;
+        position: relative;
     }
 
     /*--- TOWN PAGES ---*/
@@ -18,10 +14,9 @@
         margin: 0 50px 50px 50px;
     }
 
-    section#town-events {
+    section#town_events {
         grid-template-columns: 1fr 1fr;
     }
-
     /*--- STORM CENTER ---*/
     /*--- GALLERY ---*/
     /*--- CORE ---*/

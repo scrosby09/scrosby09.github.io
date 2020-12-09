@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>WeatherEye Forecasting | Preston ID</title>
+    <title>WeatherEye Forecasting | Soda Springs ID</title>
     <!-- CSS -->
     <link href="favicon.ico" rel="icon"/>
     <link href="css/normalize.css" rel="stylesheet"/>
@@ -18,7 +18,6 @@
 </head>
 
 <!-- HEADER -->
-<div id="banner-friday"></div>
 <header class="page-header">
     <div>
         <img alt="WeatherEye Logo" id="we-logo" src="images/we-logo_256x256.png"/>
@@ -43,86 +42,63 @@
     </nav>
 </div>
 
-<!-- PAGE CONTENT -->
 <main>
+    <!-- MAIN CONTENT -->
     <div class="main main-raised">
-        <!-- WEATHER ARTICLE -->
-        <div class="container clearfix">
+        <div class="container">
             <div class="card">
-                <h2>SODA SPRINGS, ID</h2>
+                <h2>Fish Haven, ID</h2>
             </div>
-            <div class="weather-hero">
+            <!-- WEATHER HERO -->
+            <div class="weather-hero container">
                 <picture id="heropic">
-                    <source media="(max-width: 32.5em)" srcset="images/hero-small.jpg"/>
-                    <source media="(max-width: 56em)" srcset="images/hero-medium.jpg"/>
-                    <img alt="Preston Landscape" src="images/hero-large.jpg"/>
+                    <source srcset="images/fish-haven_760px.jpg" media="(min-width: 421px) and (max-width: 780px)">
+                    <source srcset="images/fish-haven_870px.jpg" media="(min-width: 781px)">
+                    <img src="images/fish-haven_420px.jpg" alt="Fish Haven Idaho">
                 </picture>
                 <section id="weather-today">
-                    <h3>Weather Summary</h3>
-                    <span><b>Currently:</b> Rainy</span>
-                    <span id="highNum"><b>High: </b>49 &#176;F</span>
-                    <span id="wind_chill"></span>
-                    <span><b>Humidity:</b> 1%</span>
-                    <span id="wind_speed"><b>Wind Speed:</b> 4 mph E</span>
+                    <h2>Weather Today</h2>
+                    <p class="weather-metric">
+                        <span class="label">Currently:</span>
+                        <span id="current-conditions" class="value"></span>
+                    </p>
+                    <p class="weather-metric">
+                        <span class="label">High / Low:</span>
+                        <span id="high-temp" class="value"></span>
+                    </p>
+                    <p class="weather-metric">
+                        <span class="label">Current:</span>
+                        <span id="current-temp" class="value"></span>
+                    </p>
+                    <p class="weather-metric">
+                        <span class="label">Wind Chill:</span>
+                        <span id="wind-chill" class="value"></span>
+                    </p>
+                    <p class="weather-metric">
+                        <span class="label">Humidity:</span>
+                        <span id="humidity" class="value"></span>
+                    </p>
+                    <p class="weather-metric">
+                        <span class="label">Wind Speed:</span>
+                        <span id="wind-speed" class="value"></span>
+                    </p>
                 </section>
             </div>
-        </div>
 
-        <!-- WEATHER FORECAST -->
-        <div class="container clearfix">
-            <div class="card">
-                <h2>5 DAY FORECAST</h2>
+            <!-- WEATHER FORECAST -->
+            <div class="container">
+                <section class="weather-forecast" id="weather-forecast">
+                    <div class="card">
+                        <h2>5 Day Forecast</h2>
+                    </div>
+                    <div id="fiveday-forecast"></div>
+                </section>
             </div>
-            <section class="weather-forecast">
-                <div id="forecast-1">
-                    <h3>Date</h3>
-                    <div>
-                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
-                    </div>
-                    <div>Sunny</div>
-                    <div id="forecast1-weather"><b>78</b>&#176;F</div>
-                </div>
-                <div id="forecast-2">
-                    <h3>Date</h3>
-                    <div>
-                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
-                    </div>
-                    <div>Sunny</div>
-                    <div id="forecast2-weather"><b>78</b>&#176;F</div>
-                </div>
-                <div id="forecast-3">
-                    <h3>Date</h3>
-                    <div>
-                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
-                    </div>
-                    <div>Sunny</div>
-                    <div id="forecast3-weather"><b>78</b>&#176;F</div>
-                </div>
-                <div id="forecast-4">
-                    <h3>Date</h3>
-                    <div>
-                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
-                    </div>
-                    <div>Sunny</div>
-                    <div id="forecast4-weather"><b>78</b>&#176;F</div>
-                </div>
-                <div id="forecast-5">
-                    <h3>Date</h3>
-                    <div>
-                        <img alt="Sunny" class="forecast-icon" src="images/sun-icon.png"/>
-                    </div>
-                    <div>Sunny</div>
-                    <div id="forecast5-weather"><b>78</b>&#176;F</div>
-                </div>
-                <br>
-            </section>
-            <br>
-        </div>
 
-        <!-- WEATHER ARTICLE -->
-        <div class="container ">
-            <div class="weather-article">
-                <div class="card">
+            <!-- WEATHER ARTICLE -->
+
+            <div class="weather-article container">
+                <div class="card2">
                     <h3>WEATHER?</h3>
                     <p id="article-author">By Anonymous</p>
                 </div>
@@ -139,23 +115,16 @@
                     <br/>
                     With the formation of tropical storm Theta, 2020 has now logged more
                     tropical cyclones than ever recorded. Theta is 2020'wind_speed 29th named
-                    storm in the Atlantic Ocean. Theta, which doesn'current_temp pose a danger to
+                    storm in the Atlantic Ocean. Theta, which doesn'temp currently pose a danger to
                     land, formed a few hundred miles off the coast of Liberia Monday
                     (Nov. 9), shattering the record for total number of named storms in
-                    the Atlantic hurricane season. (When a tropical cyclone'wind_speed sustained
+                    the Atlantic hurricane season. (When a tropical cyclone'windspeed wind sustained
                     winds reach 39 to 73 mph (63 to 118 km/max_temp), it is considered a
                     tropical storm and gets a name.)
                     <br/>
                     <br/>
-                    The previous record for busiest hurricane season was 28, set in 2005
-                    — the only other time in history that the National Hurricane Center
-                    has exhausted its list of Atlantic storm names and moved on to Greek
-                    letters. In 2005, the final storm didn'current_temp form until late December,
-                    so there'wind_speed still plenty of time for 2020 to run up the score.
-                    <br/>
-                    <br/>
                     Climate change is making hurricanes more powerful and dangerous, on
-                    average, but it'wind_speed not yet clear whether it'wind_speed making them more
+                    average, but it'windspeed windspeed not yet clear whether it'windspeed windspeed is making them more
                     common, according to Yale Climate Connections. In the U.S., the Gulf
                     of Mexico took the brunt of the beating from this Atlantic storm
                     season. A record-breaking five named storms made landfall in
@@ -169,46 +138,58 @@
                     <br/>
                 </p>
             </div>
-        </div>
-        <div class="container">
-            <div class="contact-us">
-                <img alt="Preston Idaho Map" id="map" src="images/map.JPG"/>
-                <div class="contact-items">
-                    <h3>WeatherEye Forecasting</h3>
-                    <p>
-                        <img alt="Map indicator" id="map-icon" src="images/contact-map.png"/>Boise, ID 83263
-                    </p>
-                    <p>
-                        <img alt="Phone" id="phone-icon" src="images/contact-phone.png"/>208-555-1234
-                    </p>
-                    <p>
-                        <img alt="Email" id="email-icon" src="images/contact-email.png"/>contactus@weathereye.com
-                    </p>
-                    <img alt="Facebook Logo" class="social-icon" src="images/social-FB.png"/>
-                    <img alt="Twitter Logo" class="social-icon" src="images/social-TW.png"/>
-                    <img alt="Instagram Logo" class="social-icon" src="images/social-IG.png"/>
-                    <img alt="LinkedIn Logo" class="social-icon" src="images/social-IN.png"/>
+            <!-- UPCOMING EVENTS -->
+            <div class="container">
+                <section id="town_events" class="card2">
+                    <h2 class="card">Upcoming Events in Soda Springs</h2>
+                    <div class="town_events_list">
+                        <ul id="town_event">
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <!-- CONTACT US -->
+            <div class="container">
+                <div class="contact-us">
+                    <img alt="Map" id="map" src="images/map.JPG"/>
+                    <div class="contact-items card">
+                        <h4>WeatherEye Forecasting</h4>
+                        <p>
+                            <img alt="Map indicator" id="map-icon" src="images/contact-map.png"/>Boise, ID 83263
+                        </p>
+                        <p>
+                            <img alt="Phone" id="phone-icon" src="images/contact-phone.png"/>208-555-1234
+                        </p>
+                        <p>
+                            <img alt="Email" id="email-icon" src="images/contact-email.png"/>contactus@weathereye.com
+                        </p>
+                        <img alt="Facebook Logo" class="social-icon" src="images/social-FB.png"/>
+                        <img alt="Twitter Logo" class="social-icon" src="images/social-TW.png"/>
+                        <img alt="Instagram Logo" class="social-icon" src="images/social-IG.png"/>
+                        <img alt="LinkedIn Logo" class="social-icon" src="images/social-IN.png"/>
+                    </div>
                 </div>
             </div>
+            <br>
+            <br>
         </div>
-        <br>
-        <br>
     </div>
 </main>
 <br>
 <br>
-
 <!-- FOOTER -->
 <footer class="container">
     <div class="card">
-        &copy; <span id="copyright"></span> WeatherEye Forecasting | Steven Crosby |
+        &copy; <span id="copyright"></span> WeatherEye Forecasting
+        <br>
+        Steven Crosby |
         <a href="https://www.byui.edu/online">BYUI Online Learning</a>
         <br>
         Weather data provided by <a href="https://openweathermap.org/"
                                     target="_blank">OpenWeatherMap</a>
-        <span id="updated"></span>
         <a href="https://www.byui.edu/online">Assignment Portal</a>
     </div>
+    <div id="updated"></div>
 </footer>
 <script src="js/main.js"></script>
 <script src="js/liveweather.js"></script>

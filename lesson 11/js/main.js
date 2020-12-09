@@ -35,7 +35,7 @@ function toggleMenu() {
 *
 * */
 function displayBanner() {
-    document.getElementById("event-banner").style.display = "block";
+    document.getElementById("friday-banner").style.display = "block";
 }
 
 try {

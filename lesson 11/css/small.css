@@ -68,44 +68,46 @@ STYLE CONTENTS
 ----------------------------------*/
 
 /*--- HOME ---*/
-#towns-gallery {
-    text-align: center;
+#towns-section {
+    padding: 1px;
 }
 
 #town-cards h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--ochre-yellow);
-    text-align: center;
 }
 
-.town-slogan {
+#town-cards a {
+    text-decoration: none;
+}
+
+.town-motto {
     color: var(--ochre-yellow);
-    font-family: "Open Sans", sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    font-style: italic;
-    margin: 1em;
 }
 
 #town-cards {
-    display: grid;
+    display: inline-grid;
+    position: relative;
     grid-template-columns: 1fr;
     gap: 1em;
     text-align: center;
-    margin: auto;
 }
 
-#town-cards .towns-card-gallery {
-    padding: 0;
-    overflow: auto;
+.town-cards {
+    background-color: var(--dark-grey);
+    color: var(--ochre-yellow);
+}
+
+#town-cards .town-card {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: row-reverse;
 }
 
-.towns-card-gallery div,
-.towns-card-gallery img {
-    display: block;
-    width: 100%;
+.town-motto {
+    margin-top: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-weight: 600;
 }
 
 #preston {
@@ -121,16 +123,17 @@ STYLE CONTENTS
 }
 
 /*--- TOWN PAGES ---*/
-#event-banner {
-    background-color: var(--light-accent);
+#friday-banner {
+    background-color: var(--neutral-200);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-#event-banner div {
+#friday-banner div {
     text-align: center;
-    color: var(--light-shades);
-    font-family: 'Caveat';
-    font-size: 1.5rem;
+    color: var(--dark-grey);
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-weight: 600;
     padding: 5px;
 }
 
@@ -260,18 +263,17 @@ p.weather-metric {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-#town-events {
+#town_events {
     display: grid;
     gap: 25px;
     padding: 25px 7vw;
 }
-
-#town-events h2 {
+#town_events h2 {
     grid-column: 1/-1;
     text-align: center;
 }
 
-#listed-events {
+#town_event {
     line-height: 2rem;
 }
 
@@ -680,11 +682,10 @@ section {
 .card {
     position: center;
     display: block;
-    background: var(--neutral-1000);
+    background: var(--dark-grey);
     width: 100%;
     max-width: 40rem;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 1em auto;
     padding: 0.5rem;
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -693,10 +694,11 @@ section {
 .card2 {
     position: center;
     display: block;
-    background: var(--neutral-100);
+    background: var(--neutral-200);
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 40rem;
+    margin: 1em auto;
+    padding: 0.5rem;
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
