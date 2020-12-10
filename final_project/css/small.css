@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Pacifico&display=swap');
+
+/*-- DIRECTORY --
+
+1. Root
+2. Main Content
+3. Header
+4. Navigation
+5. Footer
+6. Other
+7. Core
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Pacifico&display=swap" rel="stylesheet">
+*/
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+/* MAIN CONTENT
+_____________________________________*/
 .Fiveday_Forecast {
     display: none;
 }
@@ -19,60 +67,6 @@
     padding: .5%;
 }
 
-/*Navigation*/
-nav {
-    background-color: #B86602;
-    text-align: center;
-}
-
-.Nav_Menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.Nav_Menu li:first-child {
-    display: block;
-    font-weight: bold;
-    text-align: center;
-    padding: 0.75rem;
-    text-decoration: none;
-    font-size: 0.95rem;
-}
-
-.Nav_Menu li {
-    display: none;
-    border: 2px solid black;
-}
-
-.Nav_Menu a {
-    display: block;
-    padding: .8rem 2%;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-family: Krona One, sans-serif;;
-}
-
-nav ul li a.active {
-    color: black;
-    background-color: #FFB200;
-}
-
-nav ul li a:hover {
-    color: #FFB200;
-}
-
-.responsive li {
-    display: block;
-}
-
-.responsiveClose li {
-    display: none;
-}
-
-/*Contact on home page*/
 .social {
     grid-row: 1;
     max-width: 50px;
@@ -107,13 +101,6 @@ nav ul li a:hover {
 
 .social {
     max-height: 30px;
-}
-
-/*Headings and Paragraphs*/
-#scoots-logo {
-    max-width: 200px;
-    margin-left: 15px;
-    margin-top: 15px;
 }
 
 h2 {
@@ -157,34 +144,6 @@ p {
     padding: 2%;
 }
 
-#heading1 {
-    margin-left: 55px;
-    font-size: 2em;
-    color: #59C1FF;
-}
-
-#heading2 {
-    text-align: left;
-    font-style: italic;
-    font-size: 1.5em;
-    margin-left: 25px;
-    color: white;
-}
-
-#welcome {
-    font-family: "Krona One", sans-serif;
-    font-style: italic;
-    font-size: 1em;
-    margin-top: -25px;
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #002D52;
-}
-
 .Scoots_Hero {
     position: relative;
     margin-top: 10px;
@@ -195,8 +154,6 @@ header {
     margin-left: 10%;
     border-radius: 12px;
 }
-
-/*Home Page Slideshow*/
 
 .Rentals_Carousel {
     max-width: 500px;
@@ -299,7 +256,6 @@ header {
     }
 }
 
-/*Table Weather_Today for home page*/
 #rentals {
     margin: auto;
     text-align: center;
@@ -313,8 +269,6 @@ header {
 #rentals p {
     font-size: 1em;
 }
-
-/*Weather Summary*/
 
 #Weather_Today {
     display: grid;
@@ -339,9 +293,8 @@ header {
     font-size: 1em;
 }
 
-/*Contact page*/
 .contact_card {
-    padding-top: 0%;
+    padding-top: 0;
 }
 
 form {
@@ -413,10 +366,9 @@ form label.top input:required:valid {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 700px;
-    margin: auto;
     border: 2px solid #002D52;
     border-radius: 12px;
-    margin-bottom: 10px;
+    margin: auto auto 10px;
 }
 
 #contact_terminal p {
@@ -443,7 +395,6 @@ h4 {
     border-bottom-right-radius: 12px;
 }
 
-/*Reserve*/
 #rental_terms {
     margin-left: auto;
     margin-right: auto;
@@ -467,26 +418,6 @@ h4 {
     text-align: left;
 }
 
-/*Footer*/
-footer {
-    background-color: #B86602;
-    height: 50px;
-    width: 100%;
-    color: black;
-    font-size: .8em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 12px;
-    font-size: 1em;
-}
-
-footer a:visited {
-    color: #002D52;
-}
-
-/*Image scroll*/
 img[data-src] {
     filter: blur(0.2em);
     transition: filter .5s;
@@ -498,7 +429,6 @@ img {
     max-width: 100%;
 }
 
-/*Tours*/
 .tours_gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -521,7 +451,6 @@ figcaption {
     text-align: center;
 }
 
-/*Rental Page*/
 #rental_item {
     display: grid;
     grid-gap: 10px;
@@ -550,3 +479,112 @@ figcaption {
 .rentalImage {
     width: 100%;
 }
+
+/* HEADER
+_____________________________________*/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #002D52;
+}
+
+#scoots-logo {
+    max-width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#heading1 {
+    margin-left: 55px;
+    font-size: 2em;
+    color: #59C1FF;
+}
+
+#heading2 {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-left: 25px;
+    color: white;
+}
+
+/* NAVIGATION
+_____________________________________*/
+nav {
+    background-color: #B86602;
+    text-align: center;
+}
+
+.Nav_Menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Nav_Menu li:first-child {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.Nav_Menu li {
+    display: none;
+    border: 2px solid black;
+}
+
+.Nav_Menu a {
+    display: block;
+    padding: .8rem 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Krona One, sans-serif;;
+}
+
+nav ul li a.active {
+    color: black;
+    background-color: #FFB200;
+}
+
+nav ul li a:hover {
+    color: #FFB200;
+}
+
+.responsive li {
+    display: block;
+}
+
+.responsiveClose li {
+    display: none;
+}
+
+
+/* FOOTER
+_____________________________________*/
+footer {
+    background-color: #B86602;
+    height: 50px;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    font-size: 1em;
+}
+
+footer a:visited {
+    color: #002D52;
+}
+
+/* OTHER
+_____________________________________*/
+
+/* CORE
+_____________________________________*/
