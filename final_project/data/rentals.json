@@ -1,0 +1,52 @@
+{
+    "rentals": [
+      {
+        "rental_name": "Honda Metropolitan",
+        "rental_capacity": "1",
+        "rental_image": "hondaMetro.jpg",
+        "rental_price_4hours": "Reserve Full Day: $30",
+        "rental_price_6hours": "Reserve Half Day: $30",
+        "rental_price_allday": "Walk in Full Day: $20"
+      },
+      {
+        "rental_name": "Honda Dio",
+        "rental_capacity": "2",
+        "rental_image": "hondaDio.jpg",
+        "rental_price_4hours": "Reserve Full Day: $40",
+        "rental_price_6hours": "Reserve Half Day: $30",
+        "rental_price_allday": "Walk in Full Day: $45"
+      },
+      {
+        "rental_name": "Honda PCX150",
+        "rental_capacity": "2",
+        "rental_image": "hondaPCX.jpg",
+        "rental_price_4hours": "Reserve Full Day: $50",
+        "rental_price_6hours": "Reserve Half Day: $40",
+        "rental_price_allday": "Walk in Full Day: $55"
+      },
+      {
+        "rental_name": "Honda Pioneer ATV",
+        "rental_capacity": "4",
+        "rental_image": "hondaPioneer.jpg",
+        "rental_price_4hours": "Reserve Full Day: $70",
+        "rental_price_6hours": "Reserve Half Day: $50",
+        "rental_price_allday": "Walk in Full Day: $80"
+      },
+      {
+        "rental_name": "Jeep Wrangler - 4 door with a/c",
+        "rental_capacity": "5",
+        "rental_image": "jeepAC.jpg",
+        "rental_price_4hours": "Reserve Full Day: $100",
+        "rental_price_6hours": "Reserve Half Day: $70",
+        "rental_price_allday": "Walk in Full Day: $125"
+      },
+      {
+        "rental_name": "Jeep Wrangler - 2 door",
+        "rental_capacity": "4",
+        "rental_image": "jeep2door.jpg",
+        "rental_price_4hours": "Reserve Full Day: $85",
+        "rental_price_6hours": "Reserve Half Day: $60",
+        "rental_price_allday": "Walk in Full Day: $90"
+      }
+    ]
+  }

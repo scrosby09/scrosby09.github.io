@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Scoots Rentals | Home</title>
+    <link href="favicon.ico" rel="icon"/>
+    <link href="css/small.css" rel="stylesheet"/>
+    <link href="css/medium.css" rel="stylesheet"/>
+    <link href="css/large.css" rel="stylesheet"/>
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Pacifico&display=swap"
+          rel="stylesheet">
+</head>
+
+<!-- HEADER -->
+<header>
+    <img alt="Scoots Logo" id="scoots-logo" src="images/scooterIcon.png">
+    <div id="header-content">
+        <h1 id="heading1">Scoots</h1>
+        <p id="heading2">
+            "Touring with freedom"
+        </p>
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <ul class="Nav_Menu">
+        <li><a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="rental_listing.html">Rentals</a></li>
+        <li><a href="rental_booking.html">Reservations</a></li>
+        <li><a href="tours_listing.html">Tours</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main>
+    <h2>Welcome to Scoots!</h2>
+    <p id="elevator_pitch">
+        We are a rental service company with friendly and easy to rent services
+        of motor scooters, jeeps, and side-by-sides ATVs. We are located on the Island of
+        Cozumel off the coast of Mexico in the western Caribbean Sea with two physical
+        rental locations on Cozumel.<br><br>"Rent and tour this wonderful, beautiful island with freedom."
+    </p>
+
+    <!-- SCOOTS HERO -->
+    <div class="Scoots_Hero">
+        <picture id="hero_image">
+            <source media="(max-width: 32.5em)" srcset="images/small.jpg">
+            <source media="(max-width: 56em)" srcset="images/medium.jpg">
+            <img alt="Scoots Rentals" src="images/large.jpg">
+        </picture>
+        <section id="Weather_Today">
+            <h3 id="current_weather">Current Weather:</h3>
+            <span id="today"></span>
+            <span id="temp_now"></span>
+            <span id="feels_like"></span>
+            <span id="high_low"></span>
+            <span id="humidity"></span>
+        </section>
+    </div>
+
+    <!-- SCOOTS FORECAST -->
+    <div class="container">
+        <section class="weather-forecast" id="weather-forecast">
+            <div class="card">
+                <h2>5 Day Forecast</h2>
+            </div>
+            <div id="fiveday-forecast"></div>
+        </section>
+    </div>
+    <br>
+
+    <!-- SCOOTS RENTALS CAROUSEL -->
+    <div id="Scoots_Rentals">
+        <h3>Rentals Available!</h3>
+        <p>
+            We have all kinds of rentals available to help you tour the island.
+        </p>
+        <a href="rental_listing.html">
+            Pricing Details
+        </a>
+    </div>
+    <div class="Rentals_Carousel">
+        <div class="scoots_rental_item fade">
+            <div class="rental_number">
+                1 / 6
+            </div>
+            <img alt="Honda Metro Scooter" src="images/hondaMetro.jpg">
+            <div class="rental_text">
+                Honda Metro Scooter. 49cc Engine. Automatic transmission. Max. Person(s): 1
+            </div>
+        </div>
+        <div class="scoots_rental_item fade">
+            <div class="rental_number">
+                2 / 6
+            </div>
+            <img alt="Honda Dio Scooter" src="images/hondaDio.jpg">
+            <div class="rental_text">
+                Honda Dio Scooter. 109.2 CC Engine. Automatic transmission. Max Person(s): 2
+            </div>
+        </div>
+        <div class="scoots_rental_item fade">
+            <div class="rental_number">
+                3 / 6
+            </div>
+            <img alt="Honda PCX150 Scooter" src="images/hondaPCX.jpg">
+            <div class="rental_text">
+                Honda PCX150 Scooter. 149cc Engine. Automatic transmission. Max Person(s): 2
+            </div>
+        </div>
+        <div class="scoots_rental_item fade">
+            <div class="rental_number">
+                4 / 6
+            </div>
+            <img alt="Honda Pioneer ATV" src="images/hondaPioneer.jpg">
+            <div class="rental_text">
+                Honda Pioneer ATV. 475cc Engine. Automatic transmission. Max Person(s): 4
+            </div>
+        </div>
+        <div class="scoots_rental_item fade">
+            <div class="rental_number">
+                5 / 6
+            </div>
+            <img alt="Jeep Wrangler - 4 door with a/c" src="images/jeepAC.jpg">
+            <div class="rental_text">
+                Jeep Wrangler - 4 door with a/c. 3.6 L V-6 Engine. Automatic transmission. Max Person(s): 5
+            </div>
+        </div>
+        <div class="scoots_rental_item fade">
+            <div class="rental_number">
+                6 / 6
+            </div>
+            <img alt="Jeep Wrangler - 2 door" src="images/jeep2door.jpg">
+            <div class="rental_text">
+                Jeep Wrangler - 2 door. 3.6 L V-6 Engine. Automatic transmission. Max Person(s): 4
+            </div>
+        </div>
+        <a class="move_forward" onclick="advanceDisplay(-1)">&#10094;</a>
+        <a class="move_backward" onclick="advanceDisplay(1)">&#10095;</a>
+    </div>
+    <br>
+    <div id="carousel_indicators">
+        <span class="carousel_dot" onclick="currentDisplay(1)"></span>
+        <span class="carousel_dot" onclick="currentDisplay(2)"></span>
+        <span class="carousel_dot" onclick="currentDisplay(3)"></span>
+        <span class="carousel_dot" onclick="currentDisplay(4)"></span>
+        <span class="carousel_dot" onclick="currentDisplay(5)"></span>
+        <span class="carousel_dot" onclick="currentDisplay(6)"></span>
+    </div>
+    <br>
+    <form action="rental_booking.html" class="button">
+        <input type="submit" value="Reserve Today!">
+    </form>
+    <br>
+    <div class="Contact_Us">
+        <h3>Contact Us</h3>
+        <p>
+            <img alt="Map indicator" class="map_icon" src="images/map.png">
+            Ave. Benito Juarez at, 15A Avenida Sur,
+            Centro, 77600 San Miguel de Cozumel, Q.R., Mexico
+        </p>
+        <p>
+            <img alt="Phone" class="phone" src="images/phone.png">
+            888-888-8888
+        </p>
+        <p>
+            <img alt="Email" class="email" src="images/email.png">
+            info@scoots.org
+        </p>
+        <div class="contact">
+            <a href="https://www.facebook.com/">
+                <img alt="Facebook Logo" class="social" src="images/iconfinder_Colored_Facebook3_svg_5365678.png">
+            </a>
+            <a href="https://twitter.com/">
+                <img alt="Twitter Logo" class="social" src="images/iconfinder_1_Twitter3_colored_svg_5296516.png">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img alt="Instagram Logo" class="social" src="images/iconfinder_1_Instagram_colored_svg_1_5296765.png">
+            </a>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div>
+        &copy; <span id="copyright"></span> Scoots | Designed by Michael Kendall
+    </div>
+    <span id="updated"></span>
+</footer>
+<!-- JS -->
+<script src="js/main.js"></script>
+<script>
+    getWeatherToday('3521342');
+    getWeatherForecast('3521342');
+</script>
+</html>

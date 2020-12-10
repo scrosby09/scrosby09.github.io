@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Scoots Rentals | Rentals Bookings</title>
+    <!-- CSS -->
+    <link href="favicon.ico" rel="icon"/>
+    <link href="css/small.css" rel="stylesheet"/>
+    <link href="css/medium.css" rel="stylesheet"/>
+    <link href="css/large.css" rel="stylesheet"/>
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Pacifico&display=swap"
+          rel="stylesheet">
+</head>
+
+<!-- HEADER -->
+<header>
+    <img alt="Scoots Logo" id="scoots-logo" src="itemImage/scooterIcon.png">
+    <div id="header-content">
+        <h1 id="heading1">Scoots</h1>
+        <p id="heading2">
+            "Touring with freedom"
+        </p>
+    </div>
+</header>
+<!-- NAVIGATION -->
+<nav>
+    <ul class="Nav_Menu">
+        <li>
+            <a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a>
+        </li>
+        <li>
+            <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="rental_listing.html">Rentals</a>
+        </li>
+        <li>
+            <a href="rental_booking.html">Reservations</a>
+        </li>
+        <li>
+            <a href="tours_listing.html">Tours</a></li>
+        <li>
+            <a href="contact_us.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main>
+    <h2>Rental Booking</h2>
+    <form action="rental_confirmed.html" method="get">
+
+        <!-- CUSTOMER INFO -->
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label class="top">
+                Full Name*:
+                <input name="rental_item" pattern="[A-Za-z\s]{5,}" required title="Only Letters, 6 or more characters"
+                       type="text">
+            </label>
+            <label class="top">
+                Phone*:
+                <input name="phone" pattern="[0-9]{10,}" placeholder="1235551231" required
+                       title="Only numbers and 10 digits or greater" type="tel">
+            </label>
+            <label class="top">
+                Email:
+                <input name="email" placeholder="someone@gmail.com" type="email">
+            </label>
+            <label class="top">
+                Home Country:
+                <input name="country" placeholder="United States" type="text">
+            </label>
+            <label class="top">
+                Home State:
+                <input name="state" placeholder="ID" type="text">
+            </label>
+            <label class="top" for="cruise">
+                Cruise Line:
+            </label>
+            <select name="cruise" id="cruise">
+                <option value="Princess">Princess</option>
+                <option value="Royal">Royal</option>
+                <option value="Carnival">Carnival</option>
+                <option value="Norwegian">Norwegian</option>
+                <option value="Disney">Disney</option>
+            </select>
+        </fieldset>
+
+        <!-- RENTAL ITEM INFO -->
+        <fieldset>
+            <legend>Rental Item Information</legend>
+            <label class="top">
+                Rental Date:
+                <input name="date" required type="date">
+            </label>
+            <label class="top">
+                Select Your Rental Item:
+                <select name="rental_selection" required>
+                    <option value="Honda Metropolitan">Honda Metropolitan (49cc)</option>
+                    <option value="Honda Dio">Honda Dio</option>
+                    <option value="Honda PCX150">Honda PCX150</option>
+                    <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                    <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                    <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                </select>
+            </label>
+            <label class="top">
+                Full or Half Day?
+                <select name="rental_time" required>
+                    <option value="8AM-12PM">8AM-12PM</option>
+                    <option value="10AM-2PM">10AM-2PM</option>
+                    <option value="10AM-2PM">12PM-4PM</option>
+                    <option value="2PM-6PM">2PM-6PM</option>
+                    <option value="4PM-8PM">2PM-6PM</option>
+                    <option value="8AM-2PM">8AM-2PM</option>
+                    <option value="2PM-8PM">8AM-2PM</option>
+                    <option value="8AM-8PM">8AM-8PM</option>
+                </select>
+            </label>
+
+            <label class="top" for="rental_days">
+                Tell us how many days
+                <input id="rental_days" max="10" min="1" onchange="configDaysValue(this.value)"
+                       oninput="configDaysValue(this.value)" required step="1" type="range" value="1" list="rental_days">
+                <span id="rental_days_value">5</span>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Info</legend>
+            <label class="top" id="booking_comments">What else should we know?:
+                <textarea id="comments" name="comments"></textarea>
+            </label>
+        </fieldset>
+        <input class="submitBtn" type="submit" value='Reserve'>
+    </form>
+    <div id="rental_terms">
+        <h3>Scoots Rental Terms Of Use</h3>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at time of rental.</li>
+            <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is free of charge.</li>
+            <li>Reservations rate requires 24 hour prior notification.</li>
+            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+            <li>Payment via Google Pay, cash, credit rental_display, debit rental_display, or PayPal.</li>
+            <li>Rentals may be returned to either weather_forecast.</li>
+        </ul>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div>
+        &copy; <span id="copyright"></span> Scoots | Designed by Michael Kendall
+    </div>
+    <span id="updated"></span>
+</footer>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+</html>
