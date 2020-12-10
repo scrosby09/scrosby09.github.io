@@ -15,6 +15,27 @@
 */
 
 :root {
+    --ultimate-gray: #939597;
+    --illuminating-yellow: #F5DF4D;
+    --blue-nights: #373E4B;
+    --wild-ginger: #7D4D55;
+    --oil-green: #7D876E;
+    --shadow-green: #CFC482;
+
+    --dark: #343a40;
+    --dark-grey: #121212;
+    --neutral-1000: #24292e;
+    --neutral-900: #383f45;
+    --neutral-800: #454c52;
+    --neutral-700: #596066;
+    --neutral-600: #676e76;
+    --neutral-500: #7f8790;
+    --neutral-400: #9ea5ad;
+    --neutral-300: #ced2d6;
+    --neutral-200: #e5e7ea;
+    --neutral-100: #f6f7f9;
+    --light: #f8f9fa;
+
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -26,21 +47,14 @@
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
+
     --primary: #007bff;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
+
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
