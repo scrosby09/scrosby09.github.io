@@ -1,10 +1,7 @@
 @media only screen and (min-width: 32.5em) {
 
-    main {
-        width: 75%;
-        margin: auto;
-    }
-
+    /* MAIN CONTENT
+    --------------------------------------*/
     #heropic img {
         width: 60%;
         margin-left: 20%;
@@ -14,6 +11,63 @@
         left: 15%;
     }
 
+    .Fiveday_Forecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    #Scoots_Forecast {
+        display: block;
+        text-align: center;
+    }
+
+    .Fiveday_Forecast div {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    form label.top input, form label.top select {
+        max-width: 20rem;
+    }
+
+    #contact_ferry, #contact_terminal {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact_terminal p {
+        text-align: left;
+    }
+
+    #contact_ferry p {
+        text-align: left;
+    }
+
+    .tours_gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    figure:hover {
+        box-shadow: 1px 1px 8px 5px #59C1FF;
+    }
+
+    #rental_item {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map iframe {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .contact_card {
+        padding-top: 15%;
+    }
+
+    /* HEADER
+    --------------------------------------*/
     #heading1 {
         margin-left: 45px;
         font-size: 2.5em;
@@ -39,6 +93,8 @@
         margin-top: 25px;
     }
 
+    /* NAVIGATION
+    --------------------------------------*/
     .Nav_Menu {
         display: flex;
     }
@@ -54,109 +110,5 @@
 
     .Nav_Menu li:first-child {
         display: none;
-    }
-
-    /*Weather for home page*/
-    .Fiveday_Forecast {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        justify-content: center;
-        margin-bottom: 5px;
-        width: 50%;
-        margin: auto;
-    }
-
-    #Scoots_Forecast {
-        display: block;
-        text-align: center;
-    }
-
-    #forecast_day_1, #forecast_day_2, #forecast_day_3, #forecast_day_4, #forecast_day_5 {
-        border: 1px solid #002D52;
-        border-radius: 12px;
-        padding: 3px;
-        background-color: #59C1FF;
-        margin: 3px;
-        font-size: .5em;
-    }
-
-    #forecast_day_1 {
-        grid-column: 1;
-    }
-
-    #forecast_day_2 {
-        grid-column: 2;
-    }
-
-    #forecast_day_3 {
-        grid-column: 3;
-    }
-
-    #forecast_day_4 {
-        grid-column: 4;
-    }
-
-    #forecast_day_5 {
-        grid-column: 5;
-    }
-
-    #forecast {
-        display: grid;
-        text-align: center;
-    }
-
-    #forecast_weather_1, #forecast_weather_2, #forecast_weather_3, #forecast_weather_4, #forecast_weather_5,
-    #forecast_cond_1, #forecast_cond_2, #forecast_cond_3, #forecast_cond_4, #forecast_cond_5, #forecast_date_1,
-    #forecast_date_2, #forecast_date_3, #forecast_date_4, #forecast_date_5 {
-        color: #002D52;
-        font-family: "Krona One", sans-serif;
-        font-weight: lighter;
-    }
-
-    .Fiveday_Forecast div {
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-    /*Forms*/
-    form label.top input, form label.top select {
-        max-width: 20rem;
-    }
-
-    /*Contact*/
-    #contact_ferry, #contact_terminal {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #contact_terminal p {
-        text-align: left;
-    }
-
-    #contact_ferry p {
-        text-align: left;
-    }
-
-    /*Tours*/
-    .tours_gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    figure:hover {
-        box-shadow: 1px 1px 8px 5px #59C1FF;
-    }
-
-    /*Rental page*/
-    #rental_item {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /*Contact page*/
-    .map iframe {
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
-    }
-
-    .contact_card {
-        padding-top: 15%;
     }
 }
