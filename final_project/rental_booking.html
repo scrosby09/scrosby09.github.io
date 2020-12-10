@@ -18,7 +18,7 @@
 
 <!-- HEADER -->
 <header>
-    <img alt="Scoots Logo" id="scoots-logo" src="itemImage/scooterIcon.png">
+    <img alt="Scoots Logo" id="scoots-logo" src="images/scoots_logo.png">
     <div id="header-content">
         <h1 id="heading1">Scoots</h1>
         <p id="heading2">
@@ -59,21 +59,19 @@
             <legend>Customer Information</legend>
             <label class="top">
                 Full Name*:
-                <input name="rental_item" pattern="[A-Za-z\s]{5,}" required title="Only Letters, 6 or more characters"
-                       type="text">
+                <input name="rental_item" pattern="[A-Za-z\s]{5,}" placeholder="First and Last" required type="text">
             </label>
             <label class="top">
                 Phone*:
-                <input name="phone" pattern="[0-9]{10,}" placeholder="1235551231" required
-                       title="Only numbers and 10 digits or greater" type="tel">
+                <input name="phone" pattern="[0-9]{10,}" placeholder="000-000-0000" required type="tel">
             </label>
             <label class="top">
                 Email:
-                <input name="email" placeholder="someone@gmail.com" type="email">
+                <input name="email" placeholder="@email" type="email">
             </label>
             <label class="top">
                 Home Country:
-                <input name="country" placeholder="United States" type="text">
+                <input name="country" placeholder="Country of origin" type="text">
             </label>
             <label class="top">
                 Home State:

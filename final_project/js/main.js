@@ -86,7 +86,7 @@ function rentalCarousel(n) {
 /**
  * BUILD RENTALS BOOKINGS AND LISTINGS */
 function rentalsData() {
-    const requestURL = 'https://raw.githubusercontent.com/techmike12/techmike12.github.io/master/final-project/data/rentdata.json';
+    const requestURL = 'https://raw.githubusercontent.com/scrosby09/scrosby09.github.io/master/final_project/data/rentals.json';
 
     fetch(requestURL)
         .then(function (response) {
