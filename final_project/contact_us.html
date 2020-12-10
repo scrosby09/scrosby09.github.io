@@ -17,7 +17,7 @@
 
 <!-- HEADER -->
 <header>
-    <img alt="Scoots Logo" id="scoots-logo" src="itemImage/scooterIcon.png">
+    <img alt="Scoots Logo" id="scoots-logo" src="images/scoots_logo.png">
     <div id="header-content">
         <h1 id="heading1">Scoots</h1>
         <p id="heading2">
@@ -102,11 +102,27 @@
 </main>
 
 <!-- FOOTER -->
-<footer>
-    <div>&copy; <span id="copyright"></span> Scoots | Designed by Michael Kendall | <a
-            href="resources.html">Resources</a></div>
-    <span id="updated"></span>
+<footer class="container">
+    <div class="card">
+        &copy; <span id="copyright"></span> Scoots Rentals |
+        <br>
+        Steven Crosby |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br>
+        Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+        <a href="https://www.byui.edu/online">Assignment Portal</a>
+    </div>
+    <div id="updated"></div>
+    <br>
+    <a href="https://scrosby09.github.io/index.html" style="font-size: .8em; font-weight: 600">Return to Assignment
+        Portal</a>
+    <br>
+    <br>
 </footer>
 <!-- JS -->
 <script src="js/main.js"></script>
+<script>
+    getWeatherToday('3521342');
+    getWeatherForecast('3521342');
+</script>
 </html>

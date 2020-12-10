@@ -26,26 +26,16 @@
         </p>
     </div>
 </header>
+
 <!-- NAVIGATION -->
 <nav>
     <ul class="Nav_Menu">
-        <li>
-            <a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a>
-        </li>
-        <li>
-            <a class="active" href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="rental_listing.html">Rentals</a>
-        </li>
-        <li>
-            <a href="rental_booking.html">Reservations</a>
-        </li>
-        <li>
-            <a href="tours_listing.html">Tours</a></li>
-        <li>
-            <a href="contact_us.html">Contact</a>
-        </li>
+        <li><a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="rental_listing.html">Rentals</a></li>
+        <li><a href="rental_booking.html">Reservations</a></li>
+        <li><a href="tours_listing.html">Tours</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
     </ul>
 </nav>
 
@@ -124,7 +114,8 @@
             <label class="top" for="rental_days">
                 Tell us how many days
                 <input id="rental_days" list="rental_days" max="10" min="1"
-                       onchange="configDaysValue(this.value)" oninput="configDaysValue(this.value)" required step="1" type="range"
+                       onchange="configDaysValue(this.value)" oninput="configDaysValue(this.value)" required step="1"
+                       type="range"
                        value="1">
                 <span id="rental_days_value">5</span>
             </label>
@@ -156,13 +147,27 @@
 </main>
 
 <!-- FOOTER -->
-<footer>
-    <div>
-        &copy; <span id="copyright"></span> Scoots | Designed by Michael Kendall
+<footer class="container">
+    <div class="card">
+        &copy; <span id="copyright"></span> Scoots Rentals |
+        <br>
+        Steven Crosby |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br>
+        Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+        <a href="https://www.byui.edu/online">Assignment Portal</a>
     </div>
-    <span id="updated"></span>
+    <div id="updated"></div>
+    <br>
+    <a href="https://scrosby09.github.io/index.html" style="font-size: .8em; font-weight: 600">Return to Assignment
+        Portal</a>
+    <br>
+    <br>
 </footer>
-
 <!-- JS -->
 <script src="js/main.js"></script>
+<script>
+    getWeatherToday('3521342');
+    getWeatherForecast('3521342');
+</script>
 </html>
