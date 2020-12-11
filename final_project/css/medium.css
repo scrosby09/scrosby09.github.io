@@ -8,25 +8,14 @@
     }
 
     #Weather_Today {
-        left: 15%;
-    }
-
-    .Fiveday_Forecast {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        justify-content: center;
-        width: 50%;
-        margin: auto;
+        width: 250px;
+        font-size: 1em;
+        border-radius: 0.25rem;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     }
 
     #Scoots_Forecast {
         display: block;
-        text-align: center;
-    }
-
-    .Fiveday_Forecast div {
-        text-align: center;
-        font-size: 1.5rem;
     }
 
     form label.top input, form label.top select {

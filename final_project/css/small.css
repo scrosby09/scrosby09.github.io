@@ -263,16 +263,19 @@ p {
 }
 
 #Weather_Today {
+    font-family: "Open Sans", sans-serif;
+    color: var(--illuminating-yellow);
+    font-weight: 400;
     display: grid;
+    background-color: var(--neutral-1000);
+    opacity: 90%;
+    border-radius: 0.25rem;
     text-align: left;
-    padding: 1rem;
-    width: 250px;
-    margin: auto;
-    position: relative;
-    top: 30px;
-    bottom: 70px;
-    left: 20px;
-    right: 10px;
+    position: sticky;
+    top: 25px;
+    left: 30px;
+    padding: 2rem;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 #Weather_Today ul {
@@ -611,6 +614,29 @@ h6 {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
+.center-content {
+    justify-content: center;
+    justify-items: center;
+    position: center;
+    display: inline-block;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+}
+
 .card1 {
     max-width: 40rem;
     position: center;
@@ -629,6 +655,7 @@ h6 {
     max-width: 60rem;
     position: center;
     display: block;
+    align-content: center;
     background: var(--neutral-100);
     width: 100%;
     margin: 1em auto;
@@ -637,7 +664,6 @@ h6 {
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
-
 
 .card3 {
     position: relative;
@@ -653,13 +679,6 @@ h6 {
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
-}
-
-.card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1.25rem;
 }
 
 .jumbotron {
@@ -684,4 +703,14 @@ h6 {
     display: block;
     clear: both;
     content: "";
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }

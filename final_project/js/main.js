@@ -182,13 +182,13 @@ function getWeatherForecast() {
                     };
                     let date_forecast = full_date.toLocaleDateString("en-US", date_selection);
                     let day_forecast = document.createElement("div");
-                    day_forecast.className = "day-forecast card2";
+                    day_forecast.className = "day-forecasts";
                     day_forecast.innerText = date_forecast;
                     daily_forecast.appendChild(day_forecast);
 
                     // Build Weather Content
                     let weather = document.createElement("div");
-                    weather.className = "weather card";
+                    weather.className = "weather";
 
                     // Append Weather Icon
                     let weather_icon = document.createElement("img");
@@ -198,7 +198,7 @@ function getWeatherForecast() {
 
                     // Append High-Low Temp
                     let temp = document.createElement("p");
-                    temp.innerHTML = Math.round(weather_forecast.list[i].main.temp) + "&deg;F";
+                    temp.innerHTML = Math.round(weather_forecast.list[i].main.temp) + "%F";
                     weather.appendChild(temp);
 
                     //Append Daily Forecast and Weather
