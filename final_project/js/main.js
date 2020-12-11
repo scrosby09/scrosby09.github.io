@@ -5,11 +5,11 @@ document.getElementById("modified").innerHTML = "Last updated: " + document.last
 /**
  * NAVIGATION TOGGLE MENU */
 function toggleMenu() {
-    if (document.getElementsByClassName("Nav_Menu")[0].classList === "navigation") {
-        document.getElementsByClassName("Nav_Menu")[0].classList.toggle("responsive");
+    if (document.getElementsByClassName("navMenu")[0].classList === "navigation") {
+        document.getElementsByClassName("navMenu")[0].classList.toggle("responsive");
         document.getElementById("ham").innerHTML = "&#x2715";
     } else {
-        document.getElementsByClassName("Nav_Menu")[0].classList.toggle("responsive");
+        document.getElementsByClassName("navMenu")[0].classList.toggle("responsive");
         document.getElementById("ham").innerHTML = "&#9776 Menu";
     }
 

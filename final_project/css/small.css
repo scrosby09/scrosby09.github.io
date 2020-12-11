@@ -264,14 +264,15 @@ p {
 
 #Weather_Today {
     display: grid;
-    border-radius: 12px;
     text-align: left;
-    padding: 10px;
-    width: 200px;
+    padding: 1rem;
+    width: 250px;
     margin: auto;
-    position: absolute;
-    top: 25px;
-    left: 15%;
+    position: relative;
+    top: 30px;
+    bottom: 70px;
+    left: 20px;
+    right: 10px;
 }
 
 #Weather_Today ul {
@@ -477,44 +478,47 @@ header {
 /* NAVIGATION
 _____________________________________*/
 nav {
+    background-color: var(--illuminating-yellow);
     text-align: center;
 }
 
-.Nav_Menu {
+.navMenu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    height: 10vh !important;
 }
 
-.Nav_Menu li:first-child {
+.navMenu li:first-child {
     display: block;
     font-weight: bold;
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
-.Nav_Menu li {
+.navMenu li {
     display: none;
-    border: 2px solid black;
+    color: var(--blue-nights);
+    border: 1px solid var(--dark-grey);
 }
 
-.Nav_Menu a {
+.navMenu a {
     display: block;
     padding: .8rem 2%;
     text-align: center;
     text-decoration: none;
-    color: black;
 }
 
 nav ul li a.active {
-    color: black;
+    background-color: var(--shadow-green);
+    height: 10vh !important;
 }
 
 nav ul li a:hover {
-    color: #FFB200;
+    color: var(--blue-nights);
 }
 
 .responsive li {
@@ -612,10 +616,7 @@ h6 {
     position: center;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background: var(--dark-grey);
-    background-clip: border-box;
+    background: var(--neutral-100);
     width: 100%;
     margin: 1em auto;
     padding: 0.5rem;
@@ -629,7 +630,6 @@ h6 {
     position: center;
     display: block;
     background: var(--neutral-100);
-    background-clip: border-box;
     width: 100%;
     margin: 1em auto;
     padding: 0.5rem;
@@ -639,7 +639,7 @@ h6 {
 }
 
 
-.card {
+.card3 {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -647,10 +647,12 @@ h6 {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background: var(--neutral-100);
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
 }
 
 .card-body {
@@ -662,7 +664,6 @@ h6 {
 
 .jumbotron {
     padding: 1rem 1rem;
-    margin-bottom: 1rem;
     background-color: #e9ecef;
     border-radius: 0.25em;
 }

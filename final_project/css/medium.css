@@ -92,22 +92,21 @@
         margin-top: 25px;
     }
 
-    .Nav_Menu {
+    .navMenu {
         display: flex;
     }
 
-    .Nav_Menu li {
+    .navMenu li {
         display: block;
         flex: 1 1 auto;
     }
 
-    .Nav_Menu a {
+    .navMenu a {
         text-align: center;
     }
 
-    .Nav_Menu li:first-child {
+    .navMenu li:first-child {
         display: none;
-
     }
 
     .main {
