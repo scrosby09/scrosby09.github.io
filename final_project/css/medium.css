@@ -58,8 +58,8 @@
     }
 
     .map iframe {
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
+        border-top-right-radius: 1px;
+        border-bottom-right-radius: 1px;
     }
 
     .contact_card {
@@ -71,7 +71,6 @@
     #heading1 {
         margin-left: 45px;
         font-size: 2.5em;
-        color: #002D52;
     }
 
     header {
@@ -79,8 +78,8 @@
     }
 
     header {
-        background-image: url("../Images/beach2.jpg");
-        background-size: 100%;
+        background-image: url("../images/filler/filler_2_md.jpg");
+        background-size: 50%;
         background-repeat: no-repeat;
     }
 
