@@ -72,9 +72,6 @@ _____________________________________*/
 }
 
 .button input {
-    background-color: #FFB200;
-    font-family: Krona One, sans-serif;
-    color: #002D52;
     border-radius: 12px;
     padding: .5%;
 }
@@ -98,7 +95,7 @@ _____________________________________*/
 }
 
 .Contact_Us p {
-    font-size: .8em;
+    font-size: .8rem;
     text-align: left;
     padding: 2%;
 }
@@ -114,7 +111,7 @@ _____________________________________*/
 
 h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h1 {
@@ -129,13 +126,13 @@ h3 {
 
 p {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
 }
 
 #elevator_pitch {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     max-width: 600px;
     margin: auto;
@@ -193,7 +190,7 @@ p {
 }
 
 .rental_text {
-    font-size: 1em;
+    font-size: 1rem;
     padding: 8px 12px;
     position: absolute;
     bottom: -10px;
@@ -296,15 +293,15 @@ form {
 }
 
 form fieldset {
-    margin: 0 2em 2em 2em;
+    margin: 0 2rem 2rem 2rem;
     border-radius: 12px;
-    padding: 2em 2%;
+    padding: 2rem 2%;
 }
 
 form label.top, form div {
     display: block;
-    padding-top: 1.5em;
-    font-size: .8em;
+    padding-top: 1.5rem;
+    font-size: .8rem;
     font-weight: bold;
 }
 
@@ -336,7 +333,7 @@ form input.submitBtn {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 20em;
+    max-width: 20rem;
 }
 
 form label.top input:required {
@@ -357,18 +354,18 @@ form label.top input:required:valid {
 
 #contact_terminal p {
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 2%;
 }
 
 #contact_ferry p {
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 2%;
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -389,12 +386,12 @@ h4 {
 }
 
 #rental_terms li {
-    font-size: 1em;
+    font-size: 1rem;
     text-align: left;
 }
 
 img[data-src] {
-    filter: blur(0.2em);
+    filter: blur(0.2rem);
     transition: filter .5s;
 }
 
@@ -466,13 +463,13 @@ header {
 
 #heading1 {
     margin-left: 55px;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 #heading2 {
     text-align: left;
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-left: 25px;
     color: white;
 }
@@ -540,7 +537,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     border-radius: 12px;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 footer a:visited {
@@ -583,7 +580,7 @@ body {
     line-height: 1.5;
     color: var(--dark-grey);
     text-align: left;
-    background-color: var(--neutral-100);
+    background-color: var(--neutral-300);
 }
 
 h1,
@@ -596,4 +593,94 @@ h6 {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0.5rem;
+}
+
+.main {
+    background: #ffffff;
+    position: relative;
+    z-index: 3;
+}
+
+.main-raised {
+    margin: -50px 30px 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card1 {
+    max-width: 40rem;
+    position: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: var(--dark-grey);
+    background-clip: border-box;
+    width: 100%;
+    margin: 1em auto;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card2 {
+    max-width: 60rem;
+    position: center;
+    display: block;
+    background: var(--neutral-100);
+    background-clip: border-box;
+    width: 100%;
+    margin: 1em auto;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.jumbotron {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #e9ecef;
+    border-radius: 0.25em;
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 1rem 1rem;
+    }
+}
+
+.jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
 }

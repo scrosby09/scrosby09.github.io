@@ -26,7 +26,7 @@
 
     .Fiveday_Forecast div {
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     form label.top input, form label.top select {
@@ -66,11 +66,11 @@
         padding-top: 15%;
     }
 
-    /* HEADER
+    /* CORE
     --------------------------------------*/
     #heading1 {
         margin-left: 45px;
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 
     header {
@@ -78,8 +78,8 @@
     }
 
     header {
-        background-image: url("../images/filler/filler_2_md.jpg");
-        background-size: 50%;
+        background-image: url("../images/filler/filler_1_orignal.jpg");
+        background-size: 100%;
         background-repeat: no-repeat;
     }
 
@@ -92,8 +92,6 @@
         margin-top: 25px;
     }
 
-    /* NAVIGATION
-    --------------------------------------*/
     .Nav_Menu {
         display: flex;
     }
@@ -109,5 +107,18 @@
 
     .Nav_Menu li:first-child {
         display: none;
+
+    }
+
+    .main {
+        background: #ffffff;
+        position: relative;
+        z-index: 3;
+    }
+
+    .main-raised {
+        margin: -50px 30px 0;
+        border-radius: 0.25rem;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     }
 }
