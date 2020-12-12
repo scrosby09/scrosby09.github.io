@@ -17,7 +17,8 @@
 
 <!-- HEADER -->
 <header>
-    <div class="card-flex-relative-60 centerd">
+    <br>
+    <div class="card-flex-center-40 centerd">
         <div class="empty-card3 centerd">
             <img class="scoots_logo" alt="Scoots Logo" id="scoots-logo" src="images/scoots_logo.png">
         </div>
@@ -31,7 +32,7 @@
 <!-- NAVIGATION -->
 <nav>
     <ul class="navMenu padding05">
-        <li><a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a id="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="rental_listing.html">Rentals</a></li>
         <li><a href="rental_booking.html">Reservations</a></li>
@@ -42,25 +43,42 @@
 <br>
 <!-- MAIN CONTENT -->
 <main>
-    <div class="main main-raised">
-        <div class="card2">
-            <h2>Welcome to Scoots!</h2>
-            <p id="elevator_pitch">
-                We are a rental service company with friendly and easy to rent services
-                of motor scooters, jeeps, and side-by-sides ATVs. We are located on the Island of
-                Cozumel off the coast of Mexico in the western Caribbean Sea with two physical
-                rental locations on Cozumel.<br><br>"Rent and tour this wonderful, beautiful island with freedom."
-            </p>
-            <section class="card2" id="Weather_Today">
-                <h3 id="current_weather">Our Weather Now:</h3>
-                <span id="today"></span>
-                <span id="temp_now"></span>
-                It feels like <span id="feels_like"></span>
-                <span id="high_low"></span>
-                <span id="humidity"></span>
-            </section>
+    <div class="main main-raised centerd">
+        <div class="container clearfix">
+            <br>
+            <!-- LANDING -->
+            <div class="card-block-relative-60 centerd padding2">
+                <h2>Welcome To Scoots!</h2>
+                <br>
+                <div class="empty-card3 padding1">
+                    <p>Find adventures nearby or in far across Cozumel.</p>
+                    <p>Our scooters, motorbikes and more will take you the greatest experiences our island has!</p>
+                </div>
+            </div>
         </div>
-
+        <section id="weatherToday">
+            <h2>Our Weather Now</h2>
+            <p class="weather_data">
+                <span class="label">Currently:</span>
+                <span id="weather_now" class="value"></span>
+            </p>
+            <p class="weather_data">
+                <span class="label">High / Low:</span>
+                <span id="high_low" class="value"></span>
+            </p>
+            <p class="weather_data">
+                <span class="label">Current:</span>
+                <span id="current_temp" class="value"></span>
+            </p>
+            <p class="weather_data">
+                <span class="label">Humidity:</span>
+                <span id="humidity" class="value"></span>
+            </p>
+            <p class="weather_data">
+                <span class="label">Wind Speed:</span>
+                <span id="wind_speed" class="value"></span>
+            </p>
+        </section>
         <!-- SCOOTS HERO -->
         <div class="Scoots_Hero">
             <picture id="hero_image">
@@ -71,93 +89,113 @@
         </div>
 
         <!-- SCOOTS FORECAST -->
-        <div class="container">
-            <section class="weather-forecast card1" id="weather-forecast">
-                <div id="fiveday-forecast">
-                    <h2>5 Day Forecast</h2>
+        <div class="main main-raised">
+            <div class="container clearfix">
+                <div class="empty-card3 centerd">
+                    <h2>Our 5 Day Forecast</h2>
+                    <section class="fiveDay">
+                        <div id="day1">
+                            <h3 id="date1"></h3>
+                            <div><img src="#" alt="" id='weather_icon1'></div>
+                            <div id="condition1"></div>
+                            <div id="day1_weather"></div>
+                        </div>
+                        <div id="day2">
+                            <h3 id="date2"></h3>
+                            <div><img src="#" alt="" id='weather_icon2'></div>
+                            <div id="condition2"></div>
+                            <div id="day2_weather"></div>
+                        </div>
+                        <div id="day3">
+                            <h3 id="date3"></h3>
+                            <div><img src="#" alt="" id='weather_icon3'></div>
+                            <div id="condition3"></div>
+                            <div id="day3_weather"></div>
+                        </div>
+                        <div id="day4">
+                            <h3 id="date4"></h3>
+                            <div><img src="#" alt="" id='weather_icon4'></div>
+                            <div id="condition4"></div>
+                            <div id="day4_weather"></div>
+                        </div>
+                        <div id="day5">
+                            <h3 id="date5"></h3>
+                            <div><img src="#" alt="" id='weather_icon5'></div>
+                            <div id="condition5"></div>
+                            <div id="day5_weather"></div>
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </div>
+        </div>
+        <br>
+        <!-- RENTAL CAROUSEL -->
+        <div id="rentalHead">
+            <h3>Rentals Available!</h3>
+            <p>We have all kinds of rentals available to help you tour the island.</p>
+            <a href="./rental_listing.html">Pricing Details</a>
+        </div>
+        <!-- RENTAL CAROUSEL -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/honda_metro_lg.jpg" alt="Honda Metro Scooter">
+                <div class="text">Honda Metro Scooter. 49cc Engine. Automatic transmission. Max. Person(s): 1</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/honda_dio_lg.jpg" alt="Honda Dio Scooter">
+                <div class="text">Honda Dio Scooter. 109.2 CC Engine. Automatic transmission. Max Person(s): 2</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/honda_pcx_lg.jpg" alt="Honda PCX150 Scooter">
+                <div class="text">Honda PCX150 Scooter. 149cc Engine. Automatic transmission. Max Person(s): 2</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/honda_pioneer_lg.jpg" alt="Honda Pioneer ATV">
+                <div class="text">Honda Pioneer ATV. 475cc Engine. Automatic transmission. Max Person(s): 4</div>
+            </div>
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="./images/jeep_4door_lg.jpg" alt="Jeep Wrangler - 4 door with a/c">
+                <div class="text">Jeep Wrangler - 4 door with a/c. 3.6 L V-6 Engine. Automatic transmission. Max
+                    Person(s): 5
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="./images/jeep_2door_lg.jpg" alt="Jeep Wrangler - 2 door">
+                <div class="text">Jeep Wrangler - 2 door. 3.6 L V-6 Engine. Automatic transmission. Max Person(s): 4
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
 
-        <!-- SCOOTS RENTALS CAROUSEL -->
-        <div class="card" id="Scoots_Rentals">
-            <h3>Rentals Available!</h3>
-            <p>We have all kinds of rentals available to help you tour the island.</p>
-            <a href="rental_listing.html">Pricing Details</a>
-        </div>
-        <div class="Rentals_Carousel">
-            <div class="scoots_rental_item fade">
-                <div class="rental_number">
-                    1 / 6
-                </div>
-                <img alt="Honda Metro Scooter" src="images/rentals/honda_metro_md.jpg">
-                <div class="rental_text">
-                    Honda Metro Scooter. 49cc Engine. Automatic transmission. Max. Person(s): 1
-                </div>
-            </div>
-            <div class="scoots_rental_item fade">
-                <div class="rental_number">
-                    2 / 6
-                </div>
-                <img alt="Honda Dio Scooter" src="images/rentals/honda_dio_lg.jpg">
-                <div class="rental_text">
-                    Honda Dio Scooter. 109.2 CC Engine. Automatic transmission. Max Person(s): 2
-                </div>
-            </div>
-            <div class="scoots_rental_item fade">
-                <div class="rental_number">
-                    3 / 6
-                </div>
-                <img alt="Honda PCX150 Scooter" src="images/rentals/honda_pcx_lg.jpg">
-                <div class="rental_text">
-                    Honda PCX150 Scooter. 149cc Engine. Automatic transmission. Max Person(s): 2
-                </div>
-            </div>
-            <div class="scoots_rental_item fade">
-                <div class="rental_number">
-                    4 / 6
-                </div>
-                <img alt="Honda Pioneer ATV" src="images/rentals/honda_pioneer_lg.jpg">
-                <div class="rental_text">
-                    Honda Pioneer ATV. 475cc Engine. Automatic transmission. Max Person(s): 4
-                </div>
-            </div>
-            <div class="scoots_rental_item fade">
-                <div class="rental_number">
-                    5 / 6
-                </div>
-                <img alt="Jeep Wrangler - 4 door with a/c" src="images/rentals/jeep_4door_lg.jpg">
-                <div class="rental_text">
-                    Jeep Wrangler - 4 door with a/c. 3.6 L V-6 Engine. Automatic transmission. Max Person(s): 5
-                </div>
-            </div>
-            <div class="scoots_rental_item fade">
-                <div class="rental_number">
-                    6 / 6
-                </div>
-                <img alt="Jeep Wrangler - 2 door" src="images/rentals/jeep_2door_lg.jpg">
-                <div class="rental_text">
-                    Jeep Wrangler - 2 door. 3.6 L V-6 Engine. Automatic transmission. Max Person(s): 4
-                </div>
-            </div>
-            <a class="move_forward" onclick="advanceDisplay(-1)">&#10094;</a>
-            <a class="move_backward" onclick="advanceDisplay(1)">&#10095;</a>
+        <div id="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
         <br>
-        <div id="carousel_indicators">
-            <span class="carousel_dot" onclick="currentDisplay(1)"></span>
-            <span class="carousel_dot" onclick="currentDisplay(2)"></span>
-            <span class="carousel_dot" onclick="currentDisplay(3)"></span>
-            <span class="carousel_dot" onclick="currentDisplay(4)"></span>
-            <span class="carousel_dot" onclick="currentDisplay(5)"></span>
-            <span class="carousel_dot" onclick="currentDisplay(6)"></span>
-        </div>
-        <br>
-        <form action="rental_booking.html" class="submitBtn">
+        <form class="button" action="reservations.html">
             <input type="submit" value="Reserve Today!">
         </form>
         <br>
+        <!-- CONTACT US -->
         <div class="Contact_Us">
             <h3>Contact Us</h3>
             <p>
@@ -189,11 +227,10 @@
     <br>
 </main>
 <br>
-
 <!-- FOOTER -->
 <footer class="container clearfix">
     <div class="section">
-        <div class="empty-card1 centerd">
+        <div class="centerd">
             &copy; <span id="copyright"></span> Scoots Rentals
             <br>
             Steven Crosby
@@ -209,5 +246,11 @@
     </div>
 </footer>
 <!-- JS -->
-<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    getForecast()
+    getWeather()
+    getRentalData()
+    getRentalImages()
+</script>
 </html>

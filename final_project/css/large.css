@@ -3,7 +3,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    #Weather_Today {
+    #summary {
         right: -200px;
     }
 

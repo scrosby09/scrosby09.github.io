@@ -1,78 +1,79 @@
 /**
  * FOOTER DATE */
-document.getElementById("modified").innerHTML = "Last updated: " + document.lastModified;
+document.getElementById("updated").innerHTML = "Last updated: " + document.lastModified;
 
 /**
  * NAVIGATION TOGGLE MENU */
 function toggleMenu() {
-    if (document.getElementsByClassName("navMenu")[0].classList === "navigation") {
+    if (document.getElementsByClassName("navMenu")[0].classList === "navMenu") {
         document.getElementsByClassName("navMenu")[0].classList.toggle("responsive");
         document.getElementById("ham").innerHTML = "&#x2715";
     } else {
         document.getElementsByClassName("navMenu")[0].classList.toggle("responsive");
         document.getElementById("ham").innerHTML = "&#9776 Menu";
     }
+}
 
+/**
+ * CONFIG RENTALS DAYS VALUE */
+function configDaysValue(rental_days) {
+    document.getElementById("rental_days_value").innerHTML = rental_days;
 }
 
 /**
  * BUILD RENTALS BOOKINGS AND LISTINGS */
-function getVehicleData() {
+function getRentalData() {
     const rentalsData = 'https://raw.githubusercontent.com/scrosby09/scrosby09.github.io/master/final_project/data/rentals.json';
-
     fetch(rentalsData)
         .then(function (response) {
             return response.json();
         })
         .then(function (jsonObject) {
             console.table(jsonObject);
-            const rentals = jsonObject['rentals'];
+            const rent = jsonObject['rent'];
 
-            // BUILD CONTENT AND HTML ELEMENTS
-            for (let i = 0; i < rentals.length; i++) {
-                // Build Rental Listing and Images
+            for (let i = 0; i < rent.length; i++) {
+                //Create section/Image
                 let card = document.createElement('div');
-                card.setAttribute('class', 'rentalsListing')
+                card.setAttribute('class', 'rentalDiv')
                 let image = document.createElement('img');
-                image.setAttribute('src', './images/' + rentals[i].picture);
-                image.setAttribute('alt', rentals[i].name);
+                image.setAttribute('src', './Images/' + rent[i].picture);
+                image.setAttribute('alt', rent[i].name);
                 image.setAttribute('class', 'rentalImage');
 
-                // Build Rental Bookings Content
-                let detail = document.createElement('div');
-                detail.setAttribute('class', 'rentalVehicle')
-
+                //Create div for rental picture
+                let detail = document.createElement('section');
+                detail.setAttribute('class', 'rentalDetail')
                 let name = document.createElement('h4');
-                name.textContent = rentals[i].rental_name;
-
+                name.textContent = rent[i].name;
                 let capacity = document.createElement('p');
-                capacity.textContent = "Max Person Capacity: " + rentals[i].rental_capacity;
+                capacity.textContent = "Max person(s): " + rent[i].person;
+                let reserveFull = document.createElement('p');
+                reserveFull.textContent = rent[i].reservprices_full;
+                let reserveHalf = document.createElement('p');
+                reserveHalf.textContent = rent[i].reservprices_half;
+                let walkFull = document.createElement('p');
+                walkFull.textContent = rent[i].walkprices_full;
+                let walkHalf = document.createElement('p');
+                walkHalf.textContent = rent[i].walkprices_half;
 
-                let rental_price_4hours = document.createElement('p');
-                rental_price_4hours.textContent = rentals[i].rental_price_4hours;
-
-                let rental_price_6hours = document.createElement('p');
-                rental_price_6hours.textContent = rentals[i].rental_price_6hours;
-
-                let rental_price_allday = document.createElement('p');
-                rental_price_allday.textContent = rentals[i].rental_price_allday;
-
-                // Matchup data and send
+                //Add elements into section
                 card.appendChild(image);
                 card.appendChild(detail);
                 detail.appendChild(name);
                 detail.appendChild(capacity);
-                detail.appendChild(rental_price_4hours);
-                detail.appendChild(rental_price_6hours);
-                detail.appendChild(rental_price_allday);
-                document.getElementById('rentals').appendChild(card);
+                detail.appendChild(reserveFull);
+                detail.appendChild(reserveHalf);
+                detail.appendChild(walkFull);
+                detail.appendChild(walkHalf);
+                document.getElementById('rental').appendChild(card);
             }
         });
 }
 
 /**
  * BUILD RENTALS IMAGES */
-function loadImages() {
+function getRentalImages() {
     const images = document.querySelectorAll("img[data-src]");
 
     const imgOptions = {
@@ -143,78 +144,65 @@ function rentalCarousel(n) {
 }
 
 /**
- * CONFIG RENTALS DAYS VALUE */
-function configDaysValue(rental_days) {
-    document.getElementById("rental_days_value").innerHTML = rental_days;
-}
-
-/**
  * BUILD WEATHER TODAY DISPLAY */
-function getWeatherToday() {
-    const weather_api = "https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&APPID=4a734b6bccba91cbab2bd77dba07fc5c";
-    fetch(weather_api)
+function getWeather() {
+    const weatherAPI = "https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&APPID=4a734b6bccba91cbab2bd77dba07fc5c";
+    fetch(weatherAPI)
         .then((response) => response.json())
-        .then((current_weather) => {
-
-            let high_temp = current_weather.main.temp_max;
-            let low_temp = current_weather.main.temp_min;
-            let temp_now = current_weather.main.temp;
-            let feels_like = current_weather.main.feels_like;
-            document.getElementById("today").innerText = current_weather.weather[0].main;
-            document.getElementById("temp_now").innerHTML = Math.round(temp_now) + "&deg;F Right Now";
-            document.getElementById("feels_like").innerText = Math.round(feels_like) + "&deg;F";
-            document.getElementById("high_low").innerHTML = Math.round(high_temp) + "&deg;F High / " + Math.round(low_temp) + "&deg;F Low";
-            document.getElementById("humidity").innerHTML = current_weather.main.humidity + "&percnt;";
+        .then((currentWeather) => {
+            console.log(currentWeather);
+            let highTemp = currentWeather.main.temp_max;
+            let lowTemp = currentWeather.main.temp_min;
+            let currentTemp = currentWeather.main.temp;
+            let windSpeed = currentWeather.wind.speed;
+            document.getElementById("weather_now").innerText = currentWeather.weather[0].main;
+            document.getElementById("high_low").innerHTML = Math.round(highTemp) + " &deg;F / " + Math.round(lowTemp) + " &deg;F";
+            document.getElementById("current_temp").innerHTML = Math.round(currentTemp) + " &deg;F";
+            document.getElementById("humidity").innerHTML = currentWeather.main.humidity + " &percnt;";
+            document.getElementById("wind_speed").innerText = Math.round(windSpeed) + "mph";
         });
 }
 
 /**
  * BUILD WEATHER FORECAST DISPLAY */
-function getWeatherForecast() {
-    const forecast_api = "https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&APPID=4a734b6bccba91cbab2bd77dba07fc5c";
-    fetch(forecast_api)
+function getForecast() {
+    const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&APPID=4a734b6bccba91cbab2bd77dba07fc5c";
+    fetch(forecastAPI)
         .then((response) => response.json())
-        .then((weather_forecast) => {
+        .then((location) => {
+            console.log(location);
+            const locationList = location.list;
+            let counter = 0;
+            for (let i = 0; i < locationList.length; i++) {
+                let forecastDay = locationList[i].dt_txt;
+                if (forecastDay.substr(11, 19) === '18:00:00') {
+                    counter++
+                    /*Get correct forecastDay for forecast*/
+                    /*Display as Month/Day*/
+                    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    let monthDate = parseInt((forecastDay[5] + forecastDay[6]) - 1);
+                    let date = forecastDay[8] + forecastDay[9];
+                    let month = months[monthDate];
+                    let fullDate = month + " " + date;
+                    let dateElement = 'date' + counter;
+                    document.getElementById(dateElement).innerHTML = fullDate;
 
-            //console.log(weather_forecast);
-            for (let i = 0; i < weather_forecast.list.length; i++) {
-                let check_date = weather_forecast.list[i].dt_txt;
-                if (check_date.includes("18:00:00")) {
-                    // Build Daily Forecast
-                    let daily_forecast = document.createElement("div");
-                    daily_forecast.className = "forecast-day card2";
+                    /*Get description*/
+                    let discriptionLower = locationList[i].weather[0].description;
+                    let discription = discriptionLower.charAt(0).toUpperCase() + discriptionLower.slice(1);
+                    let discriptionElement = 'condition' + counter;
+                    document.getElementById(discriptionElement).innerHTML = discription;
 
-                    // Format and Append Day Forecast
-                    let full_date = new Date(weather_forecast.list[i].dt_txt);
-                    let date_selection = {
-                        weekday: 'long'
-                    };
-                    let date_forecast = full_date.toLocaleDateString("en-US", date_selection);
-                    let day_forecast = document.createElement("div");
-                    day_forecast.className = "day-forecasts";
-                    day_forecast.innerText = date_forecast;
-                    daily_forecast.appendChild(day_forecast);
+                    /*Get temp-max*/
+                    let temp = Math.round(locationList[i].main.temp_max) + " &#176;F";
+                    let tempElement = 'day' + counter + '_weather';
+                    document.getElementById(tempElement).innerHTML = temp;
 
-                    // Build Weather Content
-                    let weather = document.createElement("div");
-                    weather.className = "weather";
-
-                    // Append Weather Icon
-                    let weather_icon = document.createElement("img");
-                    weather_icon.setAttribute('src', 'https://openweathermap.org/img/w/' + weather_forecast.list[i].weather[0].icon + '.png');
-                    weather_icon.setAttribute('alt', weather_forecast.list[i].weather[0].description);
-                    weather.appendChild(weather_icon);
-
-                    // Append High-Low Temp
-                    let temp = document.createElement("p");
-                    temp.innerHTML = Math.round(weather_forecast.list[i].main.temp) + "%F";
-                    weather.appendChild(temp);
-
-                    //Append Daily Forecast and Weather
-                    daily_forecast.appendChild(weather);
-
-                    //Output To HTML
-                    document.getElementById("fiveday-forecast").appendChild(daily_forecast);
+                    /*Icon for weather*/
+                    const imagesrc = 'https://openweathermap.org/img/w/' + locationList[i].weather[0].icon + '.png';
+                    let imageElement = 'weather_icon' + counter;
+                    document.getElementById(imageElement).setAttribute('src', imagesrc);
+                    document.getElementById(imageElement).setAttribute('alt', discription);
                 }
             }
         });

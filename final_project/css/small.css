@@ -58,11 +58,160 @@
 
 /* MAIN CONTENT
 _____________________________________*/
-.Fiveday_Forecast {
+/*-- RENTALS DISPLAY --*/
+#rentals {
+    margin: auto;
+    text-align: center;
+}
+
+#rentalHead {
+    margin: auto;
+    text-align: center;
+}
+
+#rentals p {
+    font-size: 1em;
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
     display: none;
 }
 
-#Scoots_Forecast {
+.mySlides img {
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: black;
+    background-color: #bbb;
+    font-size: 1em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -10px;
+    text-align: center;
+    font-family: "PT Serif", serif;
+}
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#dots {
+    text-align: center;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+#rental {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.rentalDiv {
+    border: 2px solid #002D52;
+    margin-bottom: 10px;
+}
+
+.rentalDetail {
+    padding: 2%;
+}
+
+.rentalDetail p {
+    color: #002D52;
+}
+
+.rentalDetail h4 {
+    color: #59C1FF;
+    background-color: #002D52;
+    padding: 2%;
+    border-radius: 12px;
+}
+
+.rentalImage {
+    width: 100%;
+}
+
+/*-- WEATHER DISPLAY --*/
+#weatherToday {
+    position: absolute;
+    left: 5vw;
+    top: 3vw;
+    background: radial-gradient(var(--light), var(--neutral-100));
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    opacity: .8;
+}
+
+#weatherToday h2 {
+    color: var(--dark);
+    border-bottom: 2px solid rgba(0, 0, 0, .25);
+    padding-bottom: 5px;
+}
+
+p.weather_data {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    column-gap: 10px;
+}
+
+.weather_data .label {
+    text-align: right;
+    font-style: italic;
+}
+
+.weather_data .value {
+    font-weight: 600;
+}
+
+.fiveDay {
     display: none;
 }
 
@@ -100,36 +249,6 @@ _____________________________________*/
     max-height: 30px;
 }
 
-h1 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-
-h2 {
-    font-size: 2rem;
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-p {
-    margin: 0 auto;
-    font-size: 1rem;
-}
-
-#elevator_pitch {
-    font-size: 1rem;
-    font-weight: bold;
-    max-width: 600px;
-    margin: auto;
-    border-radius: 12px;
-    padding: 2%;
-}
-
 .Scoots_Hero {
     position: relative;
     margin-top: 10px;
@@ -139,81 +258,6 @@ p {
     width: 80%;
     margin-left: 10%;
     border-radius: 12px;
-}
-
-.Rentals_Carousel {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-}
-
-.scoots_rental_item {
-    display: none;
-}
-
-.scoots_rental_item img {
-    width: 100%;
-}
-
-.move_forward,
-.move_backward {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.move_backward {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.move_forward:hover,
-.move_backward:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.rental_text {
-    font-size: 1rem;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: -10px;
-    text-align: center;
-}
-
-.rental_number {
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.carousel_dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-#carousel_indicators {
-    text-align: center;
-}
-
-.active,
-.carousel_dot:hover {
-    background-color: #717171;
 }
 
 .fade {
@@ -241,56 +285,6 @@ p {
     to {
         opacity: 1
     }
-}
-
-#rentals {
-    display: grid;
-    grid-gap: 15px;
-}
-
-.rentalsListing {
-    margin: 0 auto;
-}
-
-.rentalVehicle {
-    padding: 0.5rem;
-}
-
-.rentalVehicle p {
-    color: var(--blue-nights);
-}
-
-.rentalVehicle h4 {
-    padding: 0.5rem;
-}
-
-.rentalImage {
-    width: 100%;
-}
-
-#Weather_Today {
-    font-family: "Open Sans", sans-serif;
-    color: var(--illuminating-yellow);
-    font-weight: 400;
-    display: grid;
-    background-color: var(--neutral-1000);
-    opacity: 90%;
-    border-radius: 0.25rem;
-    text-align: left;
-    position: sticky;
-    top: 25px;
-    left: 30px;
-    padding: 2rem;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}
-
-#Weather_Today ul {
-    list-style: none;
-}
-
-#current_weather {
-    text-align: center;
-    font-size: 1em;
 }
 
 .contact_card {
@@ -380,28 +374,6 @@ form label.top input:required:valid {
     padding: 2%;
 }
 
-h4 {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-#rental_terms {
-    margin: auto auto 10px;
-    text-align: center;
-    border-radius: 12px;
-    padding: 2%;
-    max-width: 500px;
-}
-
-#rental_terms h3 {
-    font-size: 1em;
-}
-
-#rental_terms li {
-    font-size: 1rem;
-    text-align: left;
-}
-
 img[data-src] {
     filter: blur(0.2rem);
     transition: filter .5s;
@@ -411,26 +383,6 @@ img {
     filter: blur(0em);
     transition: filter .5s;
     max-width: 100%;
-}
-
-.tours_gallery {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-}
-
-figure {
-    border: 1px solid #59C1FF;
-}
-
-figcaption {
-    padding: 5px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.gallery_title {
-    text-align: center;
 }
 
 /* HEADER
@@ -516,7 +468,6 @@ nav ul li a:hover {
 .responsiveClose li {
     display: none;
 }
-
 
 /* FOOTER
 _____________________________________*/
@@ -1196,9 +1147,9 @@ template {
     margin: auto 0;
 }
 
-
 .centerd {
     margin: 0 auto;
+    text-align: center;
 }
 
 .padding05 {
