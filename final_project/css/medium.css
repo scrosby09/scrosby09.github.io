@@ -77,8 +77,8 @@
     }
 
     #scoots-logo {
-        margin-left: 25px;
-        margin-top: 25px;
+        max-width: 15rem;
+        margin: 0 auto;
     }
 
     .navMenu {
