@@ -16,18 +16,21 @@
 </head>
 
 <!-- HEADER -->
-<header class="section">
-    <div class="card-flex-relative-60 center-margin">
-        <div class="card-flex-relative-40 center-margin">
+<header>
+    <div class="card-flex-relative-60 centerd">
+        <div class="empty-card3 centerd">
             <img class="scoots_logo" alt="Scoots Logo" id="scoots-logo" src="images/scoots_logo.png">
         </div>
-        <h1></h1>
-        <p>Enjoy the ride in paraíso</p>
+        <div class="padding1 centerd">
+            <h1>SCOOTS</h1>
+            <p>Enjoy the ride in paraíso</p>
+        </div>
     </div>
+    <br>
 </header>
 <!-- NAVIGATION -->
-<nav class="section">
-    <ul class="navMenu">
+<nav>
+    <ul class="navMenu padding05">
         <li><a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="rental_listing.html">Rentals</a></li>
@@ -40,97 +43,110 @@
 <!-- MAIN CONTENT -->
 <main>
     <div class="main main-raised">
-        <div class="container center-margin clearfix">
-            <h2>Rental Booking</h2>
+        <div class="container centerd clearfix">
+            <br>
+            <div class="card-block-relative-40 centerd">
+                <h1 class="padding05">Rental Booking</h1>
+            </div>
+            <br>
             <form action="rental_confirmed.html" method="get">
-
                 <!-- CUSTOMER INFO -->
-                <fieldset>
-                    <legend>Customer Information</legend>
-                    <label class="top">
-                        Full Name*:
-                        <input name="rental_item" pattern="[A-Za-z\s]{5,}" placeholder="First and Last" required
-                               type="text">
-                    </label>
-                    <label class="top">
-                        Phone*:
-                        <input name="phone" pattern="[0-9]{10,}" placeholder="000-000-0000" required type="tel">
-                    </label>
-                    <label class="top">
-                        Email:
-                        <input name="email" placeholder="@email" type="email">
-                    </label>
-                    <label class="top">
-                        Home Country:
-                        <input name="country" placeholder="Country of origin" type="text">
-                    </label>
-                    <label class="top">
-                        Home State:
-                        <input name="state" placeholder="ID" type="text">
-                    </label>
-                    <label class="top" for="cruise">
-                        Cruise Line:
-                    </label>
-                    <select id="cruise" name="cruise">
-                        <option value="Princess">Princess</option>
-                        <option value="Royal">Royal</option>
-                        <option value="Carnival">Carnival</option>
-                        <option value="Norwegian">Norwegian</option>
-                        <option value="Disney">Disney</option>
-                    </select>
-                </fieldset>
-
+                <div class="card-block-center-60 centerd">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label class="top">
+                            Full Name*:
+                            <input name="rental_item" pattern="[A-Za-z\s]{5,}" placeholder="First and Last" required
+                                   type="text">
+                        </label>
+                        <label class="top">
+                            Phone*:
+                            <input name="phone" pattern="[0-9]{10,}" placeholder="000-000-0000" required type="tel">
+                        </label>
+                        <label class="top">
+                            Email:
+                            <input name="email" placeholder="@email" type="email">
+                        </label>
+                        <label class="top">
+                            Home Country:
+                            <input name="country" placeholder="Country of origin" type="text">
+                        </label>
+                        <label class="top">
+                            Home State:
+                            <input name="state" placeholder="ID" type="text">
+                        </label>
+                        <label class="top" for="cruise">
+                            Cruise Line:
+                        </label>
+                        <select id="cruise" name="cruise">
+                            <option value="Princess">Princess</option>
+                            <option value="Royal">Royal</option>
+                            <option value="Carnival">Carnival</option>
+                            <option value="Norwegian">Norwegian</option>
+                            <option value="Disney">Disney</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <br>
                 <!-- RENTAL ITEM INFO -->
-                <fieldset>
-                    <legend>Rental Item Information</legend>
-                    <label class="top">
-                        Rental Date:
-                        <input name="date" required type="date">
-                    </label>
-                    <label class="top">
-                        Select Your Rental Item:
-                        <select name="rental_selection" required>
-                            <option value="Honda Metropolitan">Honda Metropolitan (49cc)</option>
-                            <option value="Honda Dio">Honda Dio</option>
-                            <option value="Honda PCX150">Honda PCX150</option>
-                            <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
-                            <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
-                            <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
-                        </select>
-                    </label>
-                    <label class="top">
-                        Full or Half Day?
-                        <select name="rental_time" required>
-                            <option value="8AM-12PM">8AM-12PM</option>
-                            <option value="10AM-2PM">10AM-2PM</option>
-                            <option value="10AM-2PM">12PM-4PM</option>
-                            <option value="2PM-6PM">2PM-6PM</option>
-                            <option value="4PM-8PM">2PM-6PM</option>
-                            <option value="8AM-2PM">8AM-2PM</option>
-                            <option value="2PM-8PM">8AM-2PM</option>
-                            <option value="8AM-8PM">8AM-8PM</option>
-                        </select>
-                    </label>
-
-                    <label class="top" for="rental_days">
-                        Tell us how many days
-                        <input id="rental_days" list="rental_days" max="10" min="1"
-                               onchange="configDaysValue(this.value)" oninput="configDaysValue(this.value)" required
-                               step="1"
-                               type="range"
-                               value="1">
-                        <span id="rental_days_value">5</span>
-                    </label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Additional Info</legend>
-                    <label class="top" id="booking_comments">What else should we know?:
-                        <textarea id="comments" name="comments"></textarea>
-                    </label>
-                </fieldset>
-                <input class="submitBtn" type="submit" value='Reserve'>
+                <div class="card-block-center-60 centerd">
+                    <fieldset>
+                        <legend>Rental Item Information</legend>
+                        <label class="top">
+                            Rental Date:
+                            <input name="date" required type="date">
+                        </label>
+                        <label class="top">
+                            Select Your Rental Item:
+                            <select name="rental_selection" required>
+                                <option value="Honda Metropolitan">Honda Metropolitan (49cc)</option>
+                                <option value="Honda Dio">Honda Dio</option>
+                                <option value="Honda PCX150">Honda PCX150</option>
+                                <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                                <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                                <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                            </select>
+                        </label>
+                        <label class="top">
+                            Full or Half Day?
+                            <select name="rental_time" required>
+                                <option value="8AM-12PM">8AM-12PM</option>
+                                <option value="10AM-2PM">10AM-2PM</option>
+                                <option value="10AM-2PM">12PM-4PM</option>
+                                <option value="2PM-6PM">2PM-6PM</option>
+                                <option value="4PM-8PM">2PM-6PM</option>
+                                <option value="8AM-2PM">8AM-2PM</option>
+                                <option value="2PM-8PM">8AM-2PM</option>
+                                <option value="8AM-8PM">8AM-8PM</option>
+                            </select>
+                        </label>
+                        <label class="top" for="rental_days">
+                            Tell us how many days
+                            <input id="rental_days" list="rental_days" max="10" min="1"
+                                   onchange="configDaysValue(this.value)" oninput="configDaysValue(this.value)" required
+                                   step="1"
+                                   type="range"
+                                   value="1">
+                            <span id="rental_days_value">5</span>
+                        </label>
+                    </fieldset>
+                </div>
+                <br>
+                <!-- ADDITIONAL INFORMATION -->
+                <div class="card-block-center-60 centerd">
+                    <fieldset>
+                        <legend>Additional Info</legend>
+                        <label class="top" id="booking_comments">What else should we know?:
+                            <textarea id="comments" name="comments"></textarea>
+                        </label>
+                    </fieldset>
+                    <input class="submitBtn" type="submit" value='Reserve'>
+                    <br>
+                </div>
             </form>
+        </div>
+        <br>
+        <div class="card-block-relative-40 centerd">
             <div id="rental_terms">
                 <h3>Scoots Rental Terms Of Use</h3>
                 <ul>
@@ -147,6 +163,8 @@
                 </ul>
             </div>
         </div>
+        <br>
+        <br>
     </div>
     <br>
 </main>
@@ -154,10 +172,10 @@
 <!-- FOOTER -->
 <footer class="container clearfix">
     <div class="section">
-        <div class="card-block-center-60 center-margin">
-            &copy; <span id="copyright"></span> Scoots Rentals |
+        <div class="centerd">
+            &copy; <span id="copyright"></span> Scoots Rentals
             <br>
-            Steven Crosby |
+            Steven Crosby
             <a href="https://www.byui.edu/online">BYUI Online Learning</a>
             <br>
             Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
@@ -171,8 +189,4 @@
 </footer>
 <!-- JS -->
 <script src="js/main.js"></script>
-<script>
-    rentals_images()
-    rentalsData()
-</script>
 </html>

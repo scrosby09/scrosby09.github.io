@@ -16,19 +16,21 @@
 </head>
 
 <!-- HEADER -->
-<header class="section">
-    <div class="card-flex-center-40 center-margin">
-        <div class="card-flex-relative-40 center-margin">
+<header>
+    <div class="card-flex-relative-60 centerd">
+        <div class="empty-card3 centerd">
             <img class="scoots_logo" alt="Scoots Logo" id="scoots-logo" src="images/scoots_logo.png">
         </div>
-        <h1 class="center-margin">Scoots</h1>
-        <p>Enjoy the ride in paraíso</p>
+        <div class="padding1 centerd">
+            <h1>SCOOTS</h1>
+            <p>Enjoy the ride in paraíso</p>
+        </div>
     </div>
+    <br>
 </header>
-
 <!-- NAVIGATION -->
 <nav>
-    <ul class="navMenu">
+    <ul class="navMenu padding05">
         <li><a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="rental_listing.html">Rentals</a></li>
@@ -37,7 +39,6 @@
         <li><a href="contact_us.html">Contact</a></li>
     </ul>
 </nav>
-<br>
 <br>
 <!-- MAIN CONTENT -->
 <main>
@@ -185,32 +186,28 @@
             </div>
         </div>
     </div>
+    <br>
 </main>
+<br>
 
-<br>
-<br>
 <!-- FOOTER -->
-<footer class="container">
-    <div class="card">
-        &copy; <span id="copyright"></span> Scoots Rentals |
-        <br>
-        Steven Crosby |
-        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-        <br>
-        Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
-        <a href="https://www.byui.edu/online">Assignment Portal</a>
+<footer class="container clearfix">
+    <div class="section">
+        <div class="empty-card1 centerd">
+            &copy; <span id="copyright"></span> Scoots Rentals
+            <br>
+            Steven Crosby
+            <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+            <br>
+            Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+            <a href="https://www.byui.edu/online">Assignment Portal</a>
+            <div id="updated"></div>
+            <a href="https://scrosby09.github.io/index.html" style="font-size: .8em; font-weight: 600">Return to
+                Assignment
+                Portal</a>
+        </div>
     </div>
-    <div id="updated"></div>
-    <br>
-    <a href="https://scrosby09.github.io/index.html" style="font-size: .8em; font-weight: 600">Return to Assignment
-        Portal</a>
-    <br>
-    <br>
 </footer>
 <!-- JS -->
 <script src="js/main.js"></script>
-<script>
-    getWeatherToday('3521342');
-    getWeatherForecast('3521342');
-</script>
 </html>

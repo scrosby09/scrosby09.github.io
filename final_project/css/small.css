@@ -94,33 +94,31 @@ _____________________________________*/
 .phone,
 .email {
     max-height: 25px;
-    padding-right: 2%;
 }
 
 .social {
     max-height: 30px;
 }
 
-h2 {
+h1 {
+    font-size: 3rem;
     text-align: center;
-    font-size: 2rem;
 }
 
-h1 {
-    font-size: 2em;
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
 }
 
 h3 {
-    font-size: 1.5em;
-    margin: 5px;
-    text-decoration: underline;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 p {
-    margin: 0;
-    font-size: 1.5rem;
-    color: black;
-    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
 }
 
 #elevator_pitch {
@@ -376,10 +374,6 @@ h4 {
     text-align: center;
 }
 
-.map iframe {
-    max-width: 100%;
-}
-
 #rental_terms {
     margin: auto auto 10px;
     text-align: center;
@@ -490,13 +484,14 @@ nav {
 .navMenu {
     position: relative;
     display: -webkit-box;
-    display: display: flex !important;
+    display: flex !important;
     flex-wrap: wrap;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 0.5rem 1rem; }
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0.25rem;
 }
 
 .navMenu li:first-child {
@@ -541,15 +536,9 @@ nav ul li a:hover {
 /* FOOTER
 _____________________________________*/
 footer {
-    height: 50px;
-    width: 100%;
-    color: black;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    border-radius: 12px;
-    font-size: 1rem;
+    text-align: center;
 }
 
 footer a:visited {
@@ -898,8 +887,8 @@ template {
 
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -1108,7 +1097,6 @@ template {
     0 6px 30px 5px rgba(0, 0, 0, 0.12),
     0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
-
 }
 
 .card-block-center-60 {
@@ -1186,6 +1174,61 @@ template {
     background: var(--neutral-100);
 }
 
-.center-margin {
+.empty-card1 {
+    display: block;
+    position: relative;
+    max-width: 70rem;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    background: var(--neutral-100);
+}
+
+.empty-card2 {
+    display: flex;
+    position: relative;
+    max-width: 70rem;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    background: var(--neutral-100);
+}
+
+.empty-card3 {
+    display: block;
+    position: relative;
+    max-width: 70rem;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    background: var(--neutral-100);
+    margin: auto 0;
+}
+
+
+.centerd {
     margin: 0 auto;
+}
+
+.padding05 {
+    padding: 0.5rem;
+}
+
+
+.padding1 {
+    padding: 1rem;
+}
+
+.padding15 {
+    padding: 1.5rem;
+}
+
+.padding2 {
+    padding: 2rem;
 }
