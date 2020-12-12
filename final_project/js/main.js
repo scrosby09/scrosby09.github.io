@@ -34,7 +34,7 @@ function getVehicleData() {
                 let card = document.createElement('div');
                 card.setAttribute('class', 'rentalsListing')
                 let image = document.createElement('img');
-                image.setAttribute('src', './images/rentals/' + rentals[i].picture);
+                image.setAttribute('src', './images/' + rentals[i].picture);
                 image.setAttribute('alt', rentals[i].name);
                 image.setAttribute('class', 'rentalImage');
 
