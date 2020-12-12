@@ -1,49 +1,49 @@
 {
   "rentals": [
     {
-      "rental_name": "Honda Metropolitan",
-      "rental_capacity": "1",
-      "rental_image": "honda_metro_lg.jpg",
+      "name": "Honda Metropolitan",
+      "capacity": "1",
+      "image": "honda_metro_lg.jpg",
       "rental_price_4hours": "Reserve 4 Hours: $35",
       "rental_price_6hours": "Reserve 6 Hours: $45",
       "rental_price_allday": "Reserve All Day: $60"
     },
     {
-      "rental_name": "Honda Dio",
-      "rental_capacity": "2",
-      "rental_image": "honda_dio_sm.jpg",
+      "name": "Honda Dio",
+      "capacity": "2",
+      "image": "honda_dio_sm.jpg",
       "rental_price_4hours": "Reserve 4 Hours: $35",
       "rental_price_6hours": "Reserve 6 Hours: $45",
       "rental_price_allday": "Reserve All Day: $70"
     },
     {
-      "rental_name": "Honda PCX150",
-      "rental_capacity": "2",
-      "rental_image": "honda_pcx_lg.jpg",
+      "name": "Honda PCX150",
+      "capacity": "2",
+      "image": "honda_pcx_lg.jpg",
       "rental_price_4hours": "Reserve 4 Hours: $45",
       "rental_price_6hours": "Reserve 6 Hours: $55",
       "rental_price_allday": "Reserve All Day: $80"
     },
     {
-      "rental_name": "Honda Pioneer ATV",
-      "rental_capacity": "4",
-      "rental_image": "honda_pioneer_lg.jpg",
+      "name": "Honda Pioneer ATV",
+      "capacity": "4",
+      "image": "honda_pioneer_lg.jpg",
       "rental_price_4hours": "Reserve 4 Hours: $50",
       "rental_price_6hours": "Reserve 6 Hours: $65",
       "rental_price_allday": "Reserve All Day: $85"
     },
     {
-      "rental_name": "Jeep Wrangler - 4 door with a/c",
-      "rental_capacity": "5",
-      "rental_image": "jeep_4door_lg.jpg",
+      "name": "Jeep Wrangler - 4 door with a/c",
+      "capacity": "5",
+      "image": "jeep_4door_lg.jpg",
       "rental_price_4hours": "Reserve 4 Hours: $70",
       "rental_price_6hours": "Reserve 6 Hours: $85",
       "rental_price_allday": "Reserve All Day: $125"
     },
     {
-      "rental_name": "Jeep Wrangler - 2 door",
-      "rental_capacity": "4",
-      "rental_image": "jeep_2door_lg.jpg",
+      "name": "Jeep Wrangler - 2 door",
+      "capacity": "4",
+      "image": "jeep_2door_lg.jpg",
       "rental_price_4hours": "Reserve 4 Hours: $60",
       "rental_price_6hours": "Reserve 6 Hours: $70",
       "rental_price_allday": "Reserve All Day: $100"

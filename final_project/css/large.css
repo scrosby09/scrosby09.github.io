@@ -7,7 +7,7 @@
         right: -200px;
     }
 
-    #rental_item {
+    #rentals {
         grid-template-columns: 1fr 1fr 1fr;
     }
 

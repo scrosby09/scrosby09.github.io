@@ -42,14 +42,20 @@
 <br>
 <!-- MAIN CONTENT -->
 <main>
-    <h2>Scoots Rentals Listing</h2>
-    <form action="rental_booking.html" class="submitBtn">
-        <input type="submit" value="Reserve Today!">
-    </form>
-    <div id="rental_item"></div>
-    <form action="rental_booking.html" class="submitBtn">
-        <input type="submit" value="Reserve Today!">
-    </form>
+    <div class="main main-raised">
+        <div class="container clearfix centerd">
+            <div>
+                <h2>Scoots Rentals Listing</h2>
+                <form action="rental_booking.html" class="submitBtn">
+                    <input type="submit" value="Reserve Today!">
+                </form>
+                <div id="rentals"></div>
+                <form action="rental_booking.html" class="submitBtn">
+                    <input type="submit" value="Reserve Today!">
+                </form>
+            </div>
+        </div>
+    </div>
 </main>
 <br>
 
@@ -72,5 +78,9 @@
     </div>
 </footer>
 <!-- JS -->
-<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    loadImages()
+    getVehicleData()
+</script>
 </html>

@@ -16,36 +16,95 @@ function toggleMenu() {
 }
 
 /**
+ * BUILD RENTALS BOOKINGS AND LISTINGS */
+function getVehicleData() {
+    const rentalsData = 'https://raw.githubusercontent.com/scrosby09/scrosby09.github.io/master/final_project/data/rentals.json';
+
+    fetch(rentalsData)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonObject) {
+            console.table(jsonObject);
+            const rentals = jsonObject['rentals'];
+
+            // BUILD CONTENT AND HTML ELEMENTS
+            for (let i = 0; i < rentals.length; i++) {
+                // Build Rental Listing and Images
+                let card = document.createElement('div');
+                card.setAttribute('class', 'rentalsListing')
+                let image = document.createElement('img');
+                image.setAttribute('src', './images/rentals/' + rentals[i].picture);
+                image.setAttribute('alt', rentals[i].name);
+                image.setAttribute('class', 'rentalImage');
+
+                // Build Rental Bookings Content
+                let detail = document.createElement('div');
+                detail.setAttribute('class', 'rentalVehicle')
+
+                let name = document.createElement('h4');
+                name.textContent = rentals[i].rental_name;
+
+                let capacity = document.createElement('p');
+                capacity.textContent = "Max Person Capacity: " + rentals[i].rental_capacity;
+
+                let rental_price_4hours = document.createElement('p');
+                rental_price_4hours.textContent = rentals[i].rental_price_4hours;
+
+                let rental_price_6hours = document.createElement('p');
+                rental_price_6hours.textContent = rentals[i].rental_price_6hours;
+
+                let rental_price_allday = document.createElement('p');
+                rental_price_allday.textContent = rentals[i].rental_price_allday;
+
+                // Matchup data and send
+                card.appendChild(image);
+                card.appendChild(detail);
+                detail.appendChild(name);
+                detail.appendChild(capacity);
+                detail.appendChild(rental_price_4hours);
+                detail.appendChild(rental_price_6hours);
+                detail.appendChild(rental_price_allday);
+                document.getElementById('rentals').appendChild(card);
+            }
+        });
+}
+
+/**
  * BUILD RENTALS IMAGES */
-function rentals_images() {
-    const itemImage = document.querySelectorAll("img[data-src]");
-    const configImage = {
+function loadImages() {
+    const images = document.querySelectorAll("img[data-src]");
+
+    const imgOptions = {
         threshold: 0,
         rootMargin: "0px 0px 50px 0px"
     };
-    const displayImage = (img) => {
+
+    const loadImages = (img) => {
         img.setAttribute('src', img.getAttribute('data-src'));
         img.onload = () => {
             img.removeAttribute('data-src');
         };
     }
+
     if ("IntersectionObserver" in window) {
-        const imageObserver = new IntersectionObserver((entries, imgObserver) => {
+        const imgObserver = new IntersectionObserver((entries, imgObserver) => {
             entries.forEach((entries) => {
                 if (!entries.isIntersecting) {
+
                 } else {
-                    displayImage(entries.target);
+                    loadImages(entries.target);
                     imgObserver.unobserve(entries.target);
                 }
             });
-        }, configImage);
+        }, imgOptions);
 
-        itemImage.forEach(image => {
-            imageObserver.observe(image);
+        images.forEach(image => {
+            imgObserver.observe(image);
         });
     } else {
-        itemImage.forEach((img) => {
-            displayImage(img);
+        imagesToLoad.forEach((img) => {
+            loadImages(img);
         });
     }
 }
@@ -81,56 +140,6 @@ function rentalCarousel(n) {
     }
     displayRental[init_carousel - 1].style.display = "block";
     displayDots[init_carousel - 1].className += " active";
-}
-
-/**
- * BUILD RENTALS BOOKINGS AND LISTINGS */
-function rentalsData() {
-    const requestURL = 'https://raw.githubusercontent.com/scrosby09/scrosby09.github.io/master/final_project/data/rentals.json';
-
-    fetch(requestURL)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (jsonObject) {
-            console.table(jsonObject);
-            const rentals = jsonObject['rentals'];
-
-            // BUILD CONTENT AND HTML ELEMENTS
-            for (let i = 0; i < rentals.length; i++) {
-                // Build Rental Listing and Images
-                let rental_display = document.createElement('div');
-                rental_display.setAttribute('class', 'rentalDiv')
-                let rental_image = document.createElement('img');
-                rental_image.setAttribute('src', 'images/' + rentals[i].picture);
-                rental_image.setAttribute('alt', rentals[i].name);
-                rental_image.setAttribute('class', 'rentalImage');
-
-                // Build Rental Bookings Content
-                let rental_info = document.createElement('section');
-                rental_info.setAttribute('class', 'rentalDetail')
-                let rental_item = document.createElement('h4');
-                rental_item.textContent = rentals[i].name;
-                let rental_capacity = document.createElement('p');
-                rental_capacity.textContent = "Max Person Capacity: " + rentals[i].rental_capacity;
-                let rental_price_4hours = document.createElement('p');
-                rental_price_4hours.textContent = rentals[i].rental_price_4hours;
-                let rental_price_6hours = document.createElement('p');
-                rental_price_6hours.textContent = rentals[i].rental_price_6hours;
-                let rental_price_allday = document.createElement('p');
-                rental_price_allday.textContent = rentals[i].rental_price_allday;
-
-                // Matchup data and send
-                rental_display.appendChild(rental_image);
-                rental_display.appendChild(rental_info);
-                rental_info.appendChild(rental_item);
-                rental_info.appendChild(rental_capacity);
-                rental_info.appendChild(rental_price_4hours);
-                rental_info.appendChild(rental_price_6hours);
-                rental_info.appendChild(rental_price_allday);
-                document.getElementById('rental_item').appendChild(rental_display);
-            }
-        });
 }
 
 /**
