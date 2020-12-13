@@ -30,42 +30,43 @@ function getRentalData() {
         })
         .then(function (jsonObject) {
             console.table(jsonObject);
-            const rent = jsonObject['rent'];
+            const rentals = jsonObject['rentals'];
 
-            for (let i = 0; i < rent.length; i++) {
+            for (let i = 0; i < rentals.length; i++) {
                 //Create section/Image
                 let card = document.createElement('div');
                 card.setAttribute('class', 'rentalDiv')
                 let image = document.createElement('img');
-                image.setAttribute('src', './Images/' + rent[i].picture);
-                image.setAttribute('alt', rent[i].name);
+                image.setAttribute('src', './images/' + rentals[i].picture);
+                image.setAttribute('alt', rentals[i].name);
                 image.setAttribute('class', 'rentalImage');
 
                 //Create div for rental picture
                 let detail = document.createElement('section');
                 detail.setAttribute('class', 'rentalDetail')
+
                 let name = document.createElement('h4');
-                name.textContent = rent[i].name;
+                name.textContent = rentals[i].name;
+
                 let capacity = document.createElement('p');
-                capacity.textContent = "Max person(s): " + rent[i].person;
-                let reserveFull = document.createElement('p');
-                reserveFull.textContent = rent[i].reservprices_full;
-                let reserveHalf = document.createElement('p');
-                reserveHalf.textContent = rent[i].reservprices_half;
-                let walkFull = document.createElement('p');
-                walkFull.textContent = rent[i].walkprices_full;
-                let walkHalf = document.createElement('p');
-                walkHalf.textContent = rent[i].walkprices_half;
+                capacity.textContent = "Max person(s): " + rentals[i].capacity;
+                let rental_price_4hours = document.createElement('p');
+                rental_price_4hours.textContent = rentals[i].rental_price_4hours;
+
+                let rental_price_6hours = document.createElement('p');
+                rental_price_6hours.textContent = rentals[i].rental_price_6hours;
+
+                let rental_price_allday = document.createElement('p');
+                rental_price_allday.textContent = rentals[i].rental_price_allday;
 
                 //Add elements into section
                 card.appendChild(image);
                 card.appendChild(detail);
                 detail.appendChild(name);
                 detail.appendChild(capacity);
-                detail.appendChild(reserveFull);
-                detail.appendChild(reserveHalf);
-                detail.appendChild(walkFull);
-                detail.appendChild(walkHalf);
+                detail.appendChild(rental_price_4hours);
+                detail.appendChild(rental_price_6hours);
+                detail.appendChild(rental_price_allday);
                 document.getElementById('rental').appendChild(card);
             }
         });
@@ -92,7 +93,7 @@ function getRentalImages() {
         const imgObserver = new IntersectionObserver((entries, imgObserver) => {
             entries.forEach((entries) => {
                 if (!entries.isIntersecting) {
-
+                    return;
                 } else {
                     loadImages(entries.target);
                     imgObserver.unobserve(entries.target);
@@ -110,37 +111,38 @@ function getRentalImages() {
     }
 }
 
-/**
- * HOMEPAGE RENTAL CAROUSEL */
-let init_carousel = 1;
-rentalCarousel(init_carousel);
+/*Slide Show*/
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function advanceDisplay(n) {
-    rentalCarousel(init_carousel += n);
+/* Next/previous controls*/
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-function currentDisplay(n) {
-    rentalCarousel(init_carousel = n);
+/* Thumbnail image controls*/
+function currentSlide(n) {
+    showSlides(slideIndex = n);
 }
 
-function rentalCarousel(n) {
+function showSlides(n) {
     let i;
-    const displayRental = document.getElementsByClassName("scoots_rental_item");
-    const displayDots = document.getElementsByClassName("carousel_dot");
-    if (n > displayRental.length) {
-        init_carousel = 1
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
     }
     if (n < 1) {
-        init_carousel = displayRental.length
+        slideIndex = slides.length
     }
-    for (i = 0; i < displayRental.length; i++) {
-        displayRental[i].style.display = "none";
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    for (i = 0; i < displayDots.length; i++) {
-        displayDots[i].className = displayDots[i].className.replace(" active", "");
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-    displayRental[init_carousel - 1].style.display = "block";
-    displayDots[init_carousel - 1].className += " active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
 /**
@@ -172,37 +174,37 @@ function getForecast() {
         .then((location) => {
             console.log(location);
             const locationList = location.list;
-            let counter = 0;
+            let reset = 0;
             for (let i = 0; i < locationList.length; i++) {
                 let forecastDay = locationList[i].dt_txt;
                 if (forecastDay.substr(11, 19) === '18:00:00') {
-                    counter++
+                    reset++
                     /*Get correct forecastDay for forecast*/
                     /*Display as Month/Day*/
-                    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-                    let monthDate = parseInt((forecastDay[5] + forecastDay[6]) - 1);
+                    const monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    let forecastDate = parseFloat((forecastDay[5] + forecastDay[6]) - 1);
                     let date = forecastDay[8] + forecastDay[9];
-                    let month = months[monthDate];
+                    let month = monthList[forecastDate];
                     let fullDate = month + " " + date;
-                    let dateElement = 'date' + counter;
+                    let dateElement = 'date' + reset;
                     document.getElementById(dateElement).innerHTML = fullDate;
 
                     /*Get description*/
-                    let discriptionLower = locationList[i].weather[0].description;
-                    let discription = discriptionLower.charAt(0).toUpperCase() + discriptionLower.slice(1);
-                    let discriptionElement = 'condition' + counter;
-                    document.getElementById(discriptionElement).innerHTML = discription;
+                    let weather = locationList[i].weather[0].description;
+                    let description = weather.charAt(0).toUpperCase() + weather.slice(1);
+                    let weather_description = 'condition' + reset;
+                    document.getElementById(weather_description).innerHTML = description;
 
                     /*Get temp-max*/
-                    let temp = Math.round(locationList[i].main.temp_max) + " &#176;F";
-                    let tempElement = 'day' + counter + '_weather';
-                    document.getElementById(tempElement).innerHTML = temp;
+                    let high_temp = Math.round(locationList[i].main.temp_max) + " &#176;F";
+                    let forecast_high = 'day' + reset + '_weather';
+                    document.getElementById(forecast_high).innerHTML = high_temp;
 
                     /*Icon for weather*/
-                    const imagesrc = 'https://openweathermap.org/img/w/' + locationList[i].weather[0].icon + '.png';
-                    let imageElement = 'weather_icon' + counter;
-                    document.getElementById(imageElement).setAttribute('src', imagesrc);
-                    document.getElementById(imageElement).setAttribute('alt', discription);
+                    const weather_image = 'https://openweathermap.org/img/w/' + locationList[i].weather[0].icon + '.png';
+                    let forecast_icon = 'weather_icon' + reset;
+                    document.getElementById(forecast_icon).setAttribute('src', weather_image);
+                    document.getElementById(forecast_icon).setAttribute('alt', description);
                 }
             }
         });

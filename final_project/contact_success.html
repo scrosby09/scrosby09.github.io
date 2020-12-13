@@ -32,7 +32,7 @@
 <!-- NAVIGATION -->
 <nav>
     <ul class="navMenu padding05">
-        <li><a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a id="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="rental_listing.html">Rentals</a></li>
         <li><a href="rental_booking.html">Reservations</a></li>
@@ -59,28 +59,26 @@
     <br>
 </main>
 
+<br>
 <!-- FOOTER -->
-<footer class="container">
-    <div class="card">
-        &copy; <span id="copyright"></span> Scoots Rentals |
-        <br>
-        Steven Crosby |
-        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-        <br>
-        Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
-        <a href="https://www.byui.edu/online">Assignment Portal</a>
+<footer class="container clearfix">
+    <div class="section">
+        <div class="centerd">
+            &copy; <span id="copyright"></span> Scoots Rentals
+            <br>
+            Steven Crosby
+            <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+            <br>
+            Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+            <a href="https://www.byui.edu/online">Assignment Portal</a>
+            <div id="updated"></div>
+            <a href="https://scrosby09.github.io/index.html" style="font-size: .8em; font-weight: 600">Return to
+                Assignment
+                Portal</a>
+        </div>
     </div>
-    <div id="updated"></div>
-    <br>
-    <a href="https://scrosby09.github.io/index.html" style="font-size: .8em; font-weight: 600">Return to Assignment
-        Portal</a>
-    <br>
-    <br>
 </footer>
 <!-- JS -->
-<script src="js/main.js"></script>
-<script>
-    getWeatherToday('3521342');
-    getWeatherForecast('3521342');
-</script>
+<script src="./js/main.js"></script>
+
 </html>

@@ -32,7 +32,7 @@
 <!-- NAVIGATION -->
 <nav>
     <ul class="navMenu padding05">
-        <li><a href="#" id="nav-toggle" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a id="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="rental_listing.html">Rentals</a></li>
         <li><a href="rental_booking.html">Reservations</a></li>
@@ -123,6 +123,7 @@
     </div>
     <br>
 </main>
+<br>
 <!-- FOOTER -->
 <footer class="container clearfix">
     <div class="section">
@@ -142,5 +143,9 @@
     </div>
 </footer>
 <!-- JS -->
-<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    getRentalData()
+    getRentalImages()
+</script>
 </html>

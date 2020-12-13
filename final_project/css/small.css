@@ -61,15 +61,15 @@ _____________________________________*/
 /*-- RENTALS DISPLAY --*/
 #rentals {
     margin: auto;
-    text-align: center;
+    text-align:center;
 }
 
 #rentalHead {
     margin: auto;
-    text-align: center;
+    text-align:center;
 }
 
-#rentals p {
+#rentals p{
     font-size: 1em;
 }
 
@@ -108,7 +108,7 @@ _____________________________________*/
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .text {
@@ -149,6 +149,23 @@ _____________________________________*/
     background-color: #717171;
 }
 
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 #rental {
     display: grid;
     grid-gap: 10px;
@@ -162,7 +179,6 @@ _____________________________________*/
 .rentalDetail {
     padding: 2%;
 }
-
 .rentalDetail p {
     color: #002D52;
 }
@@ -177,6 +193,7 @@ _____________________________________*/
 .rentalImage {
     width: 100%;
 }
+
 
 /*-- WEATHER DISPLAY --*/
 #weatherToday {
