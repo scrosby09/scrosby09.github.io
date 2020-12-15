@@ -141,9 +141,8 @@
     }
 
     header {
-        background-image: url("../images/filler/filler_1_orignal.jpg");
-        background-size: 100%;
-        background-repeat: no-repeat;
+        display: block;
+        background-image: url("../images/filler/filler_9_original.jpg");
     }
 
     #heading2 {
