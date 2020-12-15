@@ -910,7 +910,6 @@ template {
 }
 
 .jumbotron {
-    background-color: var(--ultimate-gray);
     padding: 1rem 1rem;
     border-radius: 0.25em;
 }
