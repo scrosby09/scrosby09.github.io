@@ -133,7 +133,7 @@
     }
 
     .page-header {
-        height: calc(100vh + 270px);
+        height: calc(50vh + 270px);
     }
 
     /* CORE

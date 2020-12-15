@@ -420,7 +420,7 @@ img {
 /* HEADER
 -----------------------------------------------*/
 .page-header {
-    height: 80vh;
+    height: 50vh;
     background-position: center center;
     background-size: cover;
     margin: 0;
@@ -457,7 +457,7 @@ img {
 
 .page-header .iframe-container iframe {
     width: 100%;
-    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .header-filter {
@@ -1262,9 +1262,9 @@ template {
     margin: auto 0;
 }
 
-.centerd {
+.content-centered {
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     text-align: center;
 }
 
@@ -1284,7 +1284,6 @@ template {
     padding: 0.5rem;
 }
 
-
 .padding1 {
     padding: 1rem;
 }
@@ -1295,4 +1294,42 @@ template {
 
 .padding2 {
     padding: 2rem;
+}
+
+.padding3 {
+    padding: 3rem;
+}
+
+.margin-1 {
+    margin: 0 1rem;
+}
+
+.margin-15 {
+    margin: 0 1.5rem;
+}
+
+.margin-2 {
+    margin: 0 2rem;
+}
+
+.content-section {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.content-column {
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-auto {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
 }
