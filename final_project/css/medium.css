@@ -1,7 +1,7 @@
 @media only screen and (min-width: 32.5em) {
 
     /* MAIN CONTENT
-    --------------------------------------*/
+    -----------------------------------------------*/
     /*-- WEATHER DISPLAY --*/
     .fiveDay {
         display: grid;
@@ -78,6 +78,7 @@
         text-align: center;
         font-size: 1.5em;
     }
+
     /*-- RENTALS DISPLAY --*/
     .tours {
         grid-template-columns: repeat(2, 1fr);
@@ -96,11 +97,13 @@
         margin-left: 20%;
     }
 
-    form label.top input, form label.top select {
+    form label.top input,
+    form label.top select {
         max-width: 20rem;
     }
 
-    #contact_ferry, #contact_terminal {
+    #contact_ferry,
+    #contact_terminal {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -129,26 +132,12 @@
         padding-top: 15%;
     }
 
+    .page-header {
+        height: calc(100vh + 270px);
+    }
+
     /* CORE
-    --------------------------------------*/
-    #heading1 {
-        margin-left: 45px;
-        font-size: 2.5rem;
-    }
-
-    header {
-        justify-content: flex-start;
-    }
-
-    header {
-        display: block;
-        background-image: url("../images/filler/filler_9_original.jpg");
-    }
-
-    #heading2 {
-        color: black;
-    }
-
+    -----------------------------------------------*/
     #scoots-logo {
         max-width: 15rem;
         margin: 0 auto;

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*-- DIRECTORY --
+/*-- DIRECTORY
+
 
 1. Root
 2. Main Content
@@ -12,7 +13,7 @@
 
 <link href="https://fonts.gstatic.com" rel="preconnect">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Red+Hat+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
-*/
+-----------------------------------------------*/
 
 :root {
     --ultimate-gray: #939597;
@@ -57,19 +58,19 @@
 }
 
 /* MAIN CONTENT
-_____________________________________*/
+-----------------------------------------------*/
 /*-- RENTALS DISPLAY --*/
 #rentals {
     margin: auto;
-    text-align:center;
+    text-align: center;
 }
 
 #rentalHead {
     margin: auto;
-    text-align:center;
+    text-align: center;
 }
 
-#rentals p{
+#rentals p {
     font-size: 1em;
 }
 
@@ -87,7 +88,8 @@ _____________________________________*/
     width: 100%;
 }
 
-.move_carousel_bwd, .move_carousel_fwd {
+.move_carousel_bwd,
+.move_carousel_fwd {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -107,8 +109,9 @@ _____________________________________*/
     border-radius: 3px 0 0 3px;
 }
 
-.move_carousel_bwd:hover, .move_carousel_fwd:hover {
-    background-color: rgba(0,0,0,0.8);
+.move_carousel_bwd:hover,
+.move_carousel_fwd:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .text {
@@ -145,7 +148,8 @@ _____________________________________*/
     text-align: center;
 }
 
-.active, .carouselDot:hover {
+.active,
+.carouselDot:hover {
     background-color: #717171;
 }
 
@@ -157,13 +161,23 @@ _____________________________________*/
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 #rental {
@@ -179,6 +193,7 @@ _____________________________________*/
 .rentalDetail {
     padding: 2%;
 }
+
 .rentalDetail p {
     color: #002D52;
 }
@@ -403,11 +418,75 @@ img {
 }
 
 /* HEADER
-_____________________________________*/
-header {
+-----------------------------------------------*/
+.page-header {
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: -webkit-box;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.page-header .page-header-image {
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.page-header .content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 880px;
+}
+
+.page-header .iframe-container iframe {
+    width: 100%;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.header-filter {
+    position: relative;
+}
+
+.header-filter:before,
+.header-filter:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+.header-filter::before {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-filter .container {
+    z-index: 2;
+    position: relative;
+}
+
+.clear-filter::before {
+    background: none;
 }
 
 #scoots-logo {
@@ -415,21 +494,41 @@ header {
     margin: 0 auto;
 }
 
-#heading1 {
-    margin-left: 55px;
-    font-size: 2rem;
+.heading h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    text-align: center
 }
 
-#heading2 {
-    text-align: left;
-    font-style: italic;
-    font-size: 1.5rem;
-    margin-left: 25px;
-    color: white;
+.heading h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    text-align: center
 }
+
+.heading h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    text-align: center
+}
+
+.heading p {
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    text-align: center
+}
+
 
 /* NAVIGATION
-_____________________________________*/
+-----------------------------------------------*/
 nav {
     background-color: var(--illuminating-yellow);
     text-align: center;
@@ -487,7 +586,7 @@ nav ul li a:hover {
 }
 
 /* FOOTER
-_____________________________________*/
+-----------------------------------------------*/
 footer {
     display: flex;
     justify-content: center;
@@ -500,7 +599,7 @@ footer a:visited {
 
 
 /* CORE
-_____________________________________*/
+-----------------------------------------------*/
 *,
 *::before,
 *::after {
@@ -891,8 +990,8 @@ template {
     margin-left: 0;
 }
 
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
     padding-right: 0;
     padding-left: 0;
 }
@@ -940,8 +1039,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -958,8 +1057,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -976,8 +1075,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -994,8 +1093,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1012,8 +1111,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1030,8 +1129,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1046,8 +1145,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1061,8 +1160,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1076,8 +1175,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1091,8 +1190,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1106,8 +1205,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1121,8 +1220,8 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: var(--neutral-100);
 }
 
@@ -1164,8 +1263,21 @@ template {
 }
 
 .centerd {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto
     text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 .padding05 {
