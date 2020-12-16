@@ -1058,7 +1058,7 @@ template {
     border-radius: 0.25rem;
 }
 
-.empty-card1 {
+.blank-card1 {
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -1073,7 +1073,7 @@ template {
     border-radius: 0.25rem;
 }
 
-.empty-card2 {
+.blank-card2 {
     display: flex;
     position: relative;
     max-width: 70rem;
@@ -1085,7 +1085,7 @@ template {
     background: var(--neutral-100);
 }
 
-.empty-card3 {
+.blank-card3 {
     display: block;
     position: relative;
     max-width: 70rem;
@@ -1299,7 +1299,7 @@ template {
     background: var(--neutral-100);
 }
 
-.content-centered {
+.centered {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1390,8 +1390,8 @@ template {
     max-width: none;
 }
 
-.section-dark,
-.section-image {
+.tours_display,
+.tours_display_img {
     background-color: #343434;
     background-size: 200% 240%;
     background: #232323;
