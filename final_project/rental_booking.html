@@ -5,49 +5,61 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <title>Scoots Rentals | Home</title>
-    <link href="favicon.ico" rel="icon"/>
-    <link href="css/small.css" rel="stylesheet"/>
-    <link href="css/medium.css" rel="stylesheet"/>
-    <link href="css/large.css" rel="stylesheet"/>
-    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="favicon.ico" rel="icon" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
-<!-- HEADER -->
 <header>
-    <br>
-    <div class="card-flex-center-40 content-centered">
-        <div class="empty-card3 content-centered">
-            <img class="scoots_logo" alt="Scoots Logo" id="scoots-logo" src="images/scoots_logo.png">
-        </div>
-        <div class="padding1 content-centered">
-            <h1>SCOOTS</h1>
-            <p>Enjoy the ride in paraíso</p>
+    <div class="page-header header-filter" style="background-image: url('images/filler/filler_8_original.jpg')">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-auto content-centered">
+                    <div class="card-block-center-80 content-centered padding15">
+                        <img id="scoots-logo" src="images/scoots_logo.png" alt="Scoots Logo">
+                        <div class="heading text-center padding2">
+                            <h1>SCOOTS</h1><br>
+                            <h3 class="heading text-center">Enjoy Your Ride In Paradiso</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <br>
 </header>
+
 <!-- NAVIGATION -->
 <nav>
     <ul class="navMenu padding05">
         <li><a id="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="rental_listing.html">Rentals</a></li>
-        <li><a href="rental_booking.html">Reservations</a></li>
+        <li><a class="active" href="rental_booking.html">Reservations</a></li>
         <li><a href="tours_listing.html">Tours</a></li>
         <li><a href="contact_us.html">Contact</a></li>
     </ul>
 </nav>
 <br>
+
 <!-- MAIN CONTENT -->
 <main>
-    <div class="main main-raised">
-        <div class="container content-centered clearfix">
-            <br>
-            <div class="card-block-relative-40 content-centered">
-                <h1 class="padding05">Rental Booking</h1>
+    <div class="main main-raised content-centered">
+        <div class="container clearfix">
+            <div class="content-section content-centered">
+                <div class="row">
+                    <div class="col-auto content-centered">
+                        <h2 class="heading padding2">RENTAL BOOKINGS</h2>
+                    </div>
+                </div>
+                <div class="empty-card3 content-centered padding15">
+                    <p>Here you're able to reserve your Scoots rental.</p>
+                </div>
             </div>
             <br>
             <form action="rental_confirmed.html" method="get">
@@ -172,20 +184,29 @@
 
 <br>
 <!-- FOOTER -->
-<footer class="container clearfix">
-    <div class="section">
-        <div class="content-centered">
-            &copy; <span id="copyright"></span> Scoots Rentals
-            <br>
-            Steven Crosby
-            <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-            <br>
-            Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
-            <a href="https://www.byui.edu/online">Assignment Portal</a>
-            <div id="updated"></div>
-            <a href="https://scrosby09.github.io/index.html" style="font-size: .8em; font-weight: 600">Return to
-                Assignment
-                Portal</a>
+<footer>
+    <br>
+    <div class="container clearfix">
+        <div class="content-section content-centered">
+            <div>
+                <div class="col-auto content-centered">
+                    <div class="empty-card3 content-centered">
+                        &copy; <span id="copyright"></span> Scoots Rentals
+                        <br>
+                        Steven Crosby
+                        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+                        <br>
+                        Weather data provided by <a href="https://openweathermap.org/"
+                            target="_blank">OpenWeatherMap</a>
+                        <a href="https://www.byui.edu/online">Assignment Portal</a>
+                        <div id="updated"></div>
+                        <a href="https://scrosby09.github.io/index.html"
+                            style="font-size: .8em; font-weight: 600">Return to
+                            Assignment
+                            Portal</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
