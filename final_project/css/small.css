@@ -208,15 +208,8 @@
 #weatherToday {
     position: relative;
     background: radial-gradient(var(--light), var(--neutral-100));
-    border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 1rem;
     opacity: .8;
-}
-
-#weatherToday h2 {
-    color: var(--dark);
-    border-bottom: 2px solid rgba(0, 0, 0, .25);
-    padding-bottom: 5px;
 }
 
 p.weather_data {
@@ -228,11 +221,10 @@ p.weather_data {
 
 .weather_data .label {
     text-align: right;
-    font-style: italic;
 }
 
 .weather_data .value {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .fiveDay {
