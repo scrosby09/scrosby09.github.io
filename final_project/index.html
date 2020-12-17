@@ -12,8 +12,9 @@
     <link href="css/normalize.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
+
 </head>
 
 <header>
@@ -42,14 +43,14 @@
         <li><a href="rental_listing.html">Rentals</a></li>
         <li><a href="rental_booking.html">Reservations</a></li>
         <li><a href="tours_listing.html">Tours</a></li>
-        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
     </ul>
 </nav>
 <br>
 
 <!-- MAIN CONTENT -->
 <main>
-    <div class="main main-raised centered">
+    <div class="main main-raised centered" data-parallax="true">
         <div class="container clearfix">
             <div class="content-section">
                 <div class="row">
@@ -71,7 +72,7 @@
             <!-- SCOOTS WEATHER -->
             <div class="main main-raised centered" style="background-color: #939597">
                 <div class="container clearfix padding15">
-                    <div class="content-section centered padding15">
+                    <div class="content-section centered padding2">
                         <div class="row">
                             <div class="col-auto centered">
                                 <div class="card-block-center-40 centered">
@@ -102,33 +103,33 @@
                             </div>
                         </div>
                         <br>
-                        <div class="card-block-center-60 centered padding15">
+                        <div class="content-section centered">
                             <section class="fiveDay">
-                                <div class="blank-card1" id="day1">
+                                <div class="card-block-center-40" id="day1">
                                     <h3 id="date1"></h3>
                                     <div><img src="#" alt="" id='weather_icon1'></div>
                                     <div id="condition1"></div>
                                     <div id="day1_weather"></div>
                                 </div>
-                                <div class="blank-card1" id="day2">
+                                <div class="card-block-center-40" id="day2">
                                     <h3 id="date2"></h3>
                                     <div><img src="#" alt="" id='weather_icon2'></div>
                                     <div id="condition2"></div>
                                     <div id="day2_weather"></div>
                                 </div>
-                                <div class="blank-card1" id="day3">
+                                <div class="card-block-center-40" id="day3">
                                     <h3 id="date3"></h3>
                                     <div><img src="#" alt="" id='weather_icon3'></div>
                                     <div id="condition3"></div>
                                     <div id="day3_weather"></div>
                                 </div>
-                                <div class="blank-card1" id="day4">
+                                <div class="card-block-center-40" id="day4">
                                     <h3 id="date4"></h3>
                                     <div><img src="#" alt="" id='weather_icon4'></div>
                                     <div id="condition4"></div>
                                     <div id="day4_weather"></div>
                                 </div>
-                                <div class="blank-card1" id="day5">
+                                <div class="card-block-center-40" id="day5">
                                     <h3 id="date5"></h3>
                                     <div><img src="#" alt="" id='weather_icon5'></div>
                                     <div id="condition5"></div>
@@ -143,20 +144,23 @@
             <br>
             <!-- RENTAL CAROUSEL -->
             <div class="section">
-                <div class="container">
+                <div class="card-block-relative-40 centered padding3" style="background-color: #F5DF4D;">
                     <div class="content-section centered">
                         <div class="row">
                             <div class="col-auto centered">
-                                <h2 class="heading">Rentals Available!</h2>
+                                <h2 class="heading">FIND YOUR VEHICLE</h2>
                                 <p>Find your adventure vehicle here!</p>
-                                <a href="./rental_listing.html">Our Vehicles</a>
+                                <br>
+                                <form class="button" action="rental_listing.html">
+                                    <input class="submitBtn" type="submit" value="Our Vehicles">
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
                 <br>
                 <br>
-                <div class="main main-raised">
+                <div class="card-block-relative-80 centered" style="background-color: white;">
                     <div class="container padding2">
                         <div class="content-section centered">
                             <div class="row centered">
@@ -211,15 +215,14 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- CONTACT US -->
-    <div class="content-section centered">
-        <div class="row">
-            <div class="col-auto centered">
-                <div class="blank-card1 centered padding15">
-                    <div class="Contact_Us padding15">
-                        <h3 style="text-align: center;">Contact Us</h3>
+        <br>
+        <br>
+        <!-- CONTACT US -->
+        <div class="card-block-relative-60 centered padding15" style="background-color: #939597;">
+            <div class="Contact_Us content-section centered">
+                <div class="row centered">
+                    <div class="col-auto centered card-block-relative-40 padding3">
+                        <h2 class="heading blank-card3" style="background-color: #F5DF4D;">CONTACT US</h2>
                         <p style="text-align: center;">Ave. Benito Juarez at, 15A
                             Avenida Sur,
                             Centro, 77600
@@ -232,7 +235,7 @@
                         </p>
                         <p>
                             <img alt="Email" class="email" src="images/contact/contact-email.png">
-                            info@scoots.org
+                            contact@scoots.com
                         </p>
                         <div class="contact">
                             <a href="https://www.facebook.com/">
@@ -250,18 +253,17 @@
             </div>
         </div>
         <br>
-    </div>
-    </div>
-    <br>
+        <br>
     </div>
 </main>
+
 <!-- FOOTER -->
 <footer>
     <br>
     <div class="container clearfix">
         <div class="content-section centered">
-            <div class="col-auto centered">
-                <div class="blank-card3 centered">
+            <div class="card-block-relative-80 centered">
+                <div class="card-block-relative-40 centered style=" background-color: #fff;"">
                     &copy; <span id="copyright"></span> Scoots Rentals
                     <br>
                     Steven Crosby
