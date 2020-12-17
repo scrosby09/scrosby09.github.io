@@ -11,10 +11,6 @@
         font-size: 1rem;
     }
 
-    #forecast-title {
-        font-family: "Fira Sans", sans-serif;
-        text-align: center;
-    }
 
     #day1 {
         font-family: "Fira Sans", sans-serif;
@@ -45,7 +41,7 @@
         grid-column: 4;
         margin-left: 1%;
         margin-right: 1%;
-         background-color: #CFC482;
+        background-color: #CFC482;
     }
 
     #day5 {
@@ -54,12 +50,6 @@
         margin-left: 1%;
         margin-right: 1%;
         background-color: #F5DF4D;
-    }
-
-    #forecast {
-        font-family: "Fira Sans", sans-serif;
-        display: grid;
-        text-align: center;
     }
 
     #day1_weather,
@@ -86,10 +76,6 @@
     }
 
     /*-- RENTALS DISPLAY --*/
-    .tours {
-        font-family: "Fira Sans", sans-serif;
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     figure:hover {
         box-shadow: 1px 1px 8px 5px #59C1FF;
@@ -109,11 +95,6 @@
         max-width: 20rem;
     }
 
-    #contact_ferry,
-    #contact_terminal {
-        grid-template-columns: 1fr 1fr;
-    }
-
     #contact_terminal p {
         text-align: left;
     }
@@ -129,10 +110,6 @@
     .map iframe {
         border-top-right-radius: 1px;
         border-bottom-right-radius: 1px;
-    }
-
-    .contact_card {
-        padding-top: 15%;
     }
 
     .page-header {
