@@ -111,40 +111,6 @@ function getRentalImages() {
     }
 }
 
-/*Slide Show*/
-let carousel_init = 1;
-displayCarousel(carousel_init);
-
-/* Next/previous controls*/
-function moveCarousel(n) {
-    displayCarousel(carousel_init += n);
-}
-
-/* Thumbnail image controls*/
-function advanceCarousel(n) {
-    displayCarousel(carousel_init = n);
-}
-
-function displayCarousel(n) {
-    let i;
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("carouselDot");
-    if (n > slides.length) {
-        carousel_init = 1
-    }
-    if (n < 1) {
-        carousel_init = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[carousel_init - 1].style.display = "block";
-    dots[carousel_init - 1].className += " active";
-}
-
 /**
  * BUILD WEATHER TODAY DISPLAY */
 function getWeather() {
